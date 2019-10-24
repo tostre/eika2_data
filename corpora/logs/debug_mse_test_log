@@ -1,6 +1,0 @@
-batch: 1/2
-... correct: 0
-average test loss: 0.2503460645675659, relative correct: 0.0
-
-confusion:
-[[1.0, 2], [2.0, 1]]
