@@ -1,0 +1,2002 @@
+batch: 1/1 in epoch 1/1000 
+... loss: 0.2851400375366211
+batch: 1/1 in epoch 2/1000 
+... loss: 0.5089359283447266
+batch: 1/1 in epoch 3/1000 
+... loss: 1.3093855381011963
+batch: 1/1 in epoch 4/1000 
+... loss: 3.9933533668518066
+batch: 1/1 in epoch 5/1000 
+... loss: 10.323945999145508
+batch: 1/1 in epoch 6/1000 
+... loss: 7.510469436645508
+batch: 1/1 in epoch 7/1000 
+... loss: 0.2868693470954895
+batch: 1/1 in epoch 8/1000 
+... loss: 0.5902084112167358
+batch: 1/1 in epoch 9/1000 
+... loss: 0.6290802955627441
+batch: 1/1 in epoch 10/1000 
+... loss: 0.4136653542518616
+batch: 1/1 in epoch 11/1000 
+... loss: 0.27793949842453003
+batch: 1/1 in epoch 12/1000 
+... loss: 0.2504867911338806
+batch: 1/1 in epoch 13/1000 
+... loss: 0.2583726942539215
+batch: 1/1 in epoch 14/1000 
+... loss: 0.2605944275856018
+batch: 1/1 in epoch 15/1000 
+... loss: 0.2558121681213379
+batch: 1/1 in epoch 16/1000 
+... loss: 0.25170111656188965
+batch: 1/1 in epoch 17/1000 
+... loss: 0.2504614591598511
+batch: 1/1 in epoch 18/1000 
+... loss: 0.25057071447372437
+batch: 1/1 in epoch 19/1000 
+... loss: 0.2506977319717407
+batch: 1/1 in epoch 20/1000 
+... loss: 0.2506064176559448
+batch: 1/1 in epoch 21/1000 
+... loss: 0.25048279762268066
+batch: 1/1 in epoch 22/1000 
+... loss: 0.2504291534423828
+batch: 1/1 in epoch 23/1000 
+... loss: 0.2504240870475769
+batch: 1/1 in epoch 24/1000 
+... loss: 0.25042688846588135
+batch: 1/1 in epoch 25/1000 
+... loss: 0.2504240572452545
+batch: 1/1 in epoch 26/1000 
+... loss: 0.2504187822341919
+batch: 1/1 in epoch 27/1000 
+... loss: 0.25041496753692627
+batch: 1/1 in epoch 28/1000 
+... loss: 0.2504126727581024
+batch: 1/1 in epoch 29/1000 
+... loss: 0.25041085481643677
+batch: 1/1 in epoch 30/1000 
+... loss: 0.25040897727012634
+batch: 1/1 in epoch 31/1000 
+... loss: 0.25040698051452637
+batch: 1/1 in epoch 32/1000 
+... loss: 0.2504050135612488
+batch: 1/1 in epoch 33/1000 
+... loss: 0.25040310621261597
+batch: 1/1 in epoch 34/1000 
+... loss: 0.25040119886398315
+batch: 1/1 in epoch 35/1000 
+... loss: 0.2503993511199951
+batch: 1/1 in epoch 36/1000 
+... loss: 0.2503975033760071
+batch: 1/1 in epoch 37/1000 
+... loss: 0.25039565563201904
+batch: 1/1 in epoch 38/1000 
+... loss: 0.250393807888031
+batch: 1/1 in epoch 39/1000 
+... loss: 0.25039201974868774
+batch: 1/1 in epoch 40/1000 
+... loss: 0.2503902018070221
+batch: 1/1 in epoch 41/1000 
+... loss: 0.25038838386535645
+batch: 1/1 in epoch 42/1000 
+... loss: 0.2503865957260132
+batch: 1/1 in epoch 43/1000 
+... loss: 0.2503848075866699
+batch: 1/1 in epoch 44/1000 
+... loss: 0.25038304924964905
+batch: 1/1 in epoch 45/1000 
+... loss: 0.2503812909126282
+batch: 1/1 in epoch 46/1000 
+... loss: 0.2503795623779297
+batch: 1/1 in epoch 47/1000 
+... loss: 0.2503778338432312
+batch: 1/1 in epoch 48/1000 
+... loss: 0.2503761053085327
+batch: 1/1 in epoch 49/1000 
+... loss: 0.25037437677383423
+batch: 1/1 in epoch 50/1000 
+... loss: 0.25037264823913574
+batch: 1/1 in epoch 51/1000 
+... loss: 0.25037097930908203
+batch: 1/1 in epoch 52/1000 
+... loss: 0.2503693103790283
+batch: 1/1 in epoch 53/1000 
+... loss: 0.2503676116466522
+batch: 1/1 in epoch 54/1000 
+... loss: 0.2503659427165985
+batch: 1/1 in epoch 55/1000 
+... loss: 0.2503642737865448
+batch: 1/1 in epoch 56/1000 
+... loss: 0.2503626346588135
+batch: 1/1 in epoch 57/1000 
+... loss: 0.25036099553108215
+batch: 1/1 in epoch 58/1000 
+... loss: 0.25035935640335083
+batch: 1/1 in epoch 59/1000 
+... loss: 0.2503577470779419
+batch: 1/1 in epoch 60/1000 
+... loss: 0.25035613775253296
+batch: 1/1 in epoch 61/1000 
+... loss: 0.2503545582294464
+batch: 1/1 in epoch 62/1000 
+... loss: 0.25035297870635986
+batch: 1/1 in epoch 63/1000 
+... loss: 0.2503513693809509
+batch: 1/1 in epoch 64/1000 
+... loss: 0.25034981966018677
+batch: 1/1 in epoch 65/1000 
+... loss: 0.2503482699394226
+batch: 1/1 in epoch 66/1000 
+... loss: 0.25034669041633606
+batch: 1/1 in epoch 67/1000 
+... loss: 0.2503451406955719
+batch: 1/1 in epoch 68/1000 
+... loss: 0.2503436207771301
+batch: 1/1 in epoch 69/1000 
+... loss: 0.25034210085868835
+batch: 1/1 in epoch 70/1000 
+... loss: 0.2503405809402466
+batch: 1/1 in epoch 71/1000 
+... loss: 0.2503390908241272
+batch: 1/1 in epoch 72/1000 
+... loss: 0.2503375709056854
+batch: 1/1 in epoch 73/1000 
+... loss: 0.25033608078956604
+batch: 1/1 in epoch 74/1000 
+... loss: 0.25033459067344666
+batch: 1/1 in epoch 75/1000 
+... loss: 0.25033313035964966
+batch: 1/1 in epoch 76/1000 
+... loss: 0.2503316402435303
+batch: 1/1 in epoch 77/1000 
+... loss: 0.25033020973205566
+batch: 1/1 in epoch 78/1000 
+... loss: 0.25032874941825867
+batch: 1/1 in epoch 79/1000 
+... loss: 0.25032728910446167
+batch: 1/1 in epoch 80/1000 
+... loss: 0.25032585859298706
+batch: 1/1 in epoch 81/1000 
+... loss: 0.25032442808151245
+batch: 1/1 in epoch 82/1000 
+... loss: 0.2503230571746826
+batch: 1/1 in epoch 83/1000 
+... loss: 0.250321626663208
+batch: 1/1 in epoch 84/1000 
+... loss: 0.2503202259540558
+batch: 1/1 in epoch 85/1000 
+... loss: 0.25031882524490356
+batch: 1/1 in epoch 86/1000 
+... loss: 0.25031745433807373
+batch: 1/1 in epoch 87/1000 
+... loss: 0.2503160834312439
+batch: 1/1 in epoch 88/1000 
+... loss: 0.25031471252441406
+batch: 1/1 in epoch 89/1000 
+... loss: 0.25031334161758423
+batch: 1/1 in epoch 90/1000 
+... loss: 0.2503119707107544
+batch: 1/1 in epoch 91/1000 
+... loss: 0.25031062960624695
+batch: 1/1 in epoch 92/1000 
+... loss: 0.2503092885017395
+batch: 1/1 in epoch 93/1000 
+... loss: 0.25030797719955444
+batch: 1/1 in epoch 94/1000 
+... loss: 0.250306636095047
+batch: 1/1 in epoch 95/1000 
+... loss: 0.25030529499053955
+batch: 1/1 in epoch 96/1000 
+... loss: 0.2503040134906769
+batch: 1/1 in epoch 97/1000 
+... loss: 0.2503027021884918
+batch: 1/1 in epoch 98/1000 
+... loss: 0.25030142068862915
+batch: 1/1 in epoch 99/1000 
+... loss: 0.2503001093864441
+batch: 1/1 in epoch 100/1000 
+... loss: 0.2502988278865814
+batch: 1/1 in epoch 101/1000 
+... loss: 0.25029754638671875
+batch: 1/1 in epoch 102/1000 
+... loss: 0.25029629468917847
+batch: 1/1 in epoch 103/1000 
+... loss: 0.2502950429916382
+batch: 1/1 in epoch 104/1000 
+... loss: 0.2502937912940979
+batch: 1/1 in epoch 105/1000 
+... loss: 0.2502925395965576
+batch: 1/1 in epoch 106/1000 
+... loss: 0.25029128789901733
+batch: 1/1 in epoch 107/1000 
+... loss: 0.25029003620147705
+batch: 1/1 in epoch 108/1000 
+... loss: 0.25028881430625916
+batch: 1/1 in epoch 109/1000 
+... loss: 0.25028759241104126
+batch: 1/1 in epoch 110/1000 
+... loss: 0.25028640031814575
+batch: 1/1 in epoch 111/1000 
+... loss: 0.25028514862060547
+batch: 1/1 in epoch 112/1000 
+... loss: 0.25028395652770996
+batch: 1/1 in epoch 113/1000 
+... loss: 0.25028276443481445
+batch: 1/1 in epoch 114/1000 
+... loss: 0.25028160214424133
+batch: 1/1 in epoch 115/1000 
+... loss: 0.2502804100513458
+batch: 1/1 in epoch 116/1000 
+... loss: 0.2502792477607727
+batch: 1/1 in epoch 117/1000 
+... loss: 0.2502780556678772
+batch: 1/1 in epoch 118/1000 
+... loss: 0.25027692317962646
+batch: 1/1 in epoch 119/1000 
+... loss: 0.25027573108673096
+batch: 1/1 in epoch 120/1000 
+... loss: 0.2502745985984802
+batch: 1/1 in epoch 121/1000 
+... loss: 0.2502734661102295
+batch: 1/1 in epoch 122/1000 
+... loss: 0.25027230381965637
+batch: 1/1 in epoch 123/1000 
+... loss: 0.25027117133140564
+batch: 1/1 in epoch 124/1000 
+... loss: 0.2502700686454773
+batch: 1/1 in epoch 125/1000 
+... loss: 0.25026893615722656
+batch: 1/1 in epoch 126/1000 
+... loss: 0.25026780366897583
+batch: 1/1 in epoch 127/1000 
+... loss: 0.2502666711807251
+batch: 1/1 in epoch 128/1000 
+... loss: 0.25026559829711914
+batch: 1/1 in epoch 129/1000 
+... loss: 0.2502644956111908
+batch: 1/1 in epoch 130/1000 
+... loss: 0.25026339292526245
+batch: 1/1 in epoch 131/1000 
+... loss: 0.2502623200416565
+batch: 1/1 in epoch 132/1000 
+... loss: 0.25026124715805054
+batch: 1/1 in epoch 133/1000 
+... loss: 0.2502601742744446
+batch: 1/1 in epoch 134/1000 
+... loss: 0.2502591013908386
+batch: 1/1 in epoch 135/1000 
+... loss: 0.25025802850723267
+batch: 1/1 in epoch 136/1000 
+... loss: 0.2502569556236267
+batch: 1/1 in epoch 137/1000 
+... loss: 0.25025591254234314
+batch: 1/1 in epoch 138/1000 
+... loss: 0.25025486946105957
+batch: 1/1 in epoch 139/1000 
+... loss: 0.2502537965774536
+batch: 1/1 in epoch 140/1000 
+... loss: 0.25025278329849243
+batch: 1/1 in epoch 141/1000 
+... loss: 0.25025174021720886
+batch: 1/1 in epoch 142/1000 
+... loss: 0.2502506971359253
+batch: 1/1 in epoch 143/1000 
+... loss: 0.2502496838569641
+batch: 1/1 in epoch 144/1000 
+... loss: 0.25024867057800293
+batch: 1/1 in epoch 145/1000 
+... loss: 0.25024765729904175
+batch: 1/1 in epoch 146/1000 
+... loss: 0.25024664402008057
+batch: 1/1 in epoch 147/1000 
+... loss: 0.2502456605434418
+batch: 1/1 in epoch 148/1000 
+... loss: 0.250244677066803
+batch: 1/1 in epoch 149/1000 
+... loss: 0.2502436637878418
+batch: 1/1 in epoch 150/1000 
+... loss: 0.250242680311203
+batch: 1/1 in epoch 151/1000 
+... loss: 0.2502416968345642
+batch: 1/1 in epoch 152/1000 
+... loss: 0.2502407431602478
+batch: 1/1 in epoch 153/1000 
+... loss: 0.250239759683609
+batch: 1/1 in epoch 154/1000 
+... loss: 0.2502388060092926
+batch: 1/1 in epoch 155/1000 
+... loss: 0.2502378225326538
+batch: 1/1 in epoch 156/1000 
+... loss: 0.2502368688583374
+batch: 1/1 in epoch 157/1000 
+... loss: 0.250235915184021
+batch: 1/1 in epoch 158/1000 
+... loss: 0.2502349615097046
+batch: 1/1 in epoch 159/1000 
+... loss: 0.2502340078353882
+batch: 1/1 in epoch 160/1000 
+... loss: 0.25023308396339417
+batch: 1/1 in epoch 161/1000 
+... loss: 0.25023216009140015
+batch: 1/1 in epoch 162/1000 
+... loss: 0.25023123621940613
+batch: 1/1 in epoch 163/1000 
+... loss: 0.2502303123474121
+batch: 1/1 in epoch 164/1000 
+... loss: 0.2502293884754181
+batch: 1/1 in epoch 165/1000 
+... loss: 0.2502284646034241
+batch: 1/1 in epoch 166/1000 
+... loss: 0.25022757053375244
+batch: 1/1 in epoch 167/1000 
+... loss: 0.2502266764640808
+batch: 1/1 in epoch 168/1000 
+... loss: 0.2502257525920868
+batch: 1/1 in epoch 169/1000 
+... loss: 0.25022485852241516
+batch: 1/1 in epoch 170/1000 
+... loss: 0.25022396445274353
+batch: 1/1 in epoch 171/1000 
+... loss: 0.2502231001853943
+batch: 1/1 in epoch 172/1000 
+... loss: 0.25022220611572266
+batch: 1/1 in epoch 173/1000 
+... loss: 0.250221312046051
+batch: 1/1 in epoch 174/1000 
+... loss: 0.2502204179763794
+batch: 1/1 in epoch 175/1000 
+... loss: 0.25021958351135254
+batch: 1/1 in epoch 176/1000 
+... loss: 0.2502186894416809
+batch: 1/1 in epoch 177/1000 
+... loss: 0.25021785497665405
+batch: 1/1 in epoch 178/1000 
+... loss: 0.2502169609069824
+batch: 1/1 in epoch 179/1000 
+... loss: 0.25021612644195557
+batch: 1/1 in epoch 180/1000 
+... loss: 0.2502152919769287
+batch: 1/1 in epoch 181/1000 
+... loss: 0.25021442770957947
+batch: 1/1 in epoch 182/1000 
+... loss: 0.2502135634422302
+batch: 1/1 in epoch 183/1000 
+... loss: 0.25021275877952576
+batch: 1/1 in epoch 184/1000 
+... loss: 0.2502118945121765
+batch: 1/1 in epoch 185/1000 
+... loss: 0.25021108984947205
+batch: 1/1 in epoch 186/1000 
+... loss: 0.2502102553844452
+batch: 1/1 in epoch 187/1000 
+... loss: 0.2502094507217407
+batch: 1/1 in epoch 188/1000 
+... loss: 0.25020861625671387
+batch: 1/1 in epoch 189/1000 
+... loss: 0.250207781791687
+batch: 1/1 in epoch 190/1000 
+... loss: 0.25020700693130493
+batch: 1/1 in epoch 191/1000 
+... loss: 0.2502061724662781
+batch: 1/1 in epoch 192/1000 
+... loss: 0.250205397605896
+batch: 1/1 in epoch 193/1000 
+... loss: 0.25020459294319153
+batch: 1/1 in epoch 194/1000 
+... loss: 0.25020378828048706
+batch: 1/1 in epoch 195/1000 
+... loss: 0.250203013420105
+batch: 1/1 in epoch 196/1000 
+... loss: 0.2502022385597229
+batch: 1/1 in epoch 197/1000 
+... loss: 0.2502014636993408
+batch: 1/1 in epoch 198/1000 
+... loss: 0.25020065903663635
+batch: 1/1 in epoch 199/1000 
+... loss: 0.2501998543739319
+batch: 1/1 in epoch 200/1000 
+... loss: 0.2501991093158722
+batch: 1/1 in epoch 201/1000 
+... loss: 0.2501983642578125
+batch: 1/1 in epoch 202/1000 
+... loss: 0.2501975893974304
+batch: 1/1 in epoch 203/1000 
+... loss: 0.25019681453704834
+batch: 1/1 in epoch 204/1000 
+... loss: 0.25019603967666626
+batch: 1/1 in epoch 205/1000 
+... loss: 0.25019529461860657
+batch: 1/1 in epoch 206/1000 
+... loss: 0.2501945495605469
+batch: 1/1 in epoch 207/1000 
+... loss: 0.2501937747001648
+batch: 1/1 in epoch 208/1000 
+... loss: 0.2501930594444275
+batch: 1/1 in epoch 209/1000 
+... loss: 0.2501923441886902
+batch: 1/1 in epoch 210/1000 
+... loss: 0.2501915991306305
+batch: 1/1 in epoch 211/1000 
+... loss: 0.2501908540725708
+batch: 1/1 in epoch 212/1000 
+... loss: 0.2501901388168335
+batch: 1/1 in epoch 213/1000 
+... loss: 0.2501893937587738
+batch: 1/1 in epoch 214/1000 
+... loss: 0.2501886487007141
+batch: 1/1 in epoch 215/1000 
+... loss: 0.2501879334449768
+batch: 1/1 in epoch 216/1000 
+... loss: 0.2501872181892395
+batch: 1/1 in epoch 217/1000 
+... loss: 0.2501865327358246
+batch: 1/1 in epoch 218/1000 
+... loss: 0.2501858174800873
+batch: 1/1 in epoch 219/1000 
+... loss: 0.25018513202667236
+batch: 1/1 in epoch 220/1000 
+... loss: 0.25018441677093506
+batch: 1/1 in epoch 221/1000 
+... loss: 0.25018370151519775
+batch: 1/1 in epoch 222/1000 
+... loss: 0.25018298625946045
+batch: 1/1 in epoch 223/1000 
+... loss: 0.2501823306083679
+batch: 1/1 in epoch 224/1000 
+... loss: 0.2501816153526306
+batch: 1/1 in epoch 225/1000 
+... loss: 0.2501809000968933
+batch: 1/1 in epoch 226/1000 
+... loss: 0.2501802444458008
+batch: 1/1 in epoch 227/1000 
+... loss: 0.25017958879470825
+batch: 1/1 in epoch 228/1000 
+... loss: 0.25017887353897095
+batch: 1/1 in epoch 229/1000 
+... loss: 0.2501782178878784
+batch: 1/1 in epoch 230/1000 
+... loss: 0.2501775622367859
+batch: 1/1 in epoch 231/1000 
+... loss: 0.25017687678337097
+batch: 1/1 in epoch 232/1000 
+... loss: 0.25017619132995605
+batch: 1/1 in epoch 233/1000 
+... loss: 0.2501755356788635
+batch: 1/1 in epoch 234/1000 
+... loss: 0.250174880027771
+batch: 1/1 in epoch 235/1000 
+... loss: 0.25017422437667847
+batch: 1/1 in epoch 236/1000 
+... loss: 0.25017356872558594
+batch: 1/1 in epoch 237/1000 
+... loss: 0.2501729130744934
+batch: 1/1 in epoch 238/1000 
+... loss: 0.2501722574234009
+batch: 1/1 in epoch 239/1000 
+... loss: 0.25017163157463074
+batch: 1/1 in epoch 240/1000 
+... loss: 0.2501710057258606
+batch: 1/1 in epoch 241/1000 
+... loss: 0.25017035007476807
+batch: 1/1 in epoch 242/1000 
+... loss: 0.25016969442367554
+batch: 1/1 in epoch 243/1000 
+... loss: 0.2501690983772278
+batch: 1/1 in epoch 244/1000 
+... loss: 0.25016844272613525
+batch: 1/1 in epoch 245/1000 
+... loss: 0.2501678168773651
+batch: 1/1 in epoch 246/1000 
+... loss: 0.25016719102859497
+batch: 1/1 in epoch 247/1000 
+... loss: 0.2501665949821472
+batch: 1/1 in epoch 248/1000 
+... loss: 0.2501659393310547
+batch: 1/1 in epoch 249/1000 
+... loss: 0.25016534328460693
+batch: 1/1 in epoch 250/1000 
+... loss: 0.2501647174358368
+batch: 1/1 in epoch 251/1000 
+... loss: 0.25016409158706665
+batch: 1/1 in epoch 252/1000 
+... loss: 0.2501634955406189
+batch: 1/1 in epoch 253/1000 
+... loss: 0.25016289949417114
+batch: 1/1 in epoch 254/1000 
+... loss: 0.2501623034477234
+batch: 1/1 in epoch 255/1000 
+... loss: 0.25016170740127563
+batch: 1/1 in epoch 256/1000 
+... loss: 0.2501611113548279
+batch: 1/1 in epoch 257/1000 
+... loss: 0.2501605153083801
+batch: 1/1 in epoch 258/1000 
+... loss: 0.2501599192619324
+batch: 1/1 in epoch 259/1000 
+... loss: 0.2501593232154846
+batch: 1/1 in epoch 260/1000 
+... loss: 0.25015872716903687
+batch: 1/1 in epoch 261/1000 
+... loss: 0.2501581311225891
+batch: 1/1 in epoch 262/1000 
+... loss: 0.25015756487846375
+batch: 1/1 in epoch 263/1000 
+... loss: 0.2501569986343384
+batch: 1/1 in epoch 264/1000 
+... loss: 0.2501564025878906
+batch: 1/1 in epoch 265/1000 
+... loss: 0.25015580654144287
+batch: 1/1 in epoch 266/1000 
+... loss: 0.2501552700996399
+batch: 1/1 in epoch 267/1000 
+... loss: 0.25015467405319214
+batch: 1/1 in epoch 268/1000 
+... loss: 0.25015413761138916
+batch: 1/1 in epoch 269/1000 
+... loss: 0.2501535713672638
+batch: 1/1 in epoch 270/1000 
+... loss: 0.2501530051231384
+batch: 1/1 in epoch 271/1000 
+... loss: 0.25015243887901306
+batch: 1/1 in epoch 272/1000 
+... loss: 0.2501518726348877
+batch: 1/1 in epoch 273/1000 
+... loss: 0.2501513361930847
+batch: 1/1 in epoch 274/1000 
+... loss: 0.25015076994895935
+batch: 1/1 in epoch 275/1000 
+... loss: 0.25015023350715637
+batch: 1/1 in epoch 276/1000 
+... loss: 0.250149667263031
+batch: 1/1 in epoch 277/1000 
+... loss: 0.250149130821228
+batch: 1/1 in epoch 278/1000 
+... loss: 0.25014859437942505
+batch: 1/1 in epoch 279/1000 
+... loss: 0.25014805793762207
+batch: 1/1 in epoch 280/1000 
+... loss: 0.2501475214958191
+batch: 1/1 in epoch 281/1000 
+... loss: 0.2501469850540161
+batch: 1/1 in epoch 282/1000 
+... loss: 0.25014644861221313
+batch: 1/1 in epoch 283/1000 
+... loss: 0.25014591217041016
+batch: 1/1 in epoch 284/1000 
+... loss: 0.2501453757286072
+batch: 1/1 in epoch 285/1000 
+... loss: 0.2501448392868042
+batch: 1/1 in epoch 286/1000 
+... loss: 0.2501443326473236
+batch: 1/1 in epoch 287/1000 
+... loss: 0.250143826007843
+batch: 1/1 in epoch 288/1000 
+... loss: 0.25014328956604004
+batch: 1/1 in epoch 289/1000 
+... loss: 0.25014275312423706
+batch: 1/1 in epoch 290/1000 
+... loss: 0.25014227628707886
+batch: 1/1 in epoch 291/1000 
+... loss: 0.2501417398452759
+batch: 1/1 in epoch 292/1000 
+... loss: 0.2501412034034729
+batch: 1/1 in epoch 293/1000 
+... loss: 0.2501407265663147
+batch: 1/1 in epoch 294/1000 
+... loss: 0.2501401901245117
+batch: 1/1 in epoch 295/1000 
+... loss: 0.2501397132873535
+batch: 1/1 in epoch 296/1000 
+... loss: 0.25013917684555054
+batch: 1/1 in epoch 297/1000 
+... loss: 0.25013870000839233
+batch: 1/1 in epoch 298/1000 
+... loss: 0.25013819336891174
+batch: 1/1 in epoch 299/1000 
+... loss: 0.25013768672943115
+batch: 1/1 in epoch 300/1000 
+... loss: 0.25013720989227295
+batch: 1/1 in epoch 301/1000 
+... loss: 0.25013673305511475
+batch: 1/1 in epoch 302/1000 
+... loss: 0.25013622641563416
+batch: 1/1 in epoch 303/1000 
+... loss: 0.25013571977615356
+batch: 1/1 in epoch 304/1000 
+... loss: 0.25013524293899536
+batch: 1/1 in epoch 305/1000 
+... loss: 0.25013476610183716
+batch: 1/1 in epoch 306/1000 
+... loss: 0.25013428926467896
+batch: 1/1 in epoch 307/1000 
+... loss: 0.25013381242752075
+batch: 1/1 in epoch 308/1000 
+... loss: 0.25013333559036255
+batch: 1/1 in epoch 309/1000 
+... loss: 0.25013285875320435
+batch: 1/1 in epoch 310/1000 
+... loss: 0.25013238191604614
+batch: 1/1 in epoch 311/1000 
+... loss: 0.25013190507888794
+batch: 1/1 in epoch 312/1000 
+... loss: 0.25013142824172974
+batch: 1/1 in epoch 313/1000 
+... loss: 0.2501309812068939
+batch: 1/1 in epoch 314/1000 
+... loss: 0.2501305043697357
+batch: 1/1 in epoch 315/1000 
+... loss: 0.2501300573348999
+batch: 1/1 in epoch 316/1000 
+... loss: 0.2501295804977417
+batch: 1/1 in epoch 317/1000 
+... loss: 0.2501291036605835
+batch: 1/1 in epoch 318/1000 
+... loss: 0.2501286566257477
+batch: 1/1 in epoch 319/1000 
+... loss: 0.25012820959091187
+batch: 1/1 in epoch 320/1000 
+... loss: 0.25012773275375366
+batch: 1/1 in epoch 321/1000 
+... loss: 0.25012731552124023
+batch: 1/1 in epoch 322/1000 
+... loss: 0.25012683868408203
+batch: 1/1 in epoch 323/1000 
+... loss: 0.2501263916492462
+batch: 1/1 in epoch 324/1000 
+... loss: 0.2501259446144104
+batch: 1/1 in epoch 325/1000 
+... loss: 0.250125527381897
+batch: 1/1 in epoch 326/1000 
+... loss: 0.25012508034706116
+batch: 1/1 in epoch 327/1000 
+... loss: 0.25012463331222534
+batch: 1/1 in epoch 328/1000 
+... loss: 0.2501241862773895
+batch: 1/1 in epoch 329/1000 
+... loss: 0.2501237392425537
+batch: 1/1 in epoch 330/1000 
+... loss: 0.2501233220100403
+batch: 1/1 in epoch 331/1000 
+... loss: 0.2501228451728821
+batch: 1/1 in epoch 332/1000 
+... loss: 0.25012242794036865
+batch: 1/1 in epoch 333/1000 
+... loss: 0.2501220107078552
+batch: 1/1 in epoch 334/1000 
+... loss: 0.2501215934753418
+batch: 1/1 in epoch 335/1000 
+... loss: 0.25012117624282837
+batch: 1/1 in epoch 336/1000 
+... loss: 0.25012069940567017
+batch: 1/1 in epoch 337/1000 
+... loss: 0.2501203119754791
+batch: 1/1 in epoch 338/1000 
+... loss: 0.2501198649406433
+batch: 1/1 in epoch 339/1000 
+... loss: 0.2501194477081299
+batch: 1/1 in epoch 340/1000 
+... loss: 0.25011903047561646
+batch: 1/1 in epoch 341/1000 
+... loss: 0.250118613243103
+batch: 1/1 in epoch 342/1000 
+... loss: 0.2501181960105896
+batch: 1/1 in epoch 343/1000 
+... loss: 0.25011777877807617
+batch: 1/1 in epoch 344/1000 
+... loss: 0.25011736154556274
+batch: 1/1 in epoch 345/1000 
+... loss: 0.2501169741153717
+batch: 1/1 in epoch 346/1000 
+... loss: 0.25011658668518066
+batch: 1/1 in epoch 347/1000 
+... loss: 0.25011616945266724
+batch: 1/1 in epoch 348/1000 
+... loss: 0.2501157522201538
+batch: 1/1 in epoch 349/1000 
+... loss: 0.2501153349876404
+batch: 1/1 in epoch 350/1000 
+... loss: 0.25011494755744934
+batch: 1/1 in epoch 351/1000 
+... loss: 0.2501145601272583
+batch: 1/1 in epoch 352/1000 
+... loss: 0.2501141428947449
+batch: 1/1 in epoch 353/1000 
+... loss: 0.25011375546455383
+batch: 1/1 in epoch 354/1000 
+... loss: 0.2501133680343628
+batch: 1/1 in epoch 355/1000 
+... loss: 0.25011295080184937
+batch: 1/1 in epoch 356/1000 
+... loss: 0.2501125633716583
+batch: 1/1 in epoch 357/1000 
+... loss: 0.2501121759414673
+batch: 1/1 in epoch 358/1000 
+... loss: 0.25011178851127625
+batch: 1/1 in epoch 359/1000 
+... loss: 0.2501114010810852
+batch: 1/1 in epoch 360/1000 
+... loss: 0.25011101365089417
+batch: 1/1 in epoch 361/1000 
+... loss: 0.2501106262207031
+batch: 1/1 in epoch 362/1000 
+... loss: 0.2501102685928345
+batch: 1/1 in epoch 363/1000 
+... loss: 0.25010985136032104
+batch: 1/1 in epoch 364/1000 
+... loss: 0.2501094937324524
+batch: 1/1 in epoch 365/1000 
+... loss: 0.25010910630226135
+batch: 1/1 in epoch 366/1000 
+... loss: 0.2501087188720703
+batch: 1/1 in epoch 367/1000 
+... loss: 0.25010836124420166
+batch: 1/1 in epoch 368/1000 
+... loss: 0.250108003616333
+batch: 1/1 in epoch 369/1000 
+... loss: 0.25010761618614197
+batch: 1/1 in epoch 370/1000 
+... loss: 0.2501072287559509
+batch: 1/1 in epoch 371/1000 
+... loss: 0.2501068711280823
+batch: 1/1 in epoch 372/1000 
+... loss: 0.2501065135002136
+batch: 1/1 in epoch 373/1000 
+... loss: 0.25010615587234497
+batch: 1/1 in epoch 374/1000 
+... loss: 0.25010576844215393
+batch: 1/1 in epoch 375/1000 
+... loss: 0.2501054108142853
+batch: 1/1 in epoch 376/1000 
+... loss: 0.2501050531864166
+batch: 1/1 in epoch 377/1000 
+... loss: 0.250104695558548
+batch: 1/1 in epoch 378/1000 
+... loss: 0.25010430812835693
+batch: 1/1 in epoch 379/1000 
+... loss: 0.2501039505004883
+batch: 1/1 in epoch 380/1000 
+... loss: 0.25010359287261963
+batch: 1/1 in epoch 381/1000 
+... loss: 0.25010326504707336
+batch: 1/1 in epoch 382/1000 
+... loss: 0.2501029074192047
+batch: 1/1 in epoch 383/1000 
+... loss: 0.25010254979133606
+batch: 1/1 in epoch 384/1000 
+... loss: 0.2501022219657898
+batch: 1/1 in epoch 385/1000 
+... loss: 0.25010186433792114
+batch: 1/1 in epoch 386/1000 
+... loss: 0.2501015067100525
+batch: 1/1 in epoch 387/1000 
+... loss: 0.25010114908218384
+batch: 1/1 in epoch 388/1000 
+... loss: 0.2501008212566376
+batch: 1/1 in epoch 389/1000 
+... loss: 0.2501004934310913
+batch: 1/1 in epoch 390/1000 
+... loss: 0.25010013580322266
+batch: 1/1 in epoch 391/1000 
+... loss: 0.250099778175354
+batch: 1/1 in epoch 392/1000 
+... loss: 0.25009945034980774
+batch: 1/1 in epoch 393/1000 
+... loss: 0.2500991225242615
+batch: 1/1 in epoch 394/1000 
+... loss: 0.2500987648963928
+batch: 1/1 in epoch 395/1000 
+... loss: 0.25009840726852417
+batch: 1/1 in epoch 396/1000 
+... loss: 0.2500981092453003
+batch: 1/1 in epoch 397/1000 
+... loss: 0.25009775161743164
+batch: 1/1 in epoch 398/1000 
+... loss: 0.25009745359420776
+batch: 1/1 in epoch 399/1000 
+... loss: 0.2500970959663391
+batch: 1/1 in epoch 400/1000 
+... loss: 0.25009676814079285
+batch: 1/1 in epoch 401/1000 
+... loss: 0.2500964403152466
+batch: 1/1 in epoch 402/1000 
+... loss: 0.2500961124897003
+batch: 1/1 in epoch 403/1000 
+... loss: 0.25009578466415405
+batch: 1/1 in epoch 404/1000 
+... loss: 0.2500954568386078
+batch: 1/1 in epoch 405/1000 
+... loss: 0.2500951290130615
+batch: 1/1 in epoch 406/1000 
+... loss: 0.25009483098983765
+batch: 1/1 in epoch 407/1000 
+... loss: 0.2500945031642914
+batch: 1/1 in epoch 408/1000 
+... loss: 0.2500941753387451
+batch: 1/1 in epoch 409/1000 
+... loss: 0.25009387731552124
+batch: 1/1 in epoch 410/1000 
+... loss: 0.2500935196876526
+batch: 1/1 in epoch 411/1000 
+... loss: 0.2500932216644287
+batch: 1/1 in epoch 412/1000 
+... loss: 0.25009292364120483
+batch: 1/1 in epoch 413/1000 
+... loss: 0.25009259581565857
+batch: 1/1 in epoch 414/1000 
+... loss: 0.2500922679901123
+batch: 1/1 in epoch 415/1000 
+... loss: 0.2500919699668884
+batch: 1/1 in epoch 416/1000 
+... loss: 0.25009167194366455
+batch: 1/1 in epoch 417/1000 
+... loss: 0.2500913739204407
+batch: 1/1 in epoch 418/1000 
+... loss: 0.2500910460948944
+batch: 1/1 in epoch 419/1000 
+... loss: 0.25009071826934814
+batch: 1/1 in epoch 420/1000 
+... loss: 0.25009042024612427
+batch: 1/1 in epoch 421/1000 
+... loss: 0.2500901222229004
+batch: 1/1 in epoch 422/1000 
+... loss: 0.2500898241996765
+batch: 1/1 in epoch 423/1000 
+... loss: 0.25008952617645264
+batch: 1/1 in epoch 424/1000 
+... loss: 0.25008922815322876
+batch: 1/1 in epoch 425/1000 
+... loss: 0.2500889301300049
+batch: 1/1 in epoch 426/1000 
+... loss: 0.250088632106781
+batch: 1/1 in epoch 427/1000 
+... loss: 0.25008833408355713
+batch: 1/1 in epoch 428/1000 
+... loss: 0.25008803606033325
+batch: 1/1 in epoch 429/1000 
+... loss: 0.2500877380371094
+batch: 1/1 in epoch 430/1000 
+... loss: 0.2500874400138855
+batch: 1/1 in epoch 431/1000 
+... loss: 0.2500871419906616
+batch: 1/1 in epoch 432/1000 
+... loss: 0.25008684396743774
+batch: 1/1 in epoch 433/1000 
+... loss: 0.25008654594421387
+batch: 1/1 in epoch 434/1000 
+... loss: 0.2500862777233124
+batch: 1/1 in epoch 435/1000 
+... loss: 0.2500860095024109
+batch: 1/1 in epoch 436/1000 
+... loss: 0.250085711479187
+batch: 1/1 in epoch 437/1000 
+... loss: 0.25008541345596313
+batch: 1/1 in epoch 438/1000 
+... loss: 0.25008511543273926
+batch: 1/1 in epoch 439/1000 
+... loss: 0.25008484721183777
+batch: 1/1 in epoch 440/1000 
+... loss: 0.2500845491886139
+batch: 1/1 in epoch 441/1000 
+... loss: 0.2500842809677124
+batch: 1/1 in epoch 442/1000 
+... loss: 0.2500839829444885
+batch: 1/1 in epoch 443/1000 
+... loss: 0.25008371472358704
+batch: 1/1 in epoch 444/1000 
+... loss: 0.25008344650268555
+batch: 1/1 in epoch 445/1000 
+... loss: 0.25008314847946167
+batch: 1/1 in epoch 446/1000 
+... loss: 0.2500828802585602
+batch: 1/1 in epoch 447/1000 
+... loss: 0.2500826120376587
+batch: 1/1 in epoch 448/1000 
+... loss: 0.2500823140144348
+batch: 1/1 in epoch 449/1000 
+... loss: 0.2500820457935333
+batch: 1/1 in epoch 450/1000 
+... loss: 0.2500818073749542
+batch: 1/1 in epoch 451/1000 
+... loss: 0.25008150935173035
+batch: 1/1 in epoch 452/1000 
+... loss: 0.25008124113082886
+batch: 1/1 in epoch 453/1000 
+... loss: 0.25008097290992737
+batch: 1/1 in epoch 454/1000 
+... loss: 0.2500807046890259
+batch: 1/1 in epoch 455/1000 
+... loss: 0.2500804364681244
+batch: 1/1 in epoch 456/1000 
+... loss: 0.2500801682472229
+batch: 1/1 in epoch 457/1000 
+... loss: 0.2500799298286438
+batch: 1/1 in epoch 458/1000 
+... loss: 0.2500796616077423
+batch: 1/1 in epoch 459/1000 
+... loss: 0.2500793933868408
+batch: 1/1 in epoch 460/1000 
+... loss: 0.25007909536361694
+batch: 1/1 in epoch 461/1000 
+... loss: 0.25007885694503784
+batch: 1/1 in epoch 462/1000 
+... loss: 0.25007861852645874
+batch: 1/1 in epoch 463/1000 
+... loss: 0.25007835030555725
+batch: 1/1 in epoch 464/1000 
+... loss: 0.25007808208465576
+batch: 1/1 in epoch 465/1000 
+... loss: 0.2500778138637543
+batch: 1/1 in epoch 466/1000 
+... loss: 0.2500775456428528
+batch: 1/1 in epoch 467/1000 
+... loss: 0.2500773072242737
+batch: 1/1 in epoch 468/1000 
+... loss: 0.2500770688056946
+batch: 1/1 in epoch 469/1000 
+... loss: 0.2500768005847931
+batch: 1/1 in epoch 470/1000 
+... loss: 0.2500765323638916
+batch: 1/1 in epoch 471/1000 
+... loss: 0.2500762939453125
+batch: 1/1 in epoch 472/1000 
+... loss: 0.2500760555267334
+batch: 1/1 in epoch 473/1000 
+... loss: 0.2500758171081543
+batch: 1/1 in epoch 474/1000 
+... loss: 0.2500755488872528
+batch: 1/1 in epoch 475/1000 
+... loss: 0.2500752806663513
+batch: 1/1 in epoch 476/1000 
+... loss: 0.2500750422477722
+batch: 1/1 in epoch 477/1000 
+... loss: 0.2500748038291931
+batch: 1/1 in epoch 478/1000 
+... loss: 0.250074565410614
+batch: 1/1 in epoch 479/1000 
+... loss: 0.2500742971897125
+batch: 1/1 in epoch 480/1000 
+... loss: 0.2500740885734558
+batch: 1/1 in epoch 481/1000 
+... loss: 0.2500738203525543
+batch: 1/1 in epoch 482/1000 
+... loss: 0.2500735819339752
+batch: 1/1 in epoch 483/1000 
+... loss: 0.2500733435153961
+batch: 1/1 in epoch 484/1000 
+... loss: 0.250073105096817
+batch: 1/1 in epoch 485/1000 
+... loss: 0.2500728666782379
+batch: 1/1 in epoch 486/1000 
+... loss: 0.2500726282596588
+batch: 1/1 in epoch 487/1000 
+... loss: 0.2500723600387573
+batch: 1/1 in epoch 488/1000 
+... loss: 0.2500721514225006
+batch: 1/1 in epoch 489/1000 
+... loss: 0.2500719130039215
+batch: 1/1 in epoch 490/1000 
+... loss: 0.2500716745853424
+batch: 1/1 in epoch 491/1000 
+... loss: 0.2500714361667633
+batch: 1/1 in epoch 492/1000 
+... loss: 0.2500711977481842
+batch: 1/1 in epoch 493/1000 
+... loss: 0.2500709891319275
+batch: 1/1 in epoch 494/1000 
+... loss: 0.2500707507133484
+batch: 1/1 in epoch 495/1000 
+... loss: 0.2500705122947693
+batch: 1/1 in epoch 496/1000 
+... loss: 0.2500702738761902
+batch: 1/1 in epoch 497/1000 
+... loss: 0.2500700354576111
+batch: 1/1 in epoch 498/1000 
+... loss: 0.25006985664367676
+batch: 1/1 in epoch 499/1000 
+... loss: 0.25006961822509766
+batch: 1/1 in epoch 500/1000 
+... loss: 0.25006937980651855
+batch: 1/1 in epoch 501/1000 
+... loss: 0.25006914138793945
+batch: 1/1 in epoch 502/1000 
+... loss: 0.25006893277168274
+batch: 1/1 in epoch 503/1000 
+... loss: 0.25006869435310364
+batch: 1/1 in epoch 504/1000 
+... loss: 0.2500684857368469
+batch: 1/1 in epoch 505/1000 
+... loss: 0.2500682473182678
+batch: 1/1 in epoch 506/1000 
+... loss: 0.2500680387020111
+batch: 1/1 in epoch 507/1000 
+... loss: 0.2500678300857544
+batch: 1/1 in epoch 508/1000 
+... loss: 0.2500675916671753
+batch: 1/1 in epoch 509/1000 
+... loss: 0.2500673532485962
+batch: 1/1 in epoch 510/1000 
+... loss: 0.25006717443466187
+batch: 1/1 in epoch 511/1000 
+... loss: 0.25006693601608276
+batch: 1/1 in epoch 512/1000 
+... loss: 0.25006669759750366
+batch: 1/1 in epoch 513/1000 
+... loss: 0.25006651878356934
+batch: 1/1 in epoch 514/1000 
+... loss: 0.25006628036499023
+batch: 1/1 in epoch 515/1000 
+... loss: 0.25006604194641113
+batch: 1/1 in epoch 516/1000 
+... loss: 0.2500658631324768
+batch: 1/1 in epoch 517/1000 
+... loss: 0.2500656247138977
+batch: 1/1 in epoch 518/1000 
+... loss: 0.2500654458999634
+batch: 1/1 in epoch 519/1000 
+... loss: 0.2500652074813843
+batch: 1/1 in epoch 520/1000 
+... loss: 0.25006502866744995
+batch: 1/1 in epoch 521/1000 
+... loss: 0.25006479024887085
+batch: 1/1 in epoch 522/1000 
+... loss: 0.25006458163261414
+batch: 1/1 in epoch 523/1000 
+... loss: 0.2500643730163574
+batch: 1/1 in epoch 524/1000 
+... loss: 0.2500641942024231
+batch: 1/1 in epoch 525/1000 
+... loss: 0.250063955783844
+batch: 1/1 in epoch 526/1000 
+... loss: 0.2500637471675873
+batch: 1/1 in epoch 527/1000 
+... loss: 0.25006353855133057
+batch: 1/1 in epoch 528/1000 
+... loss: 0.25006335973739624
+batch: 1/1 in epoch 529/1000 
+... loss: 0.25006312131881714
+batch: 1/1 in epoch 530/1000 
+... loss: 0.2500629425048828
+batch: 1/1 in epoch 531/1000 
+... loss: 0.2500627040863037
+batch: 1/1 in epoch 532/1000 
+... loss: 0.2500625252723694
+batch: 1/1 in epoch 533/1000 
+... loss: 0.25006234645843506
+batch: 1/1 in epoch 534/1000 
+... loss: 0.25006213784217834
+batch: 1/1 in epoch 535/1000 
+... loss: 0.25006192922592163
+batch: 1/1 in epoch 536/1000 
+... loss: 0.2500617206096649
+batch: 1/1 in epoch 537/1000 
+... loss: 0.2500615119934082
+batch: 1/1 in epoch 538/1000 
+... loss: 0.2500613331794739
+batch: 1/1 in epoch 539/1000 
+... loss: 0.25006115436553955
+batch: 1/1 in epoch 540/1000 
+... loss: 0.25006091594696045
+batch: 1/1 in epoch 541/1000 
+... loss: 0.2500607371330261
+batch: 1/1 in epoch 542/1000 
+... loss: 0.2500605583190918
+batch: 1/1 in epoch 543/1000 
+... loss: 0.2500603497028351
+batch: 1/1 in epoch 544/1000 
+... loss: 0.25006014108657837
+batch: 1/1 in epoch 545/1000 
+... loss: 0.25005996227264404
+batch: 1/1 in epoch 546/1000 
+... loss: 0.2500597834587097
+batch: 1/1 in epoch 547/1000 
+... loss: 0.2500596046447754
+batch: 1/1 in epoch 548/1000 
+... loss: 0.2500593960285187
+batch: 1/1 in epoch 549/1000 
+... loss: 0.25005918741226196
+batch: 1/1 in epoch 550/1000 
+... loss: 0.25005900859832764
+batch: 1/1 in epoch 551/1000 
+... loss: 0.2500588297843933
+batch: 1/1 in epoch 552/1000 
+... loss: 0.250058650970459
+batch: 1/1 in epoch 553/1000 
+... loss: 0.25005844235420227
+batch: 1/1 in epoch 554/1000 
+... loss: 0.25005826354026794
+batch: 1/1 in epoch 555/1000 
+... loss: 0.2500580847263336
+batch: 1/1 in epoch 556/1000 
+... loss: 0.2500578761100769
+batch: 1/1 in epoch 557/1000 
+... loss: 0.2500576972961426
+batch: 1/1 in epoch 558/1000 
+... loss: 0.25005751848220825
+batch: 1/1 in epoch 559/1000 
+... loss: 0.2500573396682739
+batch: 1/1 in epoch 560/1000 
+... loss: 0.2500571608543396
+batch: 1/1 in epoch 561/1000 
+... loss: 0.2500569820404053
+batch: 1/1 in epoch 562/1000 
+... loss: 0.25005677342414856
+batch: 1/1 in epoch 563/1000 
+... loss: 0.2500566244125366
+batch: 1/1 in epoch 564/1000 
+... loss: 0.2500564455986023
+batch: 1/1 in epoch 565/1000 
+... loss: 0.2500562369823456
+batch: 1/1 in epoch 566/1000 
+... loss: 0.25005605816841125
+batch: 1/1 in epoch 567/1000 
+... loss: 0.2500559091567993
+batch: 1/1 in epoch 568/1000 
+... loss: 0.250055730342865
+batch: 1/1 in epoch 569/1000 
+... loss: 0.25005555152893066
+batch: 1/1 in epoch 570/1000 
+... loss: 0.25005534291267395
+batch: 1/1 in epoch 571/1000 
+... loss: 0.250055193901062
+batch: 1/1 in epoch 572/1000 
+... loss: 0.2500550150871277
+batch: 1/1 in epoch 573/1000 
+... loss: 0.25005483627319336
+batch: 1/1 in epoch 574/1000 
+... loss: 0.25005465745925903
+batch: 1/1 in epoch 575/1000 
+... loss: 0.2500544786453247
+batch: 1/1 in epoch 576/1000 
+... loss: 0.2500542998313904
+batch: 1/1 in epoch 577/1000 
+... loss: 0.25005412101745605
+batch: 1/1 in epoch 578/1000 
+... loss: 0.2500539720058441
+batch: 1/1 in epoch 579/1000 
+... loss: 0.2500537931919098
+batch: 1/1 in epoch 580/1000 
+... loss: 0.25005364418029785
+batch: 1/1 in epoch 581/1000 
+... loss: 0.2500534653663635
+batch: 1/1 in epoch 582/1000 
+... loss: 0.2500532865524292
+batch: 1/1 in epoch 583/1000 
+... loss: 0.2500531077384949
+batch: 1/1 in epoch 584/1000 
+... loss: 0.25005292892456055
+batch: 1/1 in epoch 585/1000 
+... loss: 0.2500527799129486
+batch: 1/1 in epoch 586/1000 
+... loss: 0.2500526010990143
+batch: 1/1 in epoch 587/1000 
+... loss: 0.25005245208740234
+batch: 1/1 in epoch 588/1000 
+... loss: 0.250052273273468
+batch: 1/1 in epoch 589/1000 
+... loss: 0.2500521242618561
+batch: 1/1 in epoch 590/1000 
+... loss: 0.25005197525024414
+batch: 1/1 in epoch 591/1000 
+... loss: 0.2500517964363098
+batch: 1/1 in epoch 592/1000 
+... loss: 0.2500516176223755
+batch: 1/1 in epoch 593/1000 
+... loss: 0.25005143880844116
+batch: 1/1 in epoch 594/1000 
+... loss: 0.2500512897968292
+batch: 1/1 in epoch 595/1000 
+... loss: 0.2500511407852173
+batch: 1/1 in epoch 596/1000 
+... loss: 0.25005096197128296
+batch: 1/1 in epoch 597/1000 
+... loss: 0.2500508427619934
+batch: 1/1 in epoch 598/1000 
+... loss: 0.2500506639480591
+batch: 1/1 in epoch 599/1000 
+... loss: 0.25005048513412476
+batch: 1/1 in epoch 600/1000 
+... loss: 0.2500503361225128
+batch: 1/1 in epoch 601/1000 
+... loss: 0.2500501871109009
+batch: 1/1 in epoch 602/1000 
+... loss: 0.25005000829696655
+batch: 1/1 in epoch 603/1000 
+... loss: 0.2500498592853546
+batch: 1/1 in epoch 604/1000 
+... loss: 0.2500497102737427
+batch: 1/1 in epoch 605/1000 
+... loss: 0.25004953145980835
+batch: 1/1 in epoch 606/1000 
+... loss: 0.2500493824481964
+batch: 1/1 in epoch 607/1000 
+... loss: 0.2500492334365845
+batch: 1/1 in epoch 608/1000 
+... loss: 0.25004905462265015
+batch: 1/1 in epoch 609/1000 
+... loss: 0.2500489354133606
+batch: 1/1 in epoch 610/1000 
+... loss: 0.25004875659942627
+batch: 1/1 in epoch 611/1000 
+... loss: 0.2500486373901367
+batch: 1/1 in epoch 612/1000 
+... loss: 0.2500484585762024
+batch: 1/1 in epoch 613/1000 
+... loss: 0.25004830956459045
+batch: 1/1 in epoch 614/1000 
+... loss: 0.2500481605529785
+batch: 1/1 in epoch 615/1000 
+... loss: 0.2500479817390442
+batch: 1/1 in epoch 616/1000 
+... loss: 0.25004786252975464
+batch: 1/1 in epoch 617/1000 
+... loss: 0.2500476837158203
+batch: 1/1 in epoch 618/1000 
+... loss: 0.25004756450653076
+batch: 1/1 in epoch 619/1000 
+... loss: 0.2500474154949188
+batch: 1/1 in epoch 620/1000 
+... loss: 0.2500472664833069
+batch: 1/1 in epoch 621/1000 
+... loss: 0.25004711747169495
+batch: 1/1 in epoch 622/1000 
+... loss: 0.250046968460083
+batch: 1/1 in epoch 623/1000 
+... loss: 0.2500467896461487
+batch: 1/1 in epoch 624/1000 
+... loss: 0.25004667043685913
+batch: 1/1 in epoch 625/1000 
+... loss: 0.2500464916229248
+batch: 1/1 in epoch 626/1000 
+... loss: 0.25004637241363525
+batch: 1/1 in epoch 627/1000 
+... loss: 0.2500462234020233
+batch: 1/1 in epoch 628/1000 
+... loss: 0.2500460743904114
+batch: 1/1 in epoch 629/1000 
+... loss: 0.2500459551811218
+batch: 1/1 in epoch 630/1000 
+... loss: 0.2500457763671875
+batch: 1/1 in epoch 631/1000 
+... loss: 0.25004565715789795
+batch: 1/1 in epoch 632/1000 
+... loss: 0.2500454783439636
+batch: 1/1 in epoch 633/1000 
+... loss: 0.2500453591346741
+batch: 1/1 in epoch 634/1000 
+... loss: 0.2500452399253845
+batch: 1/1 in epoch 635/1000 
+... loss: 0.2500450611114502
+batch: 1/1 in epoch 636/1000 
+... loss: 0.25004494190216064
+batch: 1/1 in epoch 637/1000 
+... loss: 0.2500447928905487
+batch: 1/1 in epoch 638/1000 
+... loss: 0.25004464387893677
+batch: 1/1 in epoch 639/1000 
+... loss: 0.2500445246696472
+batch: 1/1 in epoch 640/1000 
+... loss: 0.2500443756580353
+batch: 1/1 in epoch 641/1000 
+... loss: 0.25004422664642334
+batch: 1/1 in epoch 642/1000 
+... loss: 0.2500441074371338
+batch: 1/1 in epoch 643/1000 
+... loss: 0.25004395842552185
+batch: 1/1 in epoch 644/1000 
+... loss: 0.2500438392162323
+batch: 1/1 in epoch 645/1000 
+... loss: 0.25004369020462036
+batch: 1/1 in epoch 646/1000 
+... loss: 0.2500435709953308
+batch: 1/1 in epoch 647/1000 
+... loss: 0.25004342198371887
+batch: 1/1 in epoch 648/1000 
+... loss: 0.25004327297210693
+batch: 1/1 in epoch 649/1000 
+... loss: 0.2500431537628174
+batch: 1/1 in epoch 650/1000 
+... loss: 0.25004303455352783
+batch: 1/1 in epoch 651/1000 
+... loss: 0.2500428855419159
+batch: 1/1 in epoch 652/1000 
+... loss: 0.25004273653030396
+batch: 1/1 in epoch 653/1000 
+... loss: 0.2500426173210144
+batch: 1/1 in epoch 654/1000 
+... loss: 0.25004249811172485
+batch: 1/1 in epoch 655/1000 
+... loss: 0.2500423491001129
+batch: 1/1 in epoch 656/1000 
+... loss: 0.250042200088501
+batch: 1/1 in epoch 657/1000 
+... loss: 0.2500420808792114
+batch: 1/1 in epoch 658/1000 
+... loss: 0.2500419616699219
+batch: 1/1 in epoch 659/1000 
+... loss: 0.2500418424606323
+batch: 1/1 in epoch 660/1000 
+... loss: 0.2500417232513428
+batch: 1/1 in epoch 661/1000 
+... loss: 0.25004157423973083
+batch: 1/1 in epoch 662/1000 
+... loss: 0.2500414252281189
+batch: 1/1 in epoch 663/1000 
+... loss: 0.25004130601882935
+batch: 1/1 in epoch 664/1000 
+... loss: 0.2500411868095398
+batch: 1/1 in epoch 665/1000 
+... loss: 0.25004106760025024
+batch: 1/1 in epoch 666/1000 
+... loss: 0.2500409483909607
+batch: 1/1 in epoch 667/1000 
+... loss: 0.25004082918167114
+batch: 1/1 in epoch 668/1000 
+... loss: 0.2500407099723816
+batch: 1/1 in epoch 669/1000 
+... loss: 0.25004056096076965
+batch: 1/1 in epoch 670/1000 
+... loss: 0.2500404119491577
+batch: 1/1 in epoch 671/1000 
+... loss: 0.25004029273986816
+batch: 1/1 in epoch 672/1000 
+... loss: 0.2500401735305786
+batch: 1/1 in epoch 673/1000 
+... loss: 0.25004005432128906
+batch: 1/1 in epoch 674/1000 
+... loss: 0.2500399351119995
+batch: 1/1 in epoch 675/1000 
+... loss: 0.25003981590270996
+batch: 1/1 in epoch 676/1000 
+... loss: 0.250039666891098
+batch: 1/1 in epoch 677/1000 
+... loss: 0.25003954768180847
+batch: 1/1 in epoch 678/1000 
+... loss: 0.2500394582748413
+batch: 1/1 in epoch 679/1000 
+... loss: 0.25003930926322937
+batch: 1/1 in epoch 680/1000 
+... loss: 0.2500391900539398
+batch: 1/1 in epoch 681/1000 
+... loss: 0.25003907084465027
+batch: 1/1 in epoch 682/1000 
+... loss: 0.25003892183303833
+batch: 1/1 in epoch 683/1000 
+... loss: 0.25003883242607117
+batch: 1/1 in epoch 684/1000 
+... loss: 0.250038743019104
+batch: 1/1 in epoch 685/1000 
+... loss: 0.25003859400749207
+batch: 1/1 in epoch 686/1000 
+... loss: 0.2500384449958801
+batch: 1/1 in epoch 687/1000 
+... loss: 0.25003835558891296
+batch: 1/1 in epoch 688/1000 
+... loss: 0.2500382363796234
+batch: 1/1 in epoch 689/1000 
+... loss: 0.25003811717033386
+batch: 1/1 in epoch 690/1000 
+... loss: 0.2500379681587219
+batch: 1/1 in epoch 691/1000 
+... loss: 0.25003787875175476
+batch: 1/1 in epoch 692/1000 
+... loss: 0.2500377595424652
+batch: 1/1 in epoch 693/1000 
+... loss: 0.25003767013549805
+batch: 1/1 in epoch 694/1000 
+... loss: 0.2500375509262085
+batch: 1/1 in epoch 695/1000 
+... loss: 0.25003743171691895
+batch: 1/1 in epoch 696/1000 
+... loss: 0.2500373125076294
+batch: 1/1 in epoch 697/1000 
+... loss: 0.25003719329833984
+batch: 1/1 in epoch 698/1000 
+... loss: 0.2500370740890503
+batch: 1/1 in epoch 699/1000 
+... loss: 0.25003695487976074
+batch: 1/1 in epoch 700/1000 
+... loss: 0.2500368356704712
+batch: 1/1 in epoch 701/1000 
+... loss: 0.25003671646118164
+batch: 1/1 in epoch 702/1000 
+... loss: 0.2500365972518921
+batch: 1/1 in epoch 703/1000 
+... loss: 0.2500365078449249
+batch: 1/1 in epoch 704/1000 
+... loss: 0.2500363886356354
+batch: 1/1 in epoch 705/1000 
+... loss: 0.2500362992286682
+batch: 1/1 in epoch 706/1000 
+... loss: 0.25003618001937866
+batch: 1/1 in epoch 707/1000 
+... loss: 0.2500360608100891
+batch: 1/1 in epoch 708/1000 
+... loss: 0.25003594160079956
+batch: 1/1 in epoch 709/1000 
+... loss: 0.25003582239151
+batch: 1/1 in epoch 710/1000 
+... loss: 0.25003570318222046
+batch: 1/1 in epoch 711/1000 
+... loss: 0.2500356137752533
+batch: 1/1 in epoch 712/1000 
+... loss: 0.25003549456596375
+batch: 1/1 in epoch 713/1000 
+... loss: 0.2500354051589966
+batch: 1/1 in epoch 714/1000 
+... loss: 0.25003528594970703
+batch: 1/1 in epoch 715/1000 
+... loss: 0.2500351667404175
+batch: 1/1 in epoch 716/1000 
+... loss: 0.2500351071357727
+batch: 1/1 in epoch 717/1000 
+... loss: 0.25003498792648315
+batch: 1/1 in epoch 718/1000 
+... loss: 0.2500348687171936
+batch: 1/1 in epoch 719/1000 
+... loss: 0.25003474950790405
+batch: 1/1 in epoch 720/1000 
+... loss: 0.2500346302986145
+batch: 1/1 in epoch 721/1000 
+... loss: 0.25003454089164734
+batch: 1/1 in epoch 722/1000 
+... loss: 0.2500344216823578
+batch: 1/1 in epoch 723/1000 
+... loss: 0.2500343322753906
+batch: 1/1 in epoch 724/1000 
+... loss: 0.2500342130661011
+batch: 1/1 in epoch 725/1000 
+... loss: 0.2500340938568115
+batch: 1/1 in epoch 726/1000 
+... loss: 0.25003400444984436
+batch: 1/1 in epoch 727/1000 
+... loss: 0.2500339150428772
+batch: 1/1 in epoch 728/1000 
+... loss: 0.25003379583358765
+batch: 1/1 in epoch 729/1000 
+... loss: 0.2500336766242981
+batch: 1/1 in epoch 730/1000 
+... loss: 0.25003358721733093
+batch: 1/1 in epoch 731/1000 
+... loss: 0.25003349781036377
+batch: 1/1 in epoch 732/1000 
+... loss: 0.2500333786010742
+batch: 1/1 in epoch 733/1000 
+... loss: 0.25003328919410706
+batch: 1/1 in epoch 734/1000 
+... loss: 0.2500331997871399
+batch: 1/1 in epoch 735/1000 
+... loss: 0.25003308057785034
+batch: 1/1 in epoch 736/1000 
+... loss: 0.2500329911708832
+batch: 1/1 in epoch 737/1000 
+... loss: 0.250032901763916
+batch: 1/1 in epoch 738/1000 
+... loss: 0.25003278255462646
+batch: 1/1 in epoch 739/1000 
+... loss: 0.2500326931476593
+batch: 1/1 in epoch 740/1000 
+... loss: 0.25003257393836975
+batch: 1/1 in epoch 741/1000 
+... loss: 0.2500324845314026
+batch: 1/1 in epoch 742/1000 
+... loss: 0.25003236532211304
+batch: 1/1 in epoch 743/1000 
+... loss: 0.25003230571746826
+batch: 1/1 in epoch 744/1000 
+... loss: 0.2500321865081787
+batch: 1/1 in epoch 745/1000 
+... loss: 0.25003209710121155
+batch: 1/1 in epoch 746/1000 
+... loss: 0.250031977891922
+batch: 1/1 in epoch 747/1000 
+... loss: 0.25003188848495483
+batch: 1/1 in epoch 748/1000 
+... loss: 0.25003179907798767
+batch: 1/1 in epoch 749/1000 
+... loss: 0.2500317096710205
+batch: 1/1 in epoch 750/1000 
+... loss: 0.25003159046173096
+batch: 1/1 in epoch 751/1000 
+... loss: 0.2500315308570862
+batch: 1/1 in epoch 752/1000 
+... loss: 0.25003141164779663
+batch: 1/1 in epoch 753/1000 
+... loss: 0.25003135204315186
+batch: 1/1 in epoch 754/1000 
+... loss: 0.2500312328338623
+batch: 1/1 in epoch 755/1000 
+... loss: 0.25003111362457275
+batch: 1/1 in epoch 756/1000 
+... loss: 0.250031054019928
+batch: 1/1 in epoch 757/1000 
+... loss: 0.2500309348106384
+batch: 1/1 in epoch 758/1000 
+... loss: 0.25003084540367126
+batch: 1/1 in epoch 759/1000 
+... loss: 0.2500307559967041
+batch: 1/1 in epoch 760/1000 
+... loss: 0.25003063678741455
+batch: 1/1 in epoch 761/1000 
+... loss: 0.2500305771827698
+batch: 1/1 in epoch 762/1000 
+... loss: 0.2500304579734802
+batch: 1/1 in epoch 763/1000 
+... loss: 0.25003039836883545
+batch: 1/1 in epoch 764/1000 
+... loss: 0.2500302791595459
+batch: 1/1 in epoch 765/1000 
+... loss: 0.2500302195549011
+batch: 1/1 in epoch 766/1000 
+... loss: 0.2500301003456116
+batch: 1/1 in epoch 767/1000 
+... loss: 0.250029981136322
+batch: 1/1 in epoch 768/1000 
+... loss: 0.25002992153167725
+batch: 1/1 in epoch 769/1000 
+... loss: 0.2500298321247101
+batch: 1/1 in epoch 770/1000 
+... loss: 0.2500297427177429
+batch: 1/1 in epoch 771/1000 
+... loss: 0.25002962350845337
+batch: 1/1 in epoch 772/1000 
+... loss: 0.2500295639038086
+batch: 1/1 in epoch 773/1000 
+... loss: 0.25002944469451904
+batch: 1/1 in epoch 774/1000 
+... loss: 0.25002938508987427
+batch: 1/1 in epoch 775/1000 
+... loss: 0.2500292956829071
+batch: 1/1 in epoch 776/1000 
+... loss: 0.25002920627593994
+batch: 1/1 in epoch 777/1000 
+... loss: 0.2500290870666504
+batch: 1/1 in epoch 778/1000 
+... loss: 0.2500289976596832
+batch: 1/1 in epoch 779/1000 
+... loss: 0.25002893805503845
+batch: 1/1 in epoch 780/1000 
+... loss: 0.2500288486480713
+batch: 1/1 in epoch 781/1000 
+... loss: 0.2500287592411041
+batch: 1/1 in epoch 782/1000 
+... loss: 0.25002866983413696
+batch: 1/1 in epoch 783/1000 
+... loss: 0.2500286102294922
+batch: 1/1 in epoch 784/1000 
+... loss: 0.25002849102020264
+batch: 1/1 in epoch 785/1000 
+... loss: 0.2500284016132355
+batch: 1/1 in epoch 786/1000 
+... loss: 0.2500283420085907
+batch: 1/1 in epoch 787/1000 
+... loss: 0.25002825260162354
+batch: 1/1 in epoch 788/1000 
+... loss: 0.250028133392334
+batch: 1/1 in epoch 789/1000 
+... loss: 0.2500280737876892
+batch: 1/1 in epoch 790/1000 
+... loss: 0.25002798438072205
+batch: 1/1 in epoch 791/1000 
+... loss: 0.2500278949737549
+batch: 1/1 in epoch 792/1000 
+... loss: 0.2500278055667877
+batch: 1/1 in epoch 793/1000 
+... loss: 0.25002771615982056
+batch: 1/1 in epoch 794/1000 
+... loss: 0.2500276565551758
+batch: 1/1 in epoch 795/1000 
+... loss: 0.25002753734588623
+batch: 1/1 in epoch 796/1000 
+... loss: 0.25002747774124146
+batch: 1/1 in epoch 797/1000 
+... loss: 0.2500273883342743
+batch: 1/1 in epoch 798/1000 
+... loss: 0.25002729892730713
+batch: 1/1 in epoch 799/1000 
+... loss: 0.25002723932266235
+batch: 1/1 in epoch 800/1000 
+... loss: 0.2500271499156952
+batch: 1/1 in epoch 801/1000 
+... loss: 0.250027060508728
+batch: 1/1 in epoch 802/1000 
+... loss: 0.25002700090408325
+batch: 1/1 in epoch 803/1000 
+... loss: 0.2500269114971161
+batch: 1/1 in epoch 804/1000 
+... loss: 0.2500268220901489
+batch: 1/1 in epoch 805/1000 
+... loss: 0.25002676248550415
+batch: 1/1 in epoch 806/1000 
+... loss: 0.250026673078537
+batch: 1/1 in epoch 807/1000 
+... loss: 0.2500265836715698
+batch: 1/1 in epoch 808/1000 
+... loss: 0.25002649426460266
+batch: 1/1 in epoch 809/1000 
+... loss: 0.2500264346599579
+batch: 1/1 in epoch 810/1000 
+... loss: 0.2500263452529907
+batch: 1/1 in epoch 811/1000 
+... loss: 0.25002628564834595
+batch: 1/1 in epoch 812/1000 
+... loss: 0.2500261664390564
+batch: 1/1 in epoch 813/1000 
+... loss: 0.2500261068344116
+batch: 1/1 in epoch 814/1000 
+... loss: 0.25002601742744446
+batch: 1/1 in epoch 815/1000 
+... loss: 0.2500259578227997
+batch: 1/1 in epoch 816/1000 
+... loss: 0.2500258684158325
+batch: 1/1 in epoch 817/1000 
+... loss: 0.25002580881118774
+batch: 1/1 in epoch 818/1000 
+... loss: 0.2500256896018982
+batch: 1/1 in epoch 819/1000 
+... loss: 0.2500256299972534
+batch: 1/1 in epoch 820/1000 
+... loss: 0.25002557039260864
+batch: 1/1 in epoch 821/1000 
+... loss: 0.2500254809856415
+batch: 1/1 in epoch 822/1000 
+... loss: 0.2500253915786743
+batch: 1/1 in epoch 823/1000 
+... loss: 0.25002533197402954
+batch: 1/1 in epoch 824/1000 
+... loss: 0.25002527236938477
+batch: 1/1 in epoch 825/1000 
+... loss: 0.2500251531600952
+batch: 1/1 in epoch 826/1000 
+... loss: 0.25002509355545044
+batch: 1/1 in epoch 827/1000 
+... loss: 0.25002503395080566
+batch: 1/1 in epoch 828/1000 
+... loss: 0.2500249445438385
+batch: 1/1 in epoch 829/1000 
+... loss: 0.2500248849391937
+batch: 1/1 in epoch 830/1000 
+... loss: 0.25002479553222656
+batch: 1/1 in epoch 831/1000 
+... loss: 0.2500247359275818
+batch: 1/1 in epoch 832/1000 
+... loss: 0.2500246465206146
+batch: 1/1 in epoch 833/1000 
+... loss: 0.25002458691596985
+batch: 1/1 in epoch 834/1000 
+... loss: 0.2500244975090027
+batch: 1/1 in epoch 835/1000 
+... loss: 0.2500244379043579
+batch: 1/1 in epoch 836/1000 
+... loss: 0.25002437829971313
+batch: 1/1 in epoch 837/1000 
+... loss: 0.25002428889274597
+batch: 1/1 in epoch 838/1000 
+... loss: 0.2500241994857788
+batch: 1/1 in epoch 839/1000 
+... loss: 0.25002413988113403
+batch: 1/1 in epoch 840/1000 
+... loss: 0.25002408027648926
+batch: 1/1 in epoch 841/1000 
+... loss: 0.2500239908695221
+batch: 1/1 in epoch 842/1000 
+... loss: 0.25002390146255493
+batch: 1/1 in epoch 843/1000 
+... loss: 0.25002384185791016
+batch: 1/1 in epoch 844/1000 
+... loss: 0.2500237822532654
+batch: 1/1 in epoch 845/1000 
+... loss: 0.2500237226486206
+batch: 1/1 in epoch 846/1000 
+... loss: 0.25002363324165344
+batch: 1/1 in epoch 847/1000 
+... loss: 0.25002357363700867
+batch: 1/1 in epoch 848/1000 
+... loss: 0.2500234842300415
+batch: 1/1 in epoch 849/1000 
+... loss: 0.25002342462539673
+batch: 1/1 in epoch 850/1000 
+... loss: 0.25002336502075195
+batch: 1/1 in epoch 851/1000 
+... loss: 0.2500233054161072
+batch: 1/1 in epoch 852/1000 
+... loss: 0.25002321600914
+batch: 1/1 in epoch 853/1000 
+... loss: 0.25002315640449524
+batch: 1/1 in epoch 854/1000 
+... loss: 0.2500230669975281
+batch: 1/1 in epoch 855/1000 
+... loss: 0.2500230073928833
+batch: 1/1 in epoch 856/1000 
+... loss: 0.2500229477882385
+batch: 1/1 in epoch 857/1000 
+... loss: 0.25002288818359375
+batch: 1/1 in epoch 858/1000 
+... loss: 0.2500227987766266
+batch: 1/1 in epoch 859/1000 
+... loss: 0.2500227093696594
+batch: 1/1 in epoch 860/1000 
+... loss: 0.25002264976501465
+batch: 1/1 in epoch 861/1000 
+... loss: 0.2500225901603699
+batch: 1/1 in epoch 862/1000 
+... loss: 0.2500225305557251
+batch: 1/1 in epoch 863/1000 
+... loss: 0.2500224709510803
+batch: 1/1 in epoch 864/1000 
+... loss: 0.25002241134643555
+batch: 1/1 in epoch 865/1000 
+... loss: 0.25002235174179077
+batch: 1/1 in epoch 866/1000 
+... loss: 0.2500222623348236
+batch: 1/1 in epoch 867/1000 
+... loss: 0.25002220273017883
+batch: 1/1 in epoch 868/1000 
+... loss: 0.25002211332321167
+batch: 1/1 in epoch 869/1000 
+... loss: 0.2500220537185669
+batch: 1/1 in epoch 870/1000 
+... loss: 0.2500219941139221
+batch: 1/1 in epoch 871/1000 
+... loss: 0.25002193450927734
+batch: 1/1 in epoch 872/1000 
+... loss: 0.25002187490463257
+batch: 1/1 in epoch 873/1000 
+... loss: 0.2500218152999878
+batch: 1/1 in epoch 874/1000 
+... loss: 0.25002172589302063
+batch: 1/1 in epoch 875/1000 
+... loss: 0.25002169609069824
+batch: 1/1 in epoch 876/1000 
+... loss: 0.2500216066837311
+batch: 1/1 in epoch 877/1000 
+... loss: 0.2500215470790863
+batch: 1/1 in epoch 878/1000 
+... loss: 0.25002145767211914
+batch: 1/1 in epoch 879/1000 
+... loss: 0.25002139806747437
+batch: 1/1 in epoch 880/1000 
+... loss: 0.2500213384628296
+batch: 1/1 in epoch 881/1000 
+... loss: 0.2500212788581848
+batch: 1/1 in epoch 882/1000 
+... loss: 0.25002121925354004
+batch: 1/1 in epoch 883/1000 
+... loss: 0.25002115964889526
+batch: 1/1 in epoch 884/1000 
+... loss: 0.2500211000442505
+batch: 1/1 in epoch 885/1000 
+... loss: 0.2500210404396057
+batch: 1/1 in epoch 886/1000 
+... loss: 0.25002098083496094
+batch: 1/1 in epoch 887/1000 
+... loss: 0.25002092123031616
+batch: 1/1 in epoch 888/1000 
+... loss: 0.2500208616256714
+batch: 1/1 in epoch 889/1000 
+... loss: 0.2500208020210266
+batch: 1/1 in epoch 890/1000 
+... loss: 0.25002074241638184
+batch: 1/1 in epoch 891/1000 
+... loss: 0.2500206530094147
+batch: 1/1 in epoch 892/1000 
+... loss: 0.2500205934047699
+batch: 1/1 in epoch 893/1000 
+... loss: 0.2500205338001251
+batch: 1/1 in epoch 894/1000 
+... loss: 0.25002047419548035
+batch: 1/1 in epoch 895/1000 
+... loss: 0.25002041459083557
+batch: 1/1 in epoch 896/1000 
+... loss: 0.2500203549861908
+batch: 1/1 in epoch 897/1000 
+... loss: 0.250020295381546
+batch: 1/1 in epoch 898/1000 
+... loss: 0.25002023577690125
+batch: 1/1 in epoch 899/1000 
+... loss: 0.25002017617225647
+batch: 1/1 in epoch 900/1000 
+... loss: 0.2500200867652893
+batch: 1/1 in epoch 901/1000 
+... loss: 0.2500200569629669
+batch: 1/1 in epoch 902/1000 
+... loss: 0.25001996755599976
+batch: 1/1 in epoch 903/1000 
+... loss: 0.250019907951355
+batch: 1/1 in epoch 904/1000 
+... loss: 0.2500198483467102
+batch: 1/1 in epoch 905/1000 
+... loss: 0.2500198185443878
+batch: 1/1 in epoch 906/1000 
+... loss: 0.25001975893974304
+batch: 1/1 in epoch 907/1000 
+... loss: 0.2500196695327759
+batch: 1/1 in epoch 908/1000 
+... loss: 0.2500196397304535
+batch: 1/1 in epoch 909/1000 
+... loss: 0.25001955032348633
+batch: 1/1 in epoch 910/1000 
+... loss: 0.25001949071884155
+batch: 1/1 in epoch 911/1000 
+... loss: 0.25001949071884155
+batch: 1/1 in epoch 912/1000 
+... loss: 0.2500194311141968
+batch: 1/1 in epoch 913/1000 
+... loss: 0.2500193417072296
+batch: 1/1 in epoch 914/1000 
+... loss: 0.25001928210258484
+batch: 1/1 in epoch 915/1000 
+... loss: 0.25001922249794006
+batch: 1/1 in epoch 916/1000 
+... loss: 0.2500191926956177
+batch: 1/1 in epoch 917/1000 
+... loss: 0.2500191330909729
+batch: 1/1 in epoch 918/1000 
+... loss: 0.2500190734863281
+batch: 1/1 in epoch 919/1000 
+... loss: 0.25001901388168335
+batch: 1/1 in epoch 920/1000 
+... loss: 0.2500189542770386
+batch: 1/1 in epoch 921/1000 
+... loss: 0.2500188946723938
+batch: 1/1 in epoch 922/1000 
+... loss: 0.250018835067749
+batch: 1/1 in epoch 923/1000 
+... loss: 0.25001877546310425
+batch: 1/1 in epoch 924/1000 
+... loss: 0.2500187158584595
+batch: 1/1 in epoch 925/1000 
+... loss: 0.2500186562538147
+batch: 1/1 in epoch 926/1000 
+... loss: 0.2500185966491699
+batch: 1/1 in epoch 927/1000 
+... loss: 0.25001853704452515
+batch: 1/1 in epoch 928/1000 
+... loss: 0.25001847743988037
+batch: 1/1 in epoch 929/1000 
+... loss: 0.250018447637558
+batch: 1/1 in epoch 930/1000 
+... loss: 0.2500184178352356
+batch: 1/1 in epoch 931/1000 
+... loss: 0.2500183582305908
+batch: 1/1 in epoch 932/1000 
+... loss: 0.25001829862594604
+batch: 1/1 in epoch 933/1000 
+... loss: 0.25001823902130127
+batch: 1/1 in epoch 934/1000 
+... loss: 0.2500181794166565
+batch: 1/1 in epoch 935/1000 
+... loss: 0.2500181198120117
+batch: 1/1 in epoch 936/1000 
+... loss: 0.25001806020736694
+batch: 1/1 in epoch 937/1000 
+... loss: 0.25001800060272217
+batch: 1/1 in epoch 938/1000 
+... loss: 0.2500179409980774
+batch: 1/1 in epoch 939/1000 
+... loss: 0.250017911195755
+batch: 1/1 in epoch 940/1000 
+... loss: 0.2500178813934326
+batch: 1/1 in epoch 941/1000 
+... loss: 0.25001782178878784
+batch: 1/1 in epoch 942/1000 
+... loss: 0.25001776218414307
+batch: 1/1 in epoch 943/1000 
+... loss: 0.2500177025794983
+batch: 1/1 in epoch 944/1000 
+... loss: 0.2500176429748535
+batch: 1/1 in epoch 945/1000 
+... loss: 0.25001758337020874
+batch: 1/1 in epoch 946/1000 
+... loss: 0.25001752376556396
+batch: 1/1 in epoch 947/1000 
+... loss: 0.2500174939632416
+batch: 1/1 in epoch 948/1000 
+... loss: 0.2500174343585968
+batch: 1/1 in epoch 949/1000 
+... loss: 0.2500174045562744
+batch: 1/1 in epoch 950/1000 
+... loss: 0.25001734495162964
+batch: 1/1 in epoch 951/1000 
+... loss: 0.25001728534698486
+batch: 1/1 in epoch 952/1000 
+... loss: 0.2500172257423401
+batch: 1/1 in epoch 953/1000 
+... loss: 0.2500171661376953
+batch: 1/1 in epoch 954/1000 
+... loss: 0.2500171363353729
+batch: 1/1 in epoch 955/1000 
+... loss: 0.25001710653305054
+batch: 1/1 in epoch 956/1000 
+... loss: 0.25001704692840576
+batch: 1/1 in epoch 957/1000 
+... loss: 0.250016987323761
+batch: 1/1 in epoch 958/1000 
+... loss: 0.2500169277191162
+batch: 1/1 in epoch 959/1000 
+... loss: 0.25001686811447144
+batch: 1/1 in epoch 960/1000 
+... loss: 0.25001683831214905
+batch: 1/1 in epoch 961/1000 
+... loss: 0.2500167489051819
+batch: 1/1 in epoch 962/1000 
+... loss: 0.2500167489051819
+batch: 1/1 in epoch 963/1000 
+... loss: 0.2500166893005371
+batch: 1/1 in epoch 964/1000 
+... loss: 0.25001662969589233
+batch: 1/1 in epoch 965/1000 
+... loss: 0.25001657009124756
+batch: 1/1 in epoch 966/1000 
+... loss: 0.2500165104866028
+batch: 1/1 in epoch 967/1000 
+... loss: 0.2500165104866028
+batch: 1/1 in epoch 968/1000 
+... loss: 0.250016450881958
+batch: 1/1 in epoch 969/1000 
+... loss: 0.25001639127731323
+batch: 1/1 in epoch 970/1000 
+... loss: 0.25001633167266846
+batch: 1/1 in epoch 971/1000 
+... loss: 0.25001630187034607
+batch: 1/1 in epoch 972/1000 
+... loss: 0.2500162422657013
+batch: 1/1 in epoch 973/1000 
+... loss: 0.2500162124633789
+batch: 1/1 in epoch 974/1000 
+... loss: 0.25001615285873413
+batch: 1/1 in epoch 975/1000 
+... loss: 0.25001612305641174
+batch: 1/1 in epoch 976/1000 
+... loss: 0.2500160336494446
+batch: 1/1 in epoch 977/1000 
+... loss: 0.2500160038471222
+batch: 1/1 in epoch 978/1000 
+... loss: 0.2500159740447998
+batch: 1/1 in epoch 979/1000 
+... loss: 0.25001591444015503
+batch: 1/1 in epoch 980/1000 
+... loss: 0.25001585483551025
+batch: 1/1 in epoch 981/1000 
+... loss: 0.25001582503318787
+batch: 1/1 in epoch 982/1000 
+... loss: 0.2500157654285431
+batch: 1/1 in epoch 983/1000 
+... loss: 0.2500157356262207
+batch: 1/1 in epoch 984/1000 
+... loss: 0.2500156760215759
+batch: 1/1 in epoch 985/1000 
+... loss: 0.25001561641693115
+batch: 1/1 in epoch 986/1000 
+... loss: 0.25001558661460876
+batch: 1/1 in epoch 987/1000 
+... loss: 0.2500155568122864
+batch: 1/1 in epoch 988/1000 
+... loss: 0.2500154972076416
+batch: 1/1 in epoch 989/1000 
+... loss: 0.2500154376029968
+batch: 1/1 in epoch 990/1000 
+... loss: 0.25001540780067444
+batch: 1/1 in epoch 991/1000 
+... loss: 0.25001537799835205
+batch: 1/1 in epoch 992/1000 
+... loss: 0.2500153183937073
+batch: 1/1 in epoch 993/1000 
+... loss: 0.2500152587890625
+batch: 1/1 in epoch 994/1000 
+... loss: 0.2500151991844177
+batch: 1/1 in epoch 995/1000 
+... loss: 0.2500151991844177
+batch: 1/1 in epoch 996/1000 
+... loss: 0.25001513957977295
+batch: 1/1 in epoch 997/1000 
+... loss: 0.25001510977745056
+batch: 1/1 in epoch 998/1000 
+... loss: 0.2500150203704834
+batch: 1/1 in epoch 999/1000 
+... loss: 0.2500150203704834
+batch: 1/1 in epoch 1000/1000 
+... loss: 0.2500149607658386
+
+[[0, 0.2851400375366211], [1, 0.5089359283447266], [2, 1.3093855381011963], [3, 3.9933533668518066], [4, 10.323945999145508], [5, 7.510469436645508], [6, 0.2868693470954895], [7, 0.5902084112167358], [8, 0.6290802955627441], [9, 0.4136653542518616], [10, 0.27793949842453003], [11, 0.2504867911338806], [12, 0.2583726942539215], [13, 0.2605944275856018], [14, 0.2558121681213379], [15, 0.25170111656188965], [16, 0.2504614591598511], [17, 0.25057071447372437], [18, 0.2506977319717407], [19, 0.2506064176559448], [20, 0.25048279762268066], [21, 0.2504291534423828], [22, 0.2504240870475769], [23, 0.25042688846588135], [24, 0.2504240572452545], [25, 0.2504187822341919], [26, 0.25041496753692627], [27, 0.2504126727581024], [28, 0.25041085481643677], [29, 0.25040897727012634], [30, 0.25040698051452637], [31, 0.2504050135612488], [32, 0.25040310621261597], [33, 0.25040119886398315], [34, 0.2503993511199951], [35, 0.2503975033760071], [36, 0.25039565563201904], [37, 0.250393807888031], [38, 0.25039201974868774], [39, 0.2503902018070221], [40, 0.25038838386535645], [41, 0.2503865957260132], [42, 0.2503848075866699], [43, 0.25038304924964905], [44, 0.2503812909126282], [45, 0.2503795623779297], [46, 0.2503778338432312], [47, 0.2503761053085327], [48, 0.25037437677383423], [49, 0.25037264823913574], [50, 0.25037097930908203], [51, 0.2503693103790283], [52, 0.2503676116466522], [53, 0.2503659427165985], [54, 0.2503642737865448], [55, 0.2503626346588135], [56, 0.25036099553108215], [57, 0.25035935640335083], [58, 0.2503577470779419], [59, 0.25035613775253296], [60, 0.2503545582294464], [61, 0.25035297870635986], [62, 0.2503513693809509], [63, 0.25034981966018677], [64, 0.2503482699394226], [65, 0.25034669041633606], [66, 0.2503451406955719], [67, 0.2503436207771301], [68, 0.25034210085868835], [69, 0.2503405809402466], [70, 0.2503390908241272], [71, 0.2503375709056854], [72, 0.25033608078956604], [73, 0.25033459067344666], [74, 0.25033313035964966], [75, 0.2503316402435303], [76, 0.25033020973205566], [77, 0.25032874941825867], [78, 0.25032728910446167], [79, 0.25032585859298706], [80, 0.25032442808151245], [81, 0.2503230571746826], [82, 0.250321626663208], [83, 0.2503202259540558], [84, 0.25031882524490356], [85, 0.25031745433807373], [86, 0.2503160834312439], [87, 0.25031471252441406], [88, 0.25031334161758423], [89, 0.2503119707107544], [90, 0.25031062960624695], [91, 0.2503092885017395], [92, 0.25030797719955444], [93, 0.250306636095047], [94, 0.25030529499053955], [95, 0.2503040134906769], [96, 0.2503027021884918], [97, 0.25030142068862915], [98, 0.2503001093864441], [99, 0.2502988278865814], [100, 0.25029754638671875], [101, 0.25029629468917847], [102, 0.2502950429916382], [103, 0.2502937912940979], [104, 0.2502925395965576], [105, 0.25029128789901733], [106, 0.25029003620147705], [107, 0.25028881430625916], [108, 0.25028759241104126], [109, 0.25028640031814575], [110, 0.25028514862060547], [111, 0.25028395652770996], [112, 0.25028276443481445], [113, 0.25028160214424133], [114, 0.2502804100513458], [115, 0.2502792477607727], [116, 0.2502780556678772], [117, 0.25027692317962646], [118, 0.25027573108673096], [119, 0.2502745985984802], [120, 0.2502734661102295], [121, 0.25027230381965637], [122, 0.25027117133140564], [123, 0.2502700686454773], [124, 0.25026893615722656], [125, 0.25026780366897583], [126, 0.2502666711807251], [127, 0.25026559829711914], [128, 0.2502644956111908], [129, 0.25026339292526245], [130, 0.2502623200416565], [131, 0.25026124715805054], [132, 0.2502601742744446], [133, 0.2502591013908386], [134, 0.25025802850723267], [135, 0.2502569556236267], [136, 0.25025591254234314], [137, 0.25025486946105957], [138, 0.2502537965774536], [139, 0.25025278329849243], [140, 0.25025174021720886], [141, 0.2502506971359253], [142, 0.2502496838569641], [143, 0.25024867057800293], [144, 0.25024765729904175], [145, 0.25024664402008057], [146, 0.2502456605434418], [147, 0.250244677066803], [148, 0.2502436637878418], [149, 0.250242680311203], [150, 0.2502416968345642], [151, 0.2502407431602478], [152, 0.250239759683609], [153, 0.2502388060092926], [154, 0.2502378225326538], [155, 0.2502368688583374], [156, 0.250235915184021], [157, 0.2502349615097046], [158, 0.2502340078353882], [159, 0.25023308396339417], [160, 0.25023216009140015], [161, 0.25023123621940613], [162, 0.2502303123474121], [163, 0.2502293884754181], [164, 0.2502284646034241], [165, 0.25022757053375244], [166, 0.2502266764640808], [167, 0.2502257525920868], [168, 0.25022485852241516], [169, 0.25022396445274353], [170, 0.2502231001853943], [171, 0.25022220611572266], [172, 0.250221312046051], [173, 0.2502204179763794], [174, 0.25021958351135254], [175, 0.2502186894416809], [176, 0.25021785497665405], [177, 0.2502169609069824], [178, 0.25021612644195557], [179, 0.2502152919769287], [180, 0.25021442770957947], [181, 0.2502135634422302], [182, 0.25021275877952576], [183, 0.2502118945121765], [184, 0.25021108984947205], [185, 0.2502102553844452], [186, 0.2502094507217407], [187, 0.25020861625671387], [188, 0.250207781791687], [189, 0.25020700693130493], [190, 0.2502061724662781], [191, 0.250205397605896], [192, 0.25020459294319153], [193, 0.25020378828048706], [194, 0.250203013420105], [195, 0.2502022385597229], [196, 0.2502014636993408], [197, 0.25020065903663635], [198, 0.2501998543739319], [199, 0.2501991093158722], [200, 0.2501983642578125], [201, 0.2501975893974304], [202, 0.25019681453704834], [203, 0.25019603967666626], [204, 0.25019529461860657], [205, 0.2501945495605469], [206, 0.2501937747001648], [207, 0.2501930594444275], [208, 0.2501923441886902], [209, 0.2501915991306305], [210, 0.2501908540725708], [211, 0.2501901388168335], [212, 0.2501893937587738], [213, 0.2501886487007141], [214, 0.2501879334449768], [215, 0.2501872181892395], [216, 0.2501865327358246], [217, 0.2501858174800873], [218, 0.25018513202667236], [219, 0.25018441677093506], [220, 0.25018370151519775], [221, 0.25018298625946045], [222, 0.2501823306083679], [223, 0.2501816153526306], [224, 0.2501809000968933], [225, 0.2501802444458008], [226, 0.25017958879470825], [227, 0.25017887353897095], [228, 0.2501782178878784], [229, 0.2501775622367859], [230, 0.25017687678337097], [231, 0.25017619132995605], [232, 0.2501755356788635], [233, 0.250174880027771], [234, 0.25017422437667847], [235, 0.25017356872558594], [236, 0.2501729130744934], [237, 0.2501722574234009], [238, 0.25017163157463074], [239, 0.2501710057258606], [240, 0.25017035007476807], [241, 0.25016969442367554], [242, 0.2501690983772278], [243, 0.25016844272613525], [244, 0.2501678168773651], [245, 0.25016719102859497], [246, 0.2501665949821472], [247, 0.2501659393310547], [248, 0.25016534328460693], [249, 0.2501647174358368], [250, 0.25016409158706665], [251, 0.2501634955406189], [252, 0.25016289949417114], [253, 0.2501623034477234], [254, 0.25016170740127563], [255, 0.2501611113548279], [256, 0.2501605153083801], [257, 0.2501599192619324], [258, 0.2501593232154846], [259, 0.25015872716903687], [260, 0.2501581311225891], [261, 0.25015756487846375], [262, 0.2501569986343384], [263, 0.2501564025878906], [264, 0.25015580654144287], [265, 0.2501552700996399], [266, 0.25015467405319214], [267, 0.25015413761138916], [268, 0.2501535713672638], [269, 0.2501530051231384], [270, 0.25015243887901306], [271, 0.2501518726348877], [272, 0.2501513361930847], [273, 0.25015076994895935], [274, 0.25015023350715637], [275, 0.250149667263031], [276, 0.250149130821228], [277, 0.25014859437942505], [278, 0.25014805793762207], [279, 0.2501475214958191], [280, 0.2501469850540161], [281, 0.25014644861221313], [282, 0.25014591217041016], [283, 0.2501453757286072], [284, 0.2501448392868042], [285, 0.2501443326473236], [286, 0.250143826007843], [287, 0.25014328956604004], [288, 0.25014275312423706], [289, 0.25014227628707886], [290, 0.2501417398452759], [291, 0.2501412034034729], [292, 0.2501407265663147], [293, 0.2501401901245117], [294, 0.2501397132873535], [295, 0.25013917684555054], [296, 0.25013870000839233], [297, 0.25013819336891174], [298, 0.25013768672943115], [299, 0.25013720989227295], [300, 0.25013673305511475], [301, 0.25013622641563416], [302, 0.25013571977615356], [303, 0.25013524293899536], [304, 0.25013476610183716], [305, 0.25013428926467896], [306, 0.25013381242752075], [307, 0.25013333559036255], [308, 0.25013285875320435], [309, 0.25013238191604614], [310, 0.25013190507888794], [311, 0.25013142824172974], [312, 0.2501309812068939], [313, 0.2501305043697357], [314, 0.2501300573348999], [315, 0.2501295804977417], [316, 0.2501291036605835], [317, 0.2501286566257477], [318, 0.25012820959091187], [319, 0.25012773275375366], [320, 0.25012731552124023], [321, 0.25012683868408203], [322, 0.2501263916492462], [323, 0.2501259446144104], [324, 0.250125527381897], [325, 0.25012508034706116], [326, 0.25012463331222534], [327, 0.2501241862773895], [328, 0.2501237392425537], [329, 0.2501233220100403], [330, 0.2501228451728821], [331, 0.25012242794036865], [332, 0.2501220107078552], [333, 0.2501215934753418], [334, 0.25012117624282837], [335, 0.25012069940567017], [336, 0.2501203119754791], [337, 0.2501198649406433], [338, 0.2501194477081299], [339, 0.25011903047561646], [340, 0.250118613243103], [341, 0.2501181960105896], [342, 0.25011777877807617], [343, 0.25011736154556274], [344, 0.2501169741153717], [345, 0.25011658668518066], [346, 0.25011616945266724], [347, 0.2501157522201538], [348, 0.2501153349876404], [349, 0.25011494755744934], [350, 0.2501145601272583], [351, 0.2501141428947449], [352, 0.25011375546455383], [353, 0.2501133680343628], [354, 0.25011295080184937], [355, 0.2501125633716583], [356, 0.2501121759414673], [357, 0.25011178851127625], [358, 0.2501114010810852], [359, 0.25011101365089417], [360, 0.2501106262207031], [361, 0.2501102685928345], [362, 0.25010985136032104], [363, 0.2501094937324524], [364, 0.25010910630226135], [365, 0.2501087188720703], [366, 0.25010836124420166], [367, 0.250108003616333], [368, 0.25010761618614197], [369, 0.2501072287559509], [370, 0.2501068711280823], [371, 0.2501065135002136], [372, 0.25010615587234497], [373, 0.25010576844215393], [374, 0.2501054108142853], [375, 0.2501050531864166], [376, 0.250104695558548], [377, 0.25010430812835693], [378, 0.2501039505004883], [379, 0.25010359287261963], [380, 0.25010326504707336], [381, 0.2501029074192047], [382, 0.25010254979133606], [383, 0.2501022219657898], [384, 0.25010186433792114], [385, 0.2501015067100525], [386, 0.25010114908218384], [387, 0.2501008212566376], [388, 0.2501004934310913], [389, 0.25010013580322266], [390, 0.250099778175354], [391, 0.25009945034980774], [392, 0.2500991225242615], [393, 0.2500987648963928], [394, 0.25009840726852417], [395, 0.2500981092453003], [396, 0.25009775161743164], [397, 0.25009745359420776], [398, 0.2500970959663391], [399, 0.25009676814079285], [400, 0.2500964403152466], [401, 0.2500961124897003], [402, 0.25009578466415405], [403, 0.2500954568386078], [404, 0.2500951290130615], [405, 0.25009483098983765], [406, 0.2500945031642914], [407, 0.2500941753387451], [408, 0.25009387731552124], [409, 0.2500935196876526], [410, 0.2500932216644287], [411, 0.25009292364120483], [412, 0.25009259581565857], [413, 0.2500922679901123], [414, 0.2500919699668884], [415, 0.25009167194366455], [416, 0.2500913739204407], [417, 0.2500910460948944], [418, 0.25009071826934814], [419, 0.25009042024612427], [420, 0.2500901222229004], [421, 0.2500898241996765], [422, 0.25008952617645264], [423, 0.25008922815322876], [424, 0.2500889301300049], [425, 0.250088632106781], [426, 0.25008833408355713], [427, 0.25008803606033325], [428, 0.2500877380371094], [429, 0.2500874400138855], [430, 0.2500871419906616], [431, 0.25008684396743774], [432, 0.25008654594421387], [433, 0.2500862777233124], [434, 0.2500860095024109], [435, 0.250085711479187], [436, 0.25008541345596313], [437, 0.25008511543273926], [438, 0.25008484721183777], [439, 0.2500845491886139], [440, 0.2500842809677124], [441, 0.2500839829444885], [442, 0.25008371472358704], [443, 0.25008344650268555], [444, 0.25008314847946167], [445, 0.2500828802585602], [446, 0.2500826120376587], [447, 0.2500823140144348], [448, 0.2500820457935333], [449, 0.2500818073749542], [450, 0.25008150935173035], [451, 0.25008124113082886], [452, 0.25008097290992737], [453, 0.2500807046890259], [454, 0.2500804364681244], [455, 0.2500801682472229], [456, 0.2500799298286438], [457, 0.2500796616077423], [458, 0.2500793933868408], [459, 0.25007909536361694], [460, 0.25007885694503784], [461, 0.25007861852645874], [462, 0.25007835030555725], [463, 0.25007808208465576], [464, 0.2500778138637543], [465, 0.2500775456428528], [466, 0.2500773072242737], [467, 0.2500770688056946], [468, 0.2500768005847931], [469, 0.2500765323638916], [470, 0.2500762939453125], [471, 0.2500760555267334], [472, 0.2500758171081543], [473, 0.2500755488872528], [474, 0.2500752806663513], [475, 0.2500750422477722], [476, 0.2500748038291931], [477, 0.250074565410614], [478, 0.2500742971897125], [479, 0.2500740885734558], [480, 0.2500738203525543], [481, 0.2500735819339752], [482, 0.2500733435153961], [483, 0.250073105096817], [484, 0.2500728666782379], [485, 0.2500726282596588], [486, 0.2500723600387573], [487, 0.2500721514225006], [488, 0.2500719130039215], [489, 0.2500716745853424], [490, 0.2500714361667633], [491, 0.2500711977481842], [492, 0.2500709891319275], [493, 0.2500707507133484], [494, 0.2500705122947693], [495, 0.2500702738761902], [496, 0.2500700354576111], [497, 0.25006985664367676], [498, 0.25006961822509766], [499, 0.25006937980651855], [500, 0.25006914138793945], [501, 0.25006893277168274], [502, 0.25006869435310364], [503, 0.2500684857368469], [504, 0.2500682473182678], [505, 0.2500680387020111], [506, 0.2500678300857544], [507, 0.2500675916671753], [508, 0.2500673532485962], [509, 0.25006717443466187], [510, 0.25006693601608276], [511, 0.25006669759750366], [512, 0.25006651878356934], [513, 0.25006628036499023], [514, 0.25006604194641113], [515, 0.2500658631324768], [516, 0.2500656247138977], [517, 0.2500654458999634], [518, 0.2500652074813843], [519, 0.25006502866744995], [520, 0.25006479024887085], [521, 0.25006458163261414], [522, 0.2500643730163574], [523, 0.2500641942024231], [524, 0.250063955783844], [525, 0.2500637471675873], [526, 0.25006353855133057], [527, 0.25006335973739624], [528, 0.25006312131881714], [529, 0.2500629425048828], [530, 0.2500627040863037], [531, 0.2500625252723694], [532, 0.25006234645843506], [533, 0.25006213784217834], [534, 0.25006192922592163], [535, 0.2500617206096649], [536, 0.2500615119934082], [537, 0.2500613331794739], [538, 0.25006115436553955], [539, 0.25006091594696045], [540, 0.2500607371330261], [541, 0.2500605583190918], [542, 0.2500603497028351], [543, 0.25006014108657837], [544, 0.25005996227264404], [545, 0.2500597834587097], [546, 0.2500596046447754], [547, 0.2500593960285187], [548, 0.25005918741226196], [549, 0.25005900859832764], [550, 0.2500588297843933], [551, 0.250058650970459], [552, 0.25005844235420227], [553, 0.25005826354026794], [554, 0.2500580847263336], [555, 0.2500578761100769], [556, 0.2500576972961426], [557, 0.25005751848220825], [558, 0.2500573396682739], [559, 0.2500571608543396], [560, 0.2500569820404053], [561, 0.25005677342414856], [562, 0.2500566244125366], [563, 0.2500564455986023], [564, 0.2500562369823456], [565, 0.25005605816841125], [566, 0.2500559091567993], [567, 0.250055730342865], [568, 0.25005555152893066], [569, 0.25005534291267395], [570, 0.250055193901062], [571, 0.2500550150871277], [572, 0.25005483627319336], [573, 0.25005465745925903], [574, 0.2500544786453247], [575, 0.2500542998313904], [576, 0.25005412101745605], [577, 0.2500539720058441], [578, 0.2500537931919098], [579, 0.25005364418029785], [580, 0.2500534653663635], [581, 0.2500532865524292], [582, 0.2500531077384949], [583, 0.25005292892456055], [584, 0.2500527799129486], [585, 0.2500526010990143], [586, 0.25005245208740234], [587, 0.250052273273468], [588, 0.2500521242618561], [589, 0.25005197525024414], [590, 0.2500517964363098], [591, 0.2500516176223755], [592, 0.25005143880844116], [593, 0.2500512897968292], [594, 0.2500511407852173], [595, 0.25005096197128296], [596, 0.2500508427619934], [597, 0.2500506639480591], [598, 0.25005048513412476], [599, 0.2500503361225128], [600, 0.2500501871109009], [601, 0.25005000829696655], [602, 0.2500498592853546], [603, 0.2500497102737427], [604, 0.25004953145980835], [605, 0.2500493824481964], [606, 0.2500492334365845], [607, 0.25004905462265015], [608, 0.2500489354133606], [609, 0.25004875659942627], [610, 0.2500486373901367], [611, 0.2500484585762024], [612, 0.25004830956459045], [613, 0.2500481605529785], [614, 0.2500479817390442], [615, 0.25004786252975464], [616, 0.2500476837158203], [617, 0.25004756450653076], [618, 0.2500474154949188], [619, 0.2500472664833069], [620, 0.25004711747169495], [621, 0.250046968460083], [622, 0.2500467896461487], [623, 0.25004667043685913], [624, 0.2500464916229248], [625, 0.25004637241363525], [626, 0.2500462234020233], [627, 0.2500460743904114], [628, 0.2500459551811218], [629, 0.2500457763671875], [630, 0.25004565715789795], [631, 0.2500454783439636], [632, 0.2500453591346741], [633, 0.2500452399253845], [634, 0.2500450611114502], [635, 0.25004494190216064], [636, 0.2500447928905487], [637, 0.25004464387893677], [638, 0.2500445246696472], [639, 0.2500443756580353], [640, 0.25004422664642334], [641, 0.2500441074371338], [642, 0.25004395842552185], [643, 0.2500438392162323], [644, 0.25004369020462036], [645, 0.2500435709953308], [646, 0.25004342198371887], [647, 0.25004327297210693], [648, 0.2500431537628174], [649, 0.25004303455352783], [650, 0.2500428855419159], [651, 0.25004273653030396], [652, 0.2500426173210144], [653, 0.25004249811172485], [654, 0.2500423491001129], [655, 0.250042200088501], [656, 0.2500420808792114], [657, 0.2500419616699219], [658, 0.2500418424606323], [659, 0.2500417232513428], [660, 0.25004157423973083], [661, 0.2500414252281189], [662, 0.25004130601882935], [663, 0.2500411868095398], [664, 0.25004106760025024], [665, 0.2500409483909607], [666, 0.25004082918167114], [667, 0.2500407099723816], [668, 0.25004056096076965], [669, 0.2500404119491577], [670, 0.25004029273986816], [671, 0.2500401735305786], [672, 0.25004005432128906], [673, 0.2500399351119995], [674, 0.25003981590270996], [675, 0.250039666891098], [676, 0.25003954768180847], [677, 0.2500394582748413], [678, 0.25003930926322937], [679, 0.2500391900539398], [680, 0.25003907084465027], [681, 0.25003892183303833], [682, 0.25003883242607117], [683, 0.250038743019104], [684, 0.25003859400749207], [685, 0.2500384449958801], [686, 0.25003835558891296], [687, 0.2500382363796234], [688, 0.25003811717033386], [689, 0.2500379681587219], [690, 0.25003787875175476], [691, 0.2500377595424652], [692, 0.25003767013549805], [693, 0.2500375509262085], [694, 0.25003743171691895], [695, 0.2500373125076294], [696, 0.25003719329833984], [697, 0.2500370740890503], [698, 0.25003695487976074], [699, 0.2500368356704712], [700, 0.25003671646118164], [701, 0.2500365972518921], [702, 0.2500365078449249], [703, 0.2500363886356354], [704, 0.2500362992286682], [705, 0.25003618001937866], [706, 0.2500360608100891], [707, 0.25003594160079956], [708, 0.25003582239151], [709, 0.25003570318222046], [710, 0.2500356137752533], [711, 0.25003549456596375], [712, 0.2500354051589966], [713, 0.25003528594970703], [714, 0.2500351667404175], [715, 0.2500351071357727], [716, 0.25003498792648315], [717, 0.2500348687171936], [718, 0.25003474950790405], [719, 0.2500346302986145], [720, 0.25003454089164734], [721, 0.2500344216823578], [722, 0.2500343322753906], [723, 0.2500342130661011], [724, 0.2500340938568115], [725, 0.25003400444984436], [726, 0.2500339150428772], [727, 0.25003379583358765], [728, 0.2500336766242981], [729, 0.25003358721733093], [730, 0.25003349781036377], [731, 0.2500333786010742], [732, 0.25003328919410706], [733, 0.2500331997871399], [734, 0.25003308057785034], [735, 0.2500329911708832], [736, 0.250032901763916], [737, 0.25003278255462646], [738, 0.2500326931476593], [739, 0.25003257393836975], [740, 0.2500324845314026], [741, 0.25003236532211304], [742, 0.25003230571746826], [743, 0.2500321865081787], [744, 0.25003209710121155], [745, 0.250031977891922], [746, 0.25003188848495483], [747, 0.25003179907798767], [748, 0.2500317096710205], [749, 0.25003159046173096], [750, 0.2500315308570862], [751, 0.25003141164779663], [752, 0.25003135204315186], [753, 0.2500312328338623], [754, 0.25003111362457275], [755, 0.250031054019928], [756, 0.2500309348106384], [757, 0.25003084540367126], [758, 0.2500307559967041], [759, 0.25003063678741455], [760, 0.2500305771827698], [761, 0.2500304579734802], [762, 0.25003039836883545], [763, 0.2500302791595459], [764, 0.2500302195549011], [765, 0.2500301003456116], [766, 0.250029981136322], [767, 0.25002992153167725], [768, 0.2500298321247101], [769, 0.2500297427177429], [770, 0.25002962350845337], [771, 0.2500295639038086], [772, 0.25002944469451904], [773, 0.25002938508987427], [774, 0.2500292956829071], [775, 0.25002920627593994], [776, 0.2500290870666504], [777, 0.2500289976596832], [778, 0.25002893805503845], [779, 0.2500288486480713], [780, 0.2500287592411041], [781, 0.25002866983413696], [782, 0.2500286102294922], [783, 0.25002849102020264], [784, 0.2500284016132355], [785, 0.2500283420085907], [786, 0.25002825260162354], [787, 0.250028133392334], [788, 0.2500280737876892], [789, 0.25002798438072205], [790, 0.2500278949737549], [791, 0.2500278055667877], [792, 0.25002771615982056], [793, 0.2500276565551758], [794, 0.25002753734588623], [795, 0.25002747774124146], [796, 0.2500273883342743], [797, 0.25002729892730713], [798, 0.25002723932266235], [799, 0.2500271499156952], [800, 0.250027060508728], [801, 0.25002700090408325], [802, 0.2500269114971161], [803, 0.2500268220901489], [804, 0.25002676248550415], [805, 0.250026673078537], [806, 0.2500265836715698], [807, 0.25002649426460266], [808, 0.2500264346599579], [809, 0.2500263452529907], [810, 0.25002628564834595], [811, 0.2500261664390564], [812, 0.2500261068344116], [813, 0.25002601742744446], [814, 0.2500259578227997], [815, 0.2500258684158325], [816, 0.25002580881118774], [817, 0.2500256896018982], [818, 0.2500256299972534], [819, 0.25002557039260864], [820, 0.2500254809856415], [821, 0.2500253915786743], [822, 0.25002533197402954], [823, 0.25002527236938477], [824, 0.2500251531600952], [825, 0.25002509355545044], [826, 0.25002503395080566], [827, 0.2500249445438385], [828, 0.2500248849391937], [829, 0.25002479553222656], [830, 0.2500247359275818], [831, 0.2500246465206146], [832, 0.25002458691596985], [833, 0.2500244975090027], [834, 0.2500244379043579], [835, 0.25002437829971313], [836, 0.25002428889274597], [837, 0.2500241994857788], [838, 0.25002413988113403], [839, 0.25002408027648926], [840, 0.2500239908695221], [841, 0.25002390146255493], [842, 0.25002384185791016], [843, 0.2500237822532654], [844, 0.2500237226486206], [845, 0.25002363324165344], [846, 0.25002357363700867], [847, 0.2500234842300415], [848, 0.25002342462539673], [849, 0.25002336502075195], [850, 0.2500233054161072], [851, 0.25002321600914], [852, 0.25002315640449524], [853, 0.2500230669975281], [854, 0.2500230073928833], [855, 0.2500229477882385], [856, 0.25002288818359375], [857, 0.2500227987766266], [858, 0.2500227093696594], [859, 0.25002264976501465], [860, 0.2500225901603699], [861, 0.2500225305557251], [862, 0.2500224709510803], [863, 0.25002241134643555], [864, 0.25002235174179077], [865, 0.2500222623348236], [866, 0.25002220273017883], [867, 0.25002211332321167], [868, 0.2500220537185669], [869, 0.2500219941139221], [870, 0.25002193450927734], [871, 0.25002187490463257], [872, 0.2500218152999878], [873, 0.25002172589302063], [874, 0.25002169609069824], [875, 0.2500216066837311], [876, 0.2500215470790863], [877, 0.25002145767211914], [878, 0.25002139806747437], [879, 0.2500213384628296], [880, 0.2500212788581848], [881, 0.25002121925354004], [882, 0.25002115964889526], [883, 0.2500211000442505], [884, 0.2500210404396057], [885, 0.25002098083496094], [886, 0.25002092123031616], [887, 0.2500208616256714], [888, 0.2500208020210266], [889, 0.25002074241638184], [890, 0.2500206530094147], [891, 0.2500205934047699], [892, 0.2500205338001251], [893, 0.25002047419548035], [894, 0.25002041459083557], [895, 0.2500203549861908], [896, 0.250020295381546], [897, 0.25002023577690125], [898, 0.25002017617225647], [899, 0.2500200867652893], [900, 0.2500200569629669], [901, 0.25001996755599976], [902, 0.250019907951355], [903, 0.2500198483467102], [904, 0.2500198185443878], [905, 0.25001975893974304], [906, 0.2500196695327759], [907, 0.2500196397304535], [908, 0.25001955032348633], [909, 0.25001949071884155], [910, 0.25001949071884155], [911, 0.2500194311141968], [912, 0.2500193417072296], [913, 0.25001928210258484], [914, 0.25001922249794006], [915, 0.2500191926956177], [916, 0.2500191330909729], [917, 0.2500190734863281], [918, 0.25001901388168335], [919, 0.2500189542770386], [920, 0.2500188946723938], [921, 0.250018835067749], [922, 0.25001877546310425], [923, 0.2500187158584595], [924, 0.2500186562538147], [925, 0.2500185966491699], [926, 0.25001853704452515], [927, 0.25001847743988037], [928, 0.250018447637558], [929, 0.2500184178352356], [930, 0.2500183582305908], [931, 0.25001829862594604], [932, 0.25001823902130127], [933, 0.2500181794166565], [934, 0.2500181198120117], [935, 0.25001806020736694], [936, 0.25001800060272217], [937, 0.2500179409980774], [938, 0.250017911195755], [939, 0.2500178813934326], [940, 0.25001782178878784], [941, 0.25001776218414307], [942, 0.2500177025794983], [943, 0.2500176429748535], [944, 0.25001758337020874], [945, 0.25001752376556396], [946, 0.2500174939632416], [947, 0.2500174343585968], [948, 0.2500174045562744], [949, 0.25001734495162964], [950, 0.25001728534698486], [951, 0.2500172257423401], [952, 0.2500171661376953], [953, 0.2500171363353729], [954, 0.25001710653305054], [955, 0.25001704692840576], [956, 0.250016987323761], [957, 0.2500169277191162], [958, 0.25001686811447144], [959, 0.25001683831214905], [960, 0.2500167489051819], [961, 0.2500167489051819], [962, 0.2500166893005371], [963, 0.25001662969589233], [964, 0.25001657009124756], [965, 0.2500165104866028], [966, 0.2500165104866028], [967, 0.250016450881958], [968, 0.25001639127731323], [969, 0.25001633167266846], [970, 0.25001630187034607], [971, 0.2500162422657013], [972, 0.2500162124633789], [973, 0.25001615285873413], [974, 0.25001612305641174], [975, 0.2500160336494446], [976, 0.2500160038471222], [977, 0.2500159740447998], [978, 0.25001591444015503], [979, 0.25001585483551025], [980, 0.25001582503318787], [981, 0.2500157654285431], [982, 0.2500157356262207], [983, 0.2500156760215759], [984, 0.25001561641693115], [985, 0.25001558661460876], [986, 0.2500155568122864], [987, 0.2500154972076416], [988, 0.2500154376029968], [989, 0.25001540780067444], [990, 0.25001537799835205], [991, 0.2500153183937073], [992, 0.2500152587890625], [993, 0.2500151991844177], [994, 0.2500151991844177], [995, 0.25001513957977295], [996, 0.25001510977745056], [997, 0.2500150203704834], [998, 0.2500150203704834], [999, 0.2500149607658386]]
