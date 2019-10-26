@@ -185,7 +185,7 @@ batch_size = 25
 
 
 # debug set
-net_full = Lin_Net(8, 4, 64, 64, act_function)
+net_full = Lin_Net(8, 4, 64, act_function)
 train_loader_debug, test_loader_debug = make_data(emotion_dataset, "full", batch_size, True)
 train(train_loader_debug, net_full, 1000, criterion, 100, "../logs/cross_debug", cuda, 0.1)
 test(test_loader_debug, net_full, criterion, 100, "../logs/cross_debug", cuda)
