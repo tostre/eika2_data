@@ -1,7 +1,0 @@
-average test loss: 0.008341886103153229, relative correct: 1.0
-
-confusion:
-[[1, 1], [0, 0]]average test loss: 0.0016991952434182167, relative correct: 1.0
-
-confusion:
-[[0, 0], [2, 2]]
