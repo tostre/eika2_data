@@ -30,7 +30,7 @@ class Lin_Net(nn.Module):
         super(Lin_Net, self).__init__()
         self.act_function = act_function
         
-        self.lin1 = nn.Linear(input_dim, hidden_dim_1)
+        self.lin1 = nn.Linear(input_dim, hidden_dim)
         self.lin2 = nn.Linear(hidden_dim, hidden_dim)
         self.lin3 = nn.Linear(hidden_dim, hidden_dim)
         self.lin4 = nn.Linear(hidden_dim, output_dim)
