@@ -179,8 +179,8 @@ act_function = torch.sigmoid
 criterion = nn.MSELoss()
 cuda = torch.cuda.is_available()
 batch_size = 25
-epochs = 201
-print_every = 100
+epochs = 10001
+print_every = 500
 
 
 # In[30]:
@@ -199,39 +199,39 @@ print("... done")
 
 
 print("-------- net_lin_emotion_full")
-#net_full = Lin_Net(8, 1, 64, act_function)
-#train_loader_emotion_full, test_loader_emotion_full = make_data(emotion_dataset, "full", batch_size)
-#train(train_loader_emotion_full, net_full, print_every, criterion, epochs, "mse_emotion_full", cuda, 0.1)
+net_full = Lin_Net(8, 1, 64, act_function)
+train_loader_emotion_full, test_loader_emotion_full = make_data(emotion_dataset, "full", batch_size)
+train(train_loader_emotion_full, net_full, print_every, criterion, epochs, "mse_emotion_full", cuda, 0.1)
 #test(test_loader_emotion_full, net_full, criterion, print_every0, "mse_emotion_full")
 
 print("-------- net_lin_emotion_nolex")
-#net_half = Lin_Net(4, 1, 64, act_function)
-#train_loader_emotion_nolex, test_loader_emotion_nolex = make_data(emotion_dataset, "nolex", batch_size)
-#train(train_loader_emotion_nolex, net_half, print_every, criterion, epochs, "mse_emotion_nolex", cuda, 0.1)
+net_half = Lin_Net(4, 1, 64, act_function)
+train_loader_emotion_nolex, test_loader_emotion_nolex = make_data(emotion_dataset, "nolex", batch_size)
+train(train_loader_emotion_nolex, net_half, print_every, criterion, epochs, "mse_emotion_nolex", cuda, 0.1)
 #test(test_loader_emotion_nolex, net_half, criterion, print_every0, "mse_emotion_nolex")
 
 print("-------- net_lin_emotion_lex")
-#net_half = Lin_Net(4, 1, 64, act_function)
-#train_loader_emotion_lex, test_loader_emotion_lex = make_data(emotion_dataset, "lex", batch_size)
-#train(train_loader_emotion_lex, net_half, print_every, criterion, epochs, "mse_emotion_lex", cuda, 0.1)
+net_half = Lin_Net(4, 1, 64, act_function)
+train_loader_emotion_lex, test_loader_emotion_lex = make_data(emotion_dataset, "lex", batch_size)
+train(train_loader_emotion_lex, net_half, print_every, criterion, epochs, "mse_emotion_lex", cuda, 0.1)
 #test(test_loader_emotion_lex, net_half, criterion, print_every0, "mse_emotion_lex")
 
 print("-------- net_lin_tweet_full")
-#net_full = Lin_Net(8, 1, 64, act_function)
-#train_loader_tweet_full, test_loader_tweet_full = make_data(tweet_dataset, "full", batch_size)
-#train(train_loader_tweet_full, net_full, print_every, criterion, epochs, "mse_tweet_full", cuda, 0.1)
+net_full = Lin_Net(8, 1, 64, act_function)
+train_loader_tweet_full, test_loader_tweet_full = make_data(tweet_dataset, "full", batch_size)
+train(train_loader_tweet_full, net_full, print_every, criterion, epochs, "mse_tweet_full", cuda, 0.1)
 #test(test_loader_tweet_full, net_full, criterion, print_every0, "mse_tweet_full")
 
 print("-------- net_lin_tweet_nolex")
-#net_half = Lin_Net(4, 1, 64, act_function)
-#train_loader_tweet_nolex, test_loader_tweet_nolex = make_data(tweet_dataset, "nolex", batch_size)
-#train(train_loader_tweet_nolex, net_half, print_every, criterion, epochs, "mse_tweet_nolex", cuda, 0.1)
+net_half = Lin_Net(4, 1, 64, act_function)
+train_loader_tweet_nolex, test_loader_tweet_nolex = make_data(tweet_dataset, "nolex", batch_size)
+train(train_loader_tweet_nolex, net_half, print_every, criterion, epochs, "mse_tweet_nolex", cuda, 0.1)
 #test(test_loader_tweet_nolex, net_half, criterion, print_every0, "mse_tweet_nolex")
 
 print("-------- net_lin_tweet_lex")
-#net_half = Lin_Net(4, 1, 64, act_function)
-#train_loader_tweet_lex, test_loader_tweet_lex = make_data(tweet_dataset, "lex", batch_size)
-#train(train_loader_tweet_lex, net_half, print_every, criterion, epochs, "mse_tweet_lex", cuda, 0.1)
+net_half = Lin_Net(4, 1, 64, act_function)
+train_loader_tweet_lex, test_loader_tweet_lex = make_data(tweet_dataset, "lex", batch_size)
+train(train_loader_tweet_lex, net_half, print_every, criterion, epochs, "mse_tweet_lex", cuda, 0.1)
 #test(test_loader_tweet_lex, net_half, criterion, print_every0, "mse_tweet_lex")
 
 print("... done")
