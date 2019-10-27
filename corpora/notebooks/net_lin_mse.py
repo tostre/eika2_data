@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -116,6 +117,7 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
     for epoch in range(epochs):
         for index, (inputs, targets) in enumerate(train_loader):
             inputs, targets = inputs.float(), targets.float()
+            targets = targets.view(targets.shape[0], 1)
             if cuda: 
                 inputs = inputs.cuda()
                 targets = targets.cuda()
@@ -125,8 +127,10 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-        if (epoch % print_every == 0):
-            log("epoch {}/{} \n... loss: {}\n".format((epoch), epochs, loss.item()), 
+            if (index % print_every) == 0:
+                print("... batch {}/{}".format(index, len(train_loader)))
+        if (epoch % print_every) == 0:
+            log("epoch {}/{} \n... loss: {}\n".format(epoch, epochs, loss.item()), 
                 "../logs/" + save_name + "_train")
             torch.save(net.state_dict(), "nets/" + save_name + str(epoch) + ".pt")  
             error_curve.append([epoch, loss.item()])
@@ -183,13 +187,14 @@ epochs = 10001
 print_every = 500
 
 
+
 # In[30]:
 
 
 # debug set
-net_full = Lin_Net(8, 1, 64, act_function)
-train_loader_debug, test_loader_debug = make_data(emotion_dataset, "full", batch_size, True)
-train(train_loader_debug, net_full, epochs, criterion, print_every, "mse_debug", cuda, 0.1)
+#net_full = Lin_Net(8, 1, 64, act_function)
+#train_loader_debug, test_loader_debug = make_data(emotion_dataset, "full", batch_size, True)
+#train(train_loader_debug, net_full, epochs, criterion, print_every, "mse_debug", cuda, 0.1)
 #test(test_loader_debug, net_full, criterion, epochs, "mse_debug", cuda)
 
 print("... done")
@@ -233,6 +238,9 @@ net_half = Lin_Net(4, 1, 64, act_function)
 train_loader_tweet_lex, test_loader_tweet_lex = make_data(tweet_dataset, "lex", batch_size)
 train(train_loader_tweet_lex, net_half, print_every, criterion, epochs, "mse_tweet_lex", cuda, 0.1)
 #test(test_loader_tweet_lex, net_half, criterion, print_every0, "mse_tweet_lex")
+
+
+
 
 print("... done")
 

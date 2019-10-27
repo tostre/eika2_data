@@ -126,8 +126,10 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-        if (epoch % print_every == 0):
-            log("epoch {}/{} \n... loss: {}\n".format((epoch+1), epochs, loss.item()), 
+            if (index % print_every) == 0:
+                print("... batch {}/{}".format(index, len(train_loader)))
+        if (epoch % print_every) == 0:
+            log("epoch {}/{} \n... loss: {}\n".format(epoch, epochs, loss.item()), 
                 "../logs/" + save_name + "_train")
             torch.save(net.state_dict(), "nets/" + save_name + str(epoch) + ".pt")  
             error_curve.append([epoch, loss.item()])
@@ -176,19 +178,19 @@ tweet_dataset = ["crowdflower_clean.csv", "emoint_clean.csv", "tec_clean.csv"]
 act_function = torch.sigmoid
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
-batch_size = 257
+batch_size = 25
 epochs = 201
-print_every = 100
+print_every = 1000
 
 
 # In[51]:
 
 
 # debug set
-net_full = Lin_Net(8, 4, 64, act_function)
-train_loader_debug, test_loader_debug = make_data(emotion_dataset, "full", batch_size, True)
-train(train_loader_debug, net_full, epochs, criterion, print_every, "ent_debug", cuda, 0.1)
-#test(test_loader_debug, net_full, criterion, epochs, "cross_debug", cuda)
+#net_full = Lin_Net(8, 4, 64, act_function)
+#train_loader_debug, test_loader_debug = make_data(emotion_dataset, "full", batch_size, True)
+#train(train_loader_debug, net_full, epochs, criterion, print_every, "ent_debug", cuda, 0.1)
+#test(test_loader_debug, net_full, criterion, epochs, "ent_debug", cuda)
 
 print("... done")
 
@@ -197,40 +199,40 @@ print("... done")
 
 
 print("-------- net_lin_emotion_full")
-#net_full = Lin_Net(8, 4, 64, act_function)
-#train_loader_emotion_full, test_loader_emotion_full = make_data(emotion_dataset, "full", batch_size)
-#train(train_loader_emotion_full, net_full, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_emotion_full, net_full, criterion, 1000, "cross_emotion_full")
+net_full = Lin_Net(8, 4, 64, act_function)
+train_loader_emotion_full, test_loader_emotion_full = make_data(emotion_dataset, "full", batch_size)
+train(train_loader_emotion_full, net_full, epochs, criterion, print_every, "ent_emotion_full", cuda, 0.1)
+#test(test_loader_emotion_full, net_full, criterion, print_every, "ent_emotion_full")
 
 print("-------- net_lin_emotion_nolex")
 #net_half = Lin_Net(4, 4, 64, act_function)
 #train_loader_emotion_nolex, test_loader_emotion_nolex = make_data(emotion_dataset, "nolex", batch_size)
-#train(train_loader_emotion_nolex, net_half, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_emotion_nolex, net_half, criterion, 1000, "cross_emotion_nolex")
+#train(train_loader_emotion_nolex, net_half, epochs, criterion, print_every, "ent_emotion_nolex", cuda, 0.1)
+#test(test_loader_emotion_nolex, net_half, criterion, print_every, "ent_emotion_nolex")
 
 print("-------- net_lin_emotion_lex")
 #net_half = Lin_Net(4, 4, 64, act_function)
 #train_loader_emotion_lex, test_loader_emotion_lex = make_data(emotion_dataset, "lex", batch_size)
-#train(train_loader_emotion_lex, net_half, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_emotion_lex, net_half, criterion, 1000, "cross_emotion_lex")
+#train(train_loader_emotion_lex, net_half, epochs, criterion, print_every, "ent_emotion_lex, cuda, 0.1)
+#test(test_loader_emotion_lex, net_half, criterion, print_every, "ent_emotion_lex")
 
 print("-------- net_lin_tweet_full")
 #net_full = Lin_Net(8, 4, 64, act_function)
 #train_loader_tweet_full, test_loader_tweet_full = make_data(tweet_dataset, "full", batch_size)
-#train(train_loader_tweet_full, net_full, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_tweet_full, net_full, criterion, 1000, "cross_tweet_full")
+#train(train_loader_tweet_full, net_full, epochs, criterion, print_every, "ent_tweet_full, cuda, 0.1)
+#test(test_loader_tweet_full, net_full, criterion, print_every, "ent_tweet_full")
 
 print("-------- net_lin_tweet_nolex")
 #net_half = Lin_Net(4, 4, 64, act_function)
 #train_loader_tweet_nolex, test_loader_tweet_nolex = make_data(tweet_dataset, "nolex", batch_size)
-#train(train_loader_tweet_nolex, net_half, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_tweet_nolex, net_half, criterion, 1000, "net_lin_tweet_nolex")
+#train(train_loader_tweet_nolex, net_half, epochs, criterion, print_every, "ent_tweet_nolex, cuda, 0.1)
+#test(test_loader_tweet_nolex, net_half, criterion, print_every, "ent_tweet_nolex")
 
 print("-------- net_lin_tweet_lex")
 #net_half = Lin_Net(4, 4, 64, act_function)
 #train_loader_tweet_lex, test_loader_tweet_lex = make_data(tweet_dataset, "lex", batch_size)
-#train(train_loader_tweet_lex, net_half, 100, criterion, 5000, "cross_"+net_name, cuda, 0.1)
-#test(test_loader_tweet_lex, net_half, criterion, 1000, "net_lin_tweet_lex")
+#train(train_loader_tweet_lex, net_half, epochs, criterion, print_every, "ent_tweet_lex", cuda, 0.1)
+#test(test_loader_tweet_lex, net_half, criterion, print_every, "ent_tweet_lex")
 
 print("...done")
 
