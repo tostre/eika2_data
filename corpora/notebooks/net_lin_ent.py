@@ -20,6 +20,7 @@ from torch.utils.data import DataLoader
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import datetime
 
 
 # In[21]:
@@ -127,9 +128,9 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
             loss.backward()
             optimizer.step()
             if (index % print_every) == 0:
-                print("... batch {}/{}".format(index, len(train_loader)))
+                print("... batch {}/{}, epoch {}/{}".format(index, len(train_loader), epoch, epochs))
         if (epoch % print_every) == 0:
-            log("epoch {}/{} \n... loss: {}\n".format(epoch, epochs, loss.item()), 
+            log("{}: epoch {}/{} \n... loss: {}\n".format(datetime.datetime.now(), epoch, epochs, loss.item()), 
                 "../logs/" + save_name + "_train")
             torch.save(net.state_dict(), "nets/" + save_name + str(epoch) + ".pt")  
             error_curve.append([epoch, loss.item()])
