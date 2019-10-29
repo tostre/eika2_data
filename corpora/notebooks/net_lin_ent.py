@@ -2,6 +2,7 @@
 # coding: utf-8
 
 # In[3]:
+# tips: https://towardsdatascience.com/9-tips-for-training-lightning-fast-neural-networks-in-pytorch-8e63a502f565
 
 
 import pandas
