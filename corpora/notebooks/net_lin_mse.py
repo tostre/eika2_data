@@ -145,7 +145,7 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
             error_curve.append([epoch, loss.item()])
 			curve(error_curve, save_name)
 	log("\n" + str(error_curve), "../logs/" + save_name + "_train")
-			
+		
 
 def test(test_loader, net, criterion, print_every, save_name, cuda):
     open(save_name + "_test", "w").close()
