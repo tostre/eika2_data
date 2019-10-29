@@ -107,7 +107,7 @@ def log(summary, file):
     log.close()
     print(summary)
 
-def curve():
+def curve(error_curve, save_name):
 	plt.clf()
 	plt.plot([item[0] for item in error_curve], [item[1] for item in error_curve])
 	plt.ylabel('loss')
