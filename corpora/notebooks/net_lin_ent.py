@@ -143,8 +143,8 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
                 "../logs/" + save_name + "_train")
             torch.save(net.state_dict(), "nets/" + save_name + str(epoch) + ".pt")  
             error_curve.append([epoch, loss.item()])
-			curve(error_curve, save_name)
-	log("\n" + str(error_curve), "../logs/" + save_name + "_train")
+            curve(error_curve, save_name)
+    log("\n" + str(error_curve), "../logs/" + save_name + "_train")
 
 
 
