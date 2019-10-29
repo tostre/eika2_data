@@ -127,7 +127,7 @@ def train(train_loader, net, epochs, criterion, print_every, save_name, cuda, lr
         for index, (inputs, targets) in enumerate(train_loader):
             inputs, targets = inputs.float(), targets.float()
             targets = targets.view(targets.shape[0], 1)
-            if cuda: 
+            if cuda:
                 inputs = inputs.cuda()
                 targets = targets.cuda()
                 net = net.cuda()
@@ -187,6 +187,7 @@ tweet_dataset = ["crowdflower_clean.csv", "emoint_clean.csv", "tec_clean.csv"]
 act_function = torch.sigmoid
 criterion = nn.MSELoss()
 cuda = torch.cuda.is_available()
+print("cuda?", cuda)
 # bei batch_size 64 ist der gerinmgste fehler bei lr=lr
 # https://miguel-data-sc.github.io/2017-11-05-first/
 batch_size = 64

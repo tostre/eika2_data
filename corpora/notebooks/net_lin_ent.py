@@ -186,6 +186,7 @@ tweet_dataset = ["crowdflower_clean.csv", "emoint_clean.csv", "tec_clean.csv"]
 act_function = torch.sigmoid
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
+print("cuda?", cuda)
 # bei batch_size 64 ist der gerinmgste fehler bei lr=lr
 # https://miguel-data-sc.github.io/2017-11-05-first/
 batch_size = 64
