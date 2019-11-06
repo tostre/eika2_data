@@ -139,13 +139,13 @@ list_of_lexica = make_data(lexica, True)
 #extract_features(make_data(emotion_datasets), list_of_lexica, "emotion", 5000)
 #extract_features(make_data(norm_emotion_datasets), list_of_lexica, "norm_emotion", 5000)
 
-normalize_label_length(tweet_datasets)
-extract_features(make_data(tweet_datasets), list_of_lexica, "tweet", 1000)
-extract_features(make_data(norm_tweet_datasets), list_of_lexica, "norm_tweet", 1000)
+#normalize_label_length(tweet_datasets)
+#extract_features(make_data(tweet_datasets), list_of_lexica, "tweet", 1000)
+#extract_features(make_data(norm_tweet_datasets), list_of_lexica, "norm_tweet", 1000)
 
-#normalize_label_length(test_datasets)
-#extract_features(make_data(test_datasets), list_of_lexica, "test", 1)
-#extract_features(make_data(norm_test_datasets), list_of_lexica, "norm_test", 1)
+normalize_label_length(test_datasets)
+extract_features(make_data(test_datasets), list_of_lexica, "test", 1)
+extract_features(make_data(norm_test_datasets), list_of_lexica, "norm_test", 1)
 
 
 # In[ ]:
