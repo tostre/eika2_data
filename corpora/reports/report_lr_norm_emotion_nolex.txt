@@ -1,0 +1,12 @@
+norm_emotion_nolex (0.22795292532742512):
+              precision    recall  f1-score   support
+
+   happiness       0.27      0.33      0.30      9439
+     sadness       0.27      0.32      0.29      9519
+       anger       0.00      0.00      0.00      9413
+        fear       0.26      0.41      0.32      9506
+
+    accuracy                           0.27     37877
+   macro avg       0.20      0.27      0.23     37877
+weighted avg       0.20      0.27      0.23     37877
+
