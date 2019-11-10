@@ -14,7 +14,7 @@ import gensim.models.coherencemodel
 import matplotlib.pyplot as plt
 
 
-# In[46]:
+# In[47]:
 
 
 def make_data(dataset_name):
@@ -58,14 +58,14 @@ def draw_plot(dataset_name, x, y, best_coherence, best_num_topics):
     plt.show()
     fig.savefig("../img/num_topics_" + dataset_name + ".png", bbox_inches="tight")
     
-def find_best_topic_num(datasets, lim_low, lim_high): 
+def find_best_topic_num(datasets, lim_low, lim_high):
     coherences = []
     models = []
 
     for dataset_name in datasets:
         sentences, dic, corpus = make_data(dataset_name)
         for i in range(lim_low, lim_high):
-            print("... loop {} / {}".format(i, lim_high))
+            print(datasets_name + "... loop {} / {}".format(i, lim_high))
             lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
                                            update_every=1, chunksize=100, passes=10, per_word_topics=True)
             models.append(lda_model)
