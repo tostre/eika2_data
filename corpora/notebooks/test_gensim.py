@@ -14,7 +14,7 @@ import gensim.models.coherencemodel
 import matplotlib.pyplot as plt
 
 
-# In[47]:
+# In[54]:
 
 
 def make_data(dataset_name):
@@ -66,8 +66,10 @@ def find_best_topic_num(datasets, lim_low, lim_high):
         sentences, dic, corpus = make_data(dataset_name)
         for i in range(lim_low, lim_high):
             print(dataset_name + "... loop {} / {}".format(i, lim_high))
-            lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
-                                           update_every=1, chunksize=100, passes=10, per_word_topics=True)
+            #lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
+            #                               update_every=1, chunksize=100, passes=10, per_word_topics=True)
+            lda_model = gensim.models.ldamulticore.LdaMulticore(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
+                                           chunksize=100, passes=10, per_word_topics=True)#update_every=1, 
             models.append(lda_model)
             coherences.append(get_coherence_score(lda_model, sentences, dic))
         max_coherence_index = coherences.index(max(coherences))
@@ -76,7 +78,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
     
 
 
-# In[45]:
+# In[56]:
 
 
 # https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
@@ -85,7 +87,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 # The weights reflect how important a keyword is to that topic
 # usually one cand find a name for the topic (has to look at the keywords manually)
 
-datasets = ["tweet", "norm_tweet"]
+datasets = ["tweet", "norm_tweet", "emotion", "norm_emotion"]
 find_best_topic_num(datasets, 5, 30)
 
     
