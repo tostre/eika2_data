@@ -87,8 +87,8 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 # The weights reflect how important a keyword is to that topic
 # usually one cand find a name for the topic (has to look at the keywords manually)
 
-datasets = ["tweet", "norm_tweet", "emotion", "norm_emotion"]
-find_best_topic_num(datasets, 5, 30)
+datasets = ["norm_tweet", "tweet"]
+find_best_topic_num(datasets, 25, 100)
 
     
     
@@ -153,19 +153,19 @@ find_best_topic_num(datasets, 5, 30)
 # In[81]:
 
 
-new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
+#new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
 # ein neues doc muss ein satz sein (also eine liste)
-new_doc2 = dic.doc2bow(*sentences_split[:1])
+#new_doc2 = dic.doc2bow(*sentences_split[:1])
 print(new_doc)
 print(new_doc2)
 # get topics from a new document (fremd am besten)
-top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
-top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+#top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+#top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 # zeige alle topics in dem document
-for i, x in enumerate(top):
-    print(x)
-for i, x in enumerate(top2):
-    print(x)
+#for i, x in enumerate(top):
+#    print(x)
+#for i, x in enumerate(top2):
+#    print(x)
 
 
 # In[ ]:
