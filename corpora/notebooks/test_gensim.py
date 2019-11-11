@@ -61,15 +61,12 @@ def draw_plot(dataset_name, x, y, best_coherence, best_num_topics):
     fig.savefig("../img/num_topics_" + dataset_name + ".png", bbox_inches="tight")
     
 def find_best_topic_num(datasets, lim_low, lim_high):
-    coherences = []
-    models = []
-
     for dataset_name in datasets:
+        models = []
+        coherences = []
         sentences, dic, corpus = make_data(dataset_name)
         for i in range(lim_low, lim_high+1):
             print(dataset_name + "... loop {} / {}".format(i, lim_high))
-            #lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
-            #                               update_every=1, chunksize=100, passes=10, per_word_topics=True)
             lda_model = gensim.models.ldamulticore.LdaMulticore(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
                                            chunksize=100, passes=10, per_word_topics=True)#update_every=1, 
             models.append(lda_model)
@@ -90,7 +87,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 # usually one cand find a name for the topic (has to look at the keywords manually)
 
 datasets = ["test", "norm_test"]
-find_best_topic_num(datasets, 5, 8)
+find_best_topic_num(datasets, 25, 200)
 
     
     
@@ -158,16 +155,16 @@ find_best_topic_num(datasets, 5, 8)
 #new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
 # ein neues doc muss ein satz sein (also eine liste)
 #new_doc2 = dic.doc2bow(*sentences_split[:1])
-print(new_doc)
-print(new_doc2)
+#print(new_doc)
+#print(new_doc2)
 # get topics from a new document (fremd am besten)
 #top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 #top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 # zeige alle topics in dem document
 #for i, x in enumerate(top):
-    print(x)
+#    print(x)
 #for i, x in enumerate(top2):
-    print(x)
+#    print(x)
 
 
 # In[ ]:
