@@ -86,7 +86,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 # The weights reflect how important a keyword is to that topic
 # usually one cand find a name for the topic (has to look at the keywords manually)
 
-datasets = ["test", "norm_test"]
+datasets = ["norm_tweet"]
 find_best_topic_num(datasets, 25, 200)
 
     
