@@ -49,6 +49,8 @@ def get_coherence_score(model, sentences, dic):
     return coherence_score
 
 def draw_plot(dataset_name, x, y, best_coherence, best_num_topics):
+    print(x)
+    print(y)
     fig, ax = plt.subplots()
     ax.plot(x, y)
     ax.set(xlabel="num_topics", ylabel="coherence")
@@ -64,7 +66,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 
     for dataset_name in datasets:
         sentences, dic, corpus = make_data(dataset_name)
-        for i in range(lim_low, lim_high):
+        for i in range(lim_low, lim_high+1):
             print(dataset_name + "... loop {} / {}".format(i, lim_high))
             #lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
             #                               update_every=1, chunksize=100, passes=10, per_word_topics=True)
@@ -73,7 +75,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
             models.append(lda_model)
             coherences.append(get_coherence_score(lda_model, sentences, dic))
         max_coherence_index = coherences.index(max(coherences))
-        draw_plot(dataset_name, range(lim_low, len(coherences)+lim_low), coherences, max(coherences), max_coherence_index+lim_low)
+        draw_plot(dataset_name, list(range(lim_low, len(coherences)+lim_low)), coherences, max(coherences), max_coherence_index+lim_low)
         models[max_coherence_index].save("../models/tm_" + dataset_name + ".model")
     
 
@@ -153,18 +155,18 @@ find_best_topic_num(datasets, 5, 8)
 # In[81]:
 
 
-new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
+#new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
 # ein neues doc muss ein satz sein (also eine liste)
-new_doc2 = dic.doc2bow(*sentences_split[:1])
+#new_doc2 = dic.doc2bow(*sentences_split[:1])
 print(new_doc)
 print(new_doc2)
 # get topics from a new document (fremd am besten)
-top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
-top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+#top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+#top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 # zeige alle topics in dem document
-for i, x in enumerate(top):
+#for i, x in enumerate(top):
     print(x)
-for i, x in enumerate(top2):
+#for i, x in enumerate(top2):
     print(x)
 
 
