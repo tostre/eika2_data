@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -14,7 +14,7 @@ import gensim.models.coherencemodel
 import matplotlib.pyplot as plt
 
 
-# In[54]:
+# In[3]:
 
 
 def make_data(dataset_name):
@@ -78,7 +78,7 @@ def find_best_topic_num(datasets, lim_low, lim_high):
     
 
 
-# In[56]:
+# In[7]:
 
 
 # https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
@@ -87,8 +87,8 @@ def find_best_topic_num(datasets, lim_low, lim_high):
 # The weights reflect how important a keyword is to that topic
 # usually one cand find a name for the topic (has to look at the keywords manually)
 
-datasets = ["norm_tweet", "tweet"]
-find_best_topic_num(datasets, 25, 100)
+datasets = ["test", "norm_test"]
+find_best_topic_num(datasets, 5, 8)
 
     
     
@@ -153,19 +153,19 @@ find_best_topic_num(datasets, 25, 100)
 # In[81]:
 
 
-#new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
+new_doc = [dic.doc2bow(sample) for sample in sentences_split[:1]]
 # ein neues doc muss ein satz sein (also eine liste)
-#new_doc2 = dic.doc2bow(*sentences_split[:1])
+new_doc2 = dic.doc2bow(*sentences_split[:1])
 print(new_doc)
 print(new_doc2)
 # get topics from a new document (fremd am besten)
-#top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
-#top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+top = lda_model.get_document_topics(new_doc, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+top2 = lda_model.get_document_topics(new_doc2, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 # zeige alle topics in dem document
-#for i, x in enumerate(top):
-#    print(x)
-#for i, x in enumerate(top2):
-#    print(x)
+for i, x in enumerate(top):
+    print(x)
+for i, x in enumerate(top2):
+    print(x)
 
 
 # In[ ]:
