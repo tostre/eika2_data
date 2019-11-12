@@ -25,7 +25,7 @@ from sklearn.metrics import classification_report
 # In[95]:
 
 
-def make_topic_data(dataset_name):
+def load_topic_data(dataset_name):
     print("loading vector data for", dataset_name)
     sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).values.tolist() 
     for index, sample in enumerate(sentences): 
@@ -64,7 +64,7 @@ def draw_plot(dataset_name, x, y, best_coherence, best_num_topics):
 def find_best_topic_num(dataset_name, lim_low, lim_high):
     coherences = []
     models = []
-    sentences, dic, corpus = make_data(dataset_name)
+    sentences, dic, corpus = load_topic_data(dataset_name)
     for i in range(lim_low, lim_high+1):
         print(dataset_name + "... loop {} / {}".format(i, lim_high))
         #lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dic, num_topics=i, random_state=100,
