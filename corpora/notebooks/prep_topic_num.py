@@ -48,7 +48,7 @@ def get_coherence_score(model, sentences, dic):
     # the higher the better it is, nutzen um versch. modelle zu vergleichen (mit untersch. topic-anzahö)
     coherence_model_lda = gensim.models.coherencemodel.CoherenceModel(model=model, texts=sentences, dictionary=dic, coherence='c_v')
     coherence_score = coherence_model_lda.get_coherence()
-    #print('\nCoherence Score: ', coherence_lda)
+    print('\nCoherence Score: ', coherence_score)
     return coherence_score
 
 def draw_plot(dataset_name, x, y, best_coherence, best_num_topics):

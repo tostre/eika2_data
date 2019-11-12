@@ -29,7 +29,7 @@ import pprint
 from sklearn.metrics import classification_report
 
 
-# In[17]:
+# In[2]:
 
 
 def load_lex_data(dataset_name, feature_set):
@@ -89,7 +89,7 @@ def load_topic_data(dataset_name, num_topics):
     dataset = vecs
     
     train_x, test_x, train_y, test_y = train_test_split(dataset, targets, test_size=0.2)
-    return dic, corpus, lda_model, train_x, test_x, train_y, test_y
+    return train_x, test_x, train_y, test_y
 
 def classify_with_rf(train_x, test_x, train_y, test_y, num_trees): 
     print("building rf model")
@@ -107,8 +107,7 @@ def get_best_tree_num(dataset_name, feature_set, feature_set_name, max_trees, f=
     if f == "vec":
         data = load_vector_data(dataset_name)
     elif f == "topic":
-        data = load_topic_data(dataset_name, num_topics)
-        data = data[3:]
+        data = load_topic_data(dataset_name, num_topics_dict.get(dataset_name))
     else:        
         data = load_lex_data(dataset_name, features["lex"])
     
@@ -120,12 +119,12 @@ def get_best_tree_num(dataset_name, feature_set, feature_set_name, max_trees, f=
 
     draw_plot(dataset_name, feature_set_name, indexes, f1, max(f1), f1.index(max(f1))+1)
     
-def draw_confusion_matrix(dataset_name, feature_set_name, test_y, pred_y, score, f1_scoore, num_trees): 
+def draw_confusion_matrix(dataset_name, feature_set_name, test_y, pred_y, score, f1_scoore, num_trees, num_topics): 
     fig = plt.figure()
     hm = sn.heatmap(confusion_matrix(test_y, pred_y), fmt="d", linewidth=0.5, annot=True, square=True, xticklabels=["h", "s", "a", "f"], yticklabels=["h", "s", "a", "f"], cmap="PuRd")
     ax1 = fig.add_axes(hm)
     ax1.set(xlabel="predicted", ylabel="target")
-    desc = "dataset: {} ({}), trained with {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_topics, score, f1_scoore)
+    desc = "dataset: {} ({}), trained over {} trees and {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_trees, num_topics, score, f1_scoore)
     fig.text(0.5, -0.1, desc, ha='center')
     plt.show()
     fig.savefig("../img/cm_rf_" + dataset_name + "_" + feature_set_name + ".png", bbox_inches="tight")
@@ -166,7 +165,7 @@ def draw_coefficients_plot(dataset_name, results, coefficients):
 
 
 
-# In[12]:
+# In[3]:
 
 
 classes = ["happiness", "sadness", "anger", "fear"]
@@ -186,7 +185,7 @@ trees_for_dataset = {
     "norm_emotion_nolex": 33,
     "norm_emotion_lex": 28, 
     "norm_emotion_vec": 198,
-    "norm_emotion_topic": 100,
+    "norm_emotion_topic": 99999,
     "tweet_full": 5,
     "tweet_nolex": 14, 
     "tweet_lex": 33,
@@ -195,15 +194,11 @@ trees_for_dataset = {
     "norm_tweet_nolex": 12,
     "norm_tweet_lex": 10,
     "norm_tweet_vec": 150,
-    "norm_tweet_topic": 100
+    "norm_tweet_topic": 87
 }
 num_topics_dict = {
     "norm_tweet": 79,
-    "tweet": 90,
-    "norm_emotion": 4,
-    "norm_emotion": 4,
-    "norm_test": 25,
-    "test": 25
+    "norm_emotion": 186
 }
 
 
@@ -217,7 +212,7 @@ num_topics_dict = {
 #        get_best_tree_num(dataset, feature_set, key, 200, True)
 
 
-# In[13]:
+# In[ ]:
 
 
 #all_results = []
@@ -241,29 +236,29 @@ num_topics_dict = {
 #draw_coefficients_plot(all_results[0][0], all_results, importances)
 
 
-# In[16]:
+# In[33]:
 
 
-get_best_tree_num("test", 1, "topic", 200, "topic")
+#get_best_tree_num("norm_tweet", 1, "topic", 200, "topic")
 
 
-# In[9]:
+# In[40]:
 
 
 # train lrandom forests over the topic distributions
-#all_results = []
-#importances = []
-#for dataset_name in ["test"]: 
-#    dic, corpus, lda_model, train_x, test_x, train_y, test_y = load_topic_data(dataset_name, num_topics_dict.get(dataset_name))
-#    results, importance = classify_with_rf(train_x, test_x, train_y, test_y, trees_for_dataset.get(dataset_name + "_topic", 10))
-#    all_results.append([dataset_name, "topics", *results])
-#    importances.append(importance)
-#    
-#for index, result in enumerate(all_results): 
-#    with open("../img/report_lr_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
-#        print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
-#          classification_report(result[2], result[3],target_names=classes)), file=f)
-#    draw_confusion_matrix(*result, num_topics_dict.get(result[0]))
+all_results = []
+importances = []
+for dataset_name in ["norm_emotion"]: 
+    train_x, test_x, train_y, test_y = load_topic_data(dataset_name, num_topics_dict.get(dataset_name))
+    results, importance = classify_with_rf(train_x, test_x, train_y, test_y, trees_for_dataset.get(dataset_name + "_topic", 10))
+    all_results.append([dataset_name, "topics", *results])
+    importances.append(importance)
+
+for index, result in enumerate(all_results): 
+    with open("../img/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
+        print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
+          classification_report(result[2], result[3],target_names=classes)), file=f)
+    draw_confusion_matrix(*result, num_topics_dict.get(result[0]))
 
 
 # In[ ]:
