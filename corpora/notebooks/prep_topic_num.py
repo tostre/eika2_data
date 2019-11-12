@@ -73,9 +73,9 @@ def find_best_topic_num(dataset_name, lim_low, lim_high):
                                        chunksize=100, passes=10, per_word_topics=True)#update_every=1, 
         models.append(lda_model)
         coherences.append(get_coherence_score(lda_model, sentences, dic))
-    max_coherence_index = coherences.index(max(coherences))
-    draw_plot(dataset_name, rst(ange(lim_low, len(coherences)+lim_low)), coherences, max(coherences), max_coherence_index+lim_low)
-    models[max_coherence_index].save("../models/tm_" + dataset_name + ".model")
+        max_coherence_index = coherences.index(max(coherences))
+        draw_plot(dataset_name, list(range(lim_low, len(coherences)+lim_low)), coherences, max(coherences), max_coherence_index+lim_low)
+        models[max_coherence_index].save("../models/tm_" + dataset_name + ".model")
 
 
 # In[91]:
