@@ -88,9 +88,9 @@ def find_best_topic_num(dataset_name, lim_low, lim_high):
 
 
 # find the optimal number of topics for each dataset
-for dataset_name in datasets: 
+for dataset_name in ["norm_emotion"]: 
     find_best_topic_num(dataset_name, 25, 200)
-sentences, dic, corpus = make_topic_data("norm_test")
+#sentences, dic, corpus = make_topic_data("norm_test")
 
 
 # In[96]:
