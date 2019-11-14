@@ -73,8 +73,8 @@ def load_topic_data(dataset_name, num_topics):
     # create dic, copora and lda-model
     dic = gs.corpora.Dictionary(dataset)
     corpus = [dic.doc2bow(sample) for sample in dataset]
-    lda_model = gensim.models.ldamulticore.LdaMulticore(corpus=corpus, id2word=dic, num_topics=num_topics, random_state=100, chunksize=100, passes=10, per_word_topics=True)#update_every=1, 
-    
+    #lda_model = gensim.models.ldamulticore.LdaMulticore(corpus=corpus, id2word=dic, num_topics=num_topics, random_state=100, chunksize=100, passes=10, per_word_topics=True)#update_every=1, 
+    lda_model = gensim.models.ldamulticore.LdaMulticore.load("../models/topic_models/" + dataset_name + "_ldamodel")
     vecs = []
     # for every sentence in the dataset
     for i, sample in enumerate(dataset):
