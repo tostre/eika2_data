@@ -139,10 +139,6 @@ def make_data(dataset_name, feature_set_name, features, batch_size, spit_factor,
     # make train and test sets
     train_x, val_x, train_y, val_y = train_test_split(inputs, targets, test_size=spit_factor)
     train_x, test_x, train_y, test_y = train_test_split(train_x, train_y, test_size=spit_factor)
-    # make data loaders
-    #train_data = MyDataset(train_x.to_numpy(), train_y.to_numpy())
-    #val_data = MyDataset(val_x.to_numpy(), val_y.to_numpy())
-    #test_data = MyDataset(test_x.to_numpy(), test_y.to_numpy())
     train_data = MyDataset(np.asarray(train_x), np.asarray(train_y))
     val_data = MyDataset(np.asarray(val_x), np.asarray(val_y))
     test_data = MyDataset(np.asarray(test_x), np.asarray(test_y))
@@ -174,7 +170,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
             tf1, tloss = f1_score(train_targets.tolist(), train_pred, average="weighted"), train_loss.item()
         net.eval()
         for index, (val_inputs, val_targets) in enumerate(val_loader):
-            val_inputs, val_targets = inputs.float(), val_targets.long()
+            val_inputs, val_targets = val_inputs.float(), val_targets.long()
             #val_inputs, val_targets, net = convert_to_cuda(cuda, val_inputs, val_targets, net)
             val_pred = net(val_inputs)
             val_loss = criterion(val_pred.float(), val_targets)
