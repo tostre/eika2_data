@@ -164,25 +164,25 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
     for epoch in range(epochs):
         # for every batch in the train_loader
         net.train()
-        for index, (inputs, targets) in enumerate(train_loader):
-            inputs, train_targets = inputs.float(), targets.long()
-            inputs, train_targets, net = convert_to_cuda(cuda, inputs, train_targets, net)
+        for index, (train_inputs, targets) in enumerate(train_loader):
+            train_inputs, train_targets = train_inputs.float(), train_targets.long()
+            train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
             if cuda: 
                 print("...training on gpu")
-                inputs = inputs.to("cuda")
+                train_inputs = train_inputs.to("cuda")
                 train_targets = train_targets.to("cuda")
                 net = net.to("cuda")
             print(type(inputs), type(train_targets), type(net))
-            train_pred = net(inputs)
+            train_pred = net(train_inputs)
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
             train_pred = [item.index(max(item)) for item in train_pred.tolist()]
             tf1, tloss = f1_score(train_targets.tolist(), train_pred, average="weighted"), train_loss.item()
         net.eval()
-        for index, (inputs, targets) in enumerate(val_loader):
-            inputs, val_targets = inputs.float(), targets.long()
-            inputs, val_targets, net = convert_to_cuda(cuda, inputs, val_targets, net)
-            val_pred = net(inputs)
+        for index, (val_inputs, val_targets) in enumerate(val_loader):
+            val_inputs, val_targets = inputs.float(), val_targets.long()
+            val_inputs, val_targets, net = convert_to_cuda(cuda, val_inputs, val_targets, net)
+            val_pred = net(val_inputs)
             val_loss = criterion(val_pred.float(), val_targets)
             val_pred = [item.index(max(item)) for item in val_pred.tolist()]
             vf1, vloss = f1_score(val_targets.tolist(), val_pred, average="weighted"), val_loss.item()
