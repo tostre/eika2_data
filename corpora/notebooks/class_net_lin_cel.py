@@ -166,13 +166,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
         net.train()
         for index, (train_inputs, train_targets) in enumerate(train_loader):
             train_inputs, train_targets = train_inputs.float(), train_targets.long()
-            train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
-            if cuda: 
-                print("...training on gpu")
-                train_inputs = train_inputs.to("cuda")
-                train_targets = train_targets.to("cuda")
-                net = net.to("cuda")
-            print(type(train_inputs), type(train_targets), type(net))
+            #train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
             train_pred = net(train_inputs)
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
@@ -181,7 +175,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
         net.eval()
         for index, (val_inputs, val_targets) in enumerate(val_loader):
             val_inputs, val_targets = inputs.float(), val_targets.long()
-            val_inputs, val_targets, net = convert_to_cuda(cuda, val_inputs, val_targets, net)
+            #val_inputs, val_targets, net = convert_to_cuda(cuda, val_inputs, val_targets, net)
             val_pred = net(val_inputs)
             val_loss = criterion(val_pred.float(), val_targets)
             val_pred = [item.index(max(item)) for item in val_pred.tolist()]
@@ -203,7 +197,7 @@ def test(test_loader, net, file_name):
     net.eval()
     for index, (inputs, targets) in enumerate(test_loader):
         inputs, test_targets = inputs.float(), targets.long()
-        inputs, test_targets, net = convert_to_cuda(cuda, inputs, targets, net)
+        #inputs, test_targets, net = convert_to_cuda(cuda, inputs, targets, net)
         test_pred = net(inputs).tolist()[0]
         preds.append(test_pred.index(max(test_pred)))
         all_targets.append(test_targets.tolist()[0])
