@@ -1,0 +1,12 @@
+norm_emotion_topics (0.30851780485016506):
+              precision    recall  f1-score   support
+
+   happiness       0.37      0.38      0.38      9494
+     sadness       0.29      0.38      0.33      9502
+       anger       0.29      0.25      0.27      9445
+        fear       0.29      0.23      0.26      9436
+
+    accuracy                           0.31     37877
+   macro avg       0.31      0.31      0.31     37877
+weighted avg       0.31      0.31      0.31     37877
+
