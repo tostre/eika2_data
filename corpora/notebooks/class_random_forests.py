@@ -185,7 +185,7 @@ trees_for_dataset = {
     "norm_emotion_nolex": 33,
     "norm_emotion_lex": 28, 
     "norm_emotion_vec": 198,
-    "norm_emotion_topic": 99999,
+    "norm_emotion_topic": 100,
     "tweet_full": 5,
     "tweet_nolex": 14, 
     "tweet_lex": 33,
@@ -239,7 +239,7 @@ num_topics_dict = {
 # In[33]:
 
 
-get_best_tree_num("norm_emotion", 1, "topic", 200, "topic")
+#get_best_tree_num("norm_emotion", 1, "topic", 200, "topic")
 #dataset_name, feature_set, feature_set_name, max_trees, f="features"
 
 
@@ -247,19 +247,19 @@ get_best_tree_num("norm_emotion", 1, "topic", 200, "topic")
 
 
 # train lrandom forests over the topic distributions
-#all_results = []
-#importances = []
-#for dataset_name in ["norm_emotion"]: 
-#    train_x, test_x, train_y, test_y = load_topic_data(dataset_name, num_topics_dict.get(dataset_name))
-#    results, importance = classify_with_rf(train_x, test_x, train_y, test_y, trees_for_dataset.get(dataset_name + "_topic", 10))
-#    all_results.append([dataset_name, "topics", *results])
-#    importances.append(importance)
+all_results = []
+importances = []
+for dataset_name in ["norm_emotion"]: 
+    train_x, test_x, train_y, test_y = load_topic_data(dataset_name, num_topics_dict.get(dataset_name))
+    results, importance = classify_with_rf(train_x, test_x, train_y, test_y, trees_for_dataset.get(dataset_name + "_topic", 10))
+    all_results.append([dataset_name, "topics", *results])
+    importances.append(importance)
 
-#for index, result in enumerate(all_results): 
-#    with open("../img/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
-#        print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
-#          classification_report(result[2], result[3],target_names=classes)), file=f)
-#    draw_confusion_matrix(*result, num_topics_dict.get(result[0]))
+for index, result in enumerate(all_results): 
+    with open("../img/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
+        print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
+          classification_report(result[2], result[3],target_names=classes)), file=f)
+    draw_confusion_matrix(*result, num_topics_dict.get(result[0]))
 
 
 # In[ ]:
