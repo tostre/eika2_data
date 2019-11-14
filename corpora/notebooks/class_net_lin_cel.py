@@ -114,11 +114,11 @@ def draw_confusion_matrix(file_name, test_y, pred_y):
     fig.savefig("{}{}_{}".format("../img/", file_name, "confusion.png"), bbox_inches="tight")
 
 
-# In[51]:
+# In[112]:
 
 
 def make_data(dataset_name, feature_set_name, features, batch_size, spit_factor, num_topics):
-    # load data
+    print("loading data", dataset_name, feature_set_name)
     inputs = []
     dataset = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv")
     targets = dataset["a"]
@@ -139,7 +139,6 @@ def make_data(dataset_name, feature_set_name, features, batch_size, spit_factor,
     # make train and test sets
     train_x, val_x, train_y, val_y = train_test_split(inputs, targets, test_size=spit_factor)
     train_x, test_x, train_y, test_y = train_test_split(train_x, train_y, test_size=spit_factor)
-    print("sets", len(train_x),len(train_y),len(val_x),len(val_y),len(test_x),len(test_y))
     # make data loaders
     #train_data = MyDataset(train_x.to_numpy(), train_y.to_numpy())
     #val_data = MyDataset(val_x.to_numpy(), val_y.to_numpy())
@@ -158,6 +157,7 @@ def make_data(dataset_name, feature_set_name, features, batch_size, spit_factor,
 
 
 def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name, print_every):
+    print("training")
     optimizer = optim.Adam(net.parameters(), lr=lr)
     train_f1, val_f1, train_e, val_e = [], [], [], []
     # training cycle
@@ -192,6 +192,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
     plot_intersection(file_name, "loss", train_e, val_e)
 
 def test(test_loader, net, file_name): 
+    print("testing")
     all_targets, preds, test_e = [], [], []
     net.eval()
     for index, (inputs, targets) in enumerate(test_loader):
