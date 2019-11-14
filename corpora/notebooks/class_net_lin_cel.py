@@ -256,7 +256,7 @@ num_hidden_layers = 2
 lr = 0.1
 
 
-# In[109]:
+# In[111]:
 
 
 #run("test", "full", "cel")
@@ -265,10 +265,10 @@ lr = 0.1
 #dataset_name = "test"
 #run(dataset_name, "full", "cel", num_topics_dict[dataset_name])
 datasets = ["norm_tweet", "norm_emotion"]
-feature_sets = ["full", "half", "topic"]
+feature_set_names = ["full", "half", "topic"]
 
 for dataset_name in datasets: 
-    for feature_set_name in feature_sets: 
+    for feature_set_name in feature_set_names: 
         #run(dataset_name, "topic", "cel", num_topics_dict[dataset_name])
         run(dataset_name, feature_set_name, "cel", num_topics_dict[dataset_name])
 
