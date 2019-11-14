@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -170,10 +168,11 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
             inputs, train_targets = inputs.float(), targets.long()
             inputs, train_targets, net = convert_to_cuda(cuda, inputs, train_targets, net)
             if cuda: 
+                print("...training on gpu")
                 inputs = inputs.to("cuda")
                 train_targets = train_targets.to("cuda")
                 net = net.to("cuda")
-            print(type(inputs), type(train_target), type(net))
+            print(type(inputs), type(train_targets), type(net))
             train_pred = net(inputs)
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
@@ -300,7 +299,6 @@ for dataset_name in datasets:
 
 
 # In[ ]:
-
 
 
 
