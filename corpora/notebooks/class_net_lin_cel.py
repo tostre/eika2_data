@@ -21,7 +21,6 @@ import matplotlib
 #matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
-import intersection as ints
 import seaborn as sn
 from sklearn.metrics import confusion_matrix
 import gensim.models
