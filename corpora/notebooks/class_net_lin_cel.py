@@ -268,7 +268,7 @@ feature_set_names = ["full", "half", "topic"]
 #    for feature_set_name in feature_set_names: 
 #        #run(dataset_name, "topic", "cel", num_topics_dict[dataset_name])
 #        run(dataset_name, feature_set_name, "cel", num_topics_dict[dataset_name])
-run("test", "full", "cel", num_topics_dict[dataset_name])
+run("test", "full", "cel", num_topics_dict["test"])
 
 # In[ ]:
 
