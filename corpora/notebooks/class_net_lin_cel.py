@@ -87,8 +87,8 @@ def plot_intersection(file_name, plot_type, y1, y2, desc=True):
     epochs = len(x)
     hy = max(intersection_y, default=1)
     hx = intersection_x[intersection_y.index(hy)] if len(intersection_x) else 0
-    log_message = "\ndataset: {}\nintersection with F1 = {}, in epoch {}\n blue=train_f1, green=val_f1".format(
-            file_name, hy, hx)
+    log_message = "\ndataset: {}\nintersection with {} = {}, in epoch {}\n blue=train_f1, green=val_f1".format(
+            file_name, plot_type, hy, hx)
     # plot
     fig = plt.figure()
     plt.clf()
@@ -264,11 +264,11 @@ lr = 0.1
 datasets = ["norm_tweet", "norm_emotion"]
 feature_set_names = ["full", "half", "topic"]
 
-#for dataset_name in datasets: 
-#    for feature_set_name in feature_set_names: 
-#        #run(dataset_name, "topic", "cel", num_topics_dict[dataset_name])
-#        run(dataset_name, feature_set_name, "cel", num_topics_dict[dataset_name])
-run("test", "full", "cel", num_topics_dict["test"])
+for dataset_name in datasets: 
+    for feature_set_name in feature_set_names: 
+        #run(dataset_name, "topic", "cel", num_topics_dict[dataset_name])
+        run(dataset_name, feature_set_name, "cel", num_topics_dict[dataset_name])
+
 
 # In[ ]:
 
