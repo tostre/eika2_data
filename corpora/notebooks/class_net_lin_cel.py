@@ -164,7 +164,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
     for epoch in range(epochs):
         # for every batch in the train_loader
         net.train()
-        for index, (train_inputs, targets) in enumerate(train_loader):
+        for index, (train_inputs, train_targets) in enumerate(train_loader):
             train_inputs, train_targets = train_inputs.float(), train_targets.long()
             train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
             if cuda: 
