@@ -172,7 +172,7 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
                 train_inputs = train_inputs.to("cuda")
                 train_targets = train_targets.to("cuda")
                 net = net.to("cuda")
-            print(type(inputs), type(train_targets), type(net))
+            print(type(train_inputs), type(train_targets), type(net))
             train_pred = net(train_inputs)
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
