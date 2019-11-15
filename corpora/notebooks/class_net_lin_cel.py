@@ -164,9 +164,6 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
         for index, (train_inputs, train_targets) in enumerate(train_loader):
             train_inputs, train_targets = train_inputs.float(), train_targets.long()
             train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
-            print("...", train_inputs.is_cuda)
-            print("...", train_targets.is_cuda)
-            print("...", next(net.parameters()).is_cuda)
             train_pred = net(train_inputs)
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
@@ -265,7 +262,7 @@ lr = 0.1
 
 #dataset_name = "test"
 #run(dataset_name, "full", "cel", num_topics_dict[dataset_name])
-datasets = ["norm_emotion"]
+datasets = ["norm_tweet", "norm_emotion"]
 feature_set_names = ["full", "half", "topic"]
 
 for dataset_name in datasets: 
