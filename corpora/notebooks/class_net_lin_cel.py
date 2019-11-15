@@ -39,7 +39,8 @@ class Lin_Net(nn.Module):
         self.act_function = act_function
         
         self.lin1 = nn.Linear(input_dim, hidden_dim)
-        self.hidden_layers = [nn.Linear(hidden_dim, hidden_dim) for i in range(0, num_hidden_layers)]
+        #self.hidden_layers = [nn.Linear(hidden_dim, hidden_dim) for i in range(0, num_hidden_layers)]
+        self.hidden_layers = nn.ModuleList([nn.Linear(hidden_dim, hidden_dim) for i in range(num_hidden_layers)])
         self.lin4 = nn.Linear(hidden_dim, output_dim)
 
     def forward(self, x):
