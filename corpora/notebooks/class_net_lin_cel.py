@@ -93,7 +93,7 @@ def plot_intersection(file_name, plot_type, y1, y2, desc=True):
     # plot
     fig = plt.figure()
     plt.clf()
-    plt.plot(x, y1, "b-", x, y2, "g-", intersection_x, intersection_y, "ro")
+    plt.plot(x, y1, "b-", x, y2, "g-")#, intersection_x, intersection_y, "ro"
     plt.ylabel(plot_type)
     plt.xlabel("epochs")
     plt.grid()
@@ -103,13 +103,13 @@ def plot_intersection(file_name, plot_type, y1, y2, desc=True):
     fig.text(0.5, -0.15, log_message.replace("../logs/", ""), ha='center')
     fig.savefig("{}{}_{}{}".format("../img/", file_name, plot_type, "_intersection.png"), bbox_inches="tight")
     
-def draw_confusion_matrix(file_name, test_y, pred_y): 
+def draw_confusion_matrix(file_name, test_y, pred_y, f1_score): 
     fig = plt.figure()
     hm = sn.heatmap(confusion_matrix(test_y, pred_y), fmt="d", linewidth=0.5, annot=True, square=True, xticklabels=["h", "s", "a", "f"], yticklabels=["h", "s", "a", "f"], cmap="PuRd")
     ax1 = fig.add_axes(hm)
     ax1.set(xlabel="predicted", ylabel="target")
     #desc = "dataset: {} ({}), trained over {} trees and {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_trees, num_topics, score, f1_scoore)
-    desc = "dataset: {}".format(file_name)
+    desc = "dataset: {}\nwith F1-Score: {}".format(file_name, f1_score)
     fig.text(0.5, -0.1, desc, ha='center')
     plt.show()
     fig.savefig("{}{}_{}".format("../img/", file_name, "confusion.png"), bbox_inches="tight")
@@ -200,7 +200,7 @@ def test(test_loader, net, file_name):
         all_targets.append(test_targets.tolist()[0])
     test_f1 = f1_score(all_targets, preds, average="weighted")
     log(file_name, "\n...test_f1: {}".format(test_f1))
-    draw_confusion_matrix(file_name, all_targets, preds)
+    draw_confusion_matrix(file_name, all_targets, preds, f1_score)
 
 def run(dataset_name, feature_set_name, crit, num_topics):
     file_name = "net_lin_{}_{}({})".format(crit, dataset_name, feature_set_name)
