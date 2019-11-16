@@ -67,7 +67,7 @@ d = {
 }
 for key, value in d.items():
     print(key)
-    dataset = pd.read_csv("lll/" + key + ".csv", delimiter=value[1])
+    dataset = pd.read_csv("lll/" + key + ".csv", delimiter=value[1], error_bad_lines=False)
     terms = dataset[value[0]].tolist()
     all_sentences = []
     for sentence in terms: 
