@@ -23,7 +23,6 @@ def save_models(dataset_name, num_topics):
     for index, sample in enumerate(dataset): 
             dataset[index] = list(filter((" ").__ne__, sample))
     # create dic, copora and lda-model
-    print(dataset)
     print("making dic")
     dic = gs.corpora.Dictionary(dataset)
     dic.save("../models/dictionary/" + dataset_name + "_dictionary")
