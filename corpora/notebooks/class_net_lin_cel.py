@@ -109,7 +109,7 @@ def draw_confusion_matrix(file_name, test_y, pred_y, f1_score):
     ax1 = fig.add_axes(hm)
     ax1.set(xlabel="predicted", ylabel="target")
     #desc = "dataset: {} ({}), trained over {} trees and {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_trees, num_topics, score, f1_scoore)
-    desc = "dataset: {}\nwith F1-Score: {}".format(file_name, f1_score)
+    desc = "dataset: {}\nwith F1-Score: {}".format(file_name, round(f1_score, 2))
     fig.text(0.5, -0.1, desc, ha='center')
     plt.show()
     fig.savefig("{}{}_{}".format("../img/", file_name, "confusion.png"), bbox_inches="tight")
@@ -166,7 +166,9 @@ def train(train_loader, val_loader, net, epochs, criterion, cuda, lr, file_name,
             train_inputs, train_targets, net = convert_to_cuda(cuda, train_inputs, train_targets, net)
             train_pred = net(train_inputs)
             train_loss = criterion(train_pred.float(), train_targets)
-            optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
+            optimizer.zero_grad()
+            train_loss.backward()
+            optimizer.step()
             train_pred = [item.index(max(item)) for item in train_pred.tolist()]
             tf1, tloss = f1_score(train_targets.tolist(), train_pred, average="weighted"), train_loss.item()
         net.eval()
@@ -200,7 +202,7 @@ def test(test_loader, net, file_name):
         all_targets.append(test_targets.tolist()[0])
     test_f1 = f1_score(all_targets, preds, average="weighted")
     log(file_name, "\n...test_f1: {}".format(test_f1))
-    draw_confusion_matrix(file_name, all_targets, preds, f1_score)
+    draw_confusion_matrix(file_name, all_targets, preds, test_f1)
 
 def run(dataset_name, feature_set_name, crit, num_topics):
     file_name = "net_lin_{}_{}({})".format(crit, dataset_name, feature_set_name)
