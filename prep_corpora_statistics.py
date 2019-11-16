@@ -47,26 +47,28 @@ def get_statistics_corpus(dataset_name, column_name, delimiter):
 
 
 
-# In[97]:
-
-
-d = {
-    "emoint": ["content", ","]
-}
+# In[ ]:
 
 
 
-# In[100]:
 
 
-d = {
+# In[111]:
+
+
+data = {
     "crowdflower": ["content", ","],
     "emoint": ["text", "\t"],
-    "crowdflower": ["text", "\t"],
-    "emotion_classification": ["text", ","],
+    "tec": ["text", "\t"],
+    "emotion_classification": ["text", ","]
 }
-for key, value in d.items():
-    print(key)
+
+
+
+for key, value in data.items():
+    print(key, value)
+    print(value[0])
+
     dataset = pd.read_csv("lll/" + key + ".csv", delimiter=value[1], error_bad_lines=False)
     terms = dataset[value[0]].tolist()
     all_sentences = []
