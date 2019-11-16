@@ -53,7 +53,7 @@ def get_statistics_corpus(dataset_name, column_name, delimiter):
 
 
 
-# In[111]:
+# In[114]:
 
 
 data = {
@@ -63,12 +63,14 @@ data = {
     "emotion_classification": ["text", ","]
 }
 
+#data = {
+#    "crowdflower2": ["content", ","]
+#}
 
 
 for key, value in data.items():
     print(key, value)
     print(value[0])
-
     dataset = pd.read_csv("lll/" + key + ".csv", delimiter=value[1], error_bad_lines=False)
     terms = dataset[value[0]].tolist()
     all_sentences = []
@@ -77,7 +79,7 @@ for key, value in data.items():
         sent = [token.text for token in doc]
         all_sentences.append(sent)
     # get unigrams
-    dic = gs.corpora.Dictionary(terms)
+    dic = gs.corpora.Dictionary(all_sentences)
     print("...num unigrams:", len(dic))
     # get bigrams
     all_bgr = []
