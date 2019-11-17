@@ -25,7 +25,7 @@ from joblib import dump, load
 from gensim.models.phrases import Phrases, Phraser
 
 
-# In[169]:
+# In[197]:
 
 
 def load_lex_data(dataset_name, feature_set):
@@ -42,20 +42,21 @@ def load_vector_data(dataset_name, bgr=False):
     print("loading vector data for", dataset_name)
     sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).values.tolist()
     targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", delimiter=",", dtype = types).astype(str)["a"].tolist() 
-    
+    vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext")
     # replace placeholders (" "), make one-string-sentences
     print("... replacing placeholders")
     for index, sample in enumerate(sentences): 
             sentences[index] = list(filter((" ").__ne__, sample))
     inputs = [" ".join(sentence) for sentence in sentences]
-    
-    # build model over sentences (size=dimension of word vectors), convert sentences to vectors
-    vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext")
-    inputs = [vector_model.wv[sample] for sample in inputs]
-    
-    # split data and return
+    tokenized = sentences
+    if bgr:
+        bigram = Phraser(Phrases(sentences))
+        bigrammed = [bigram[sentence] for sentence in sentences]
+        tokenized = bigrammed
+    inputs = [np.sum(vector_model.wv[sent], 0).tolist() if sent else np.zeros(32) for sent in tokenized]   
+    inputs = np.array(inputs)
     train_x, test_x, train_y, test_y = train_test_split(inputs, targets, test_size=0.2)
-    return train_x, test_x, train_y, test_y    
+    return train_x, test_x, train_y, test_y  
 
 def load_topic_data(dataset_name, num_topics):
     print("loading topic data for", dataset_name)
@@ -99,11 +100,12 @@ def classify_with_lr(dataset_name, train_x, test_x, train_y, test_y):
     return (test_y, pred_y, score, f1_scoore), lr.coef_ 
     
 def draw_confusion_matrix(dataset_name, feature_set_name, test_y, pred_y, score, f1_scoore, num_topics=None): 
+    print(feature_set_name)
     fig = plt.figure()
     hm = sn.heatmap(confusion_matrix(test_y, pred_y), fmt="d", linewidth=0.5, annot=True, square=True, xticklabels=["h", "s", "a", "f"], yticklabels=["h", "s", "a", "f"], cmap="PuRd")
     ax1 = fig.add_axes(hm)
     ax1.set(xlabel="predicted", ylabel="target")
-    if num_topics: desc = "dataset: {} ({}), trained with {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_topics, round(score,2), round(f1_scoore,2))
+    if feature_set_name == "topics": desc = "dataset: {} ({}), trained with {} topics\nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, num_topics, round(score,2), round(f1_scoore,2))
     else: desc = "dataset: {} ({}) \nscore: {}, f1_score: {}".format(dataset_name, feature_set_name, round(score,2), round(f1_scoore,2)) 
     fig.text(0.5, -0.1, desc, ha='center')
     plt.show()
@@ -121,45 +123,7 @@ def draw_coefficients_plot(dataset_name, feature_set_name, coefficients):
     #plt.legend()#loc=1
     plt.grid()
     plt.show()
-    fig.savefig("../img/coef_lr_" + dataset_name + "_" + feature_set_name + ".png", bbox_inches="tight")
-    
-def load_vector_data(dataset_name, bgr=False):
-    print("loading vector data for", dataset_name)
-    sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).fillna("").values.tolist()
-    targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", delimiter=",", dtype = types).astype(str)["a"].tolist() 
-    vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext")
-    # replace placeholders (" "), make one-string-sentences
-    print("... replacing placeholders")
-    for index, sample in enumerate(sentences): 
-            sentences[index] = list(filter((" ").__ne__, sample))
-    inputs = [" ".join(sentence) for sentence in sentences]
-    sentences
-    
-    if bgr:
-        tokenized = [t.split() for t in inputs]
-        phrases = Phrases(tokenized)
-        bigram = Phraser(phrases)
-        bigrammed = []
-        # make bigrams for inputs
-        for sentence in inputs:
-            sentence = [t.split() for t in [sentence]]
-            bigrammed.append(bigram[sentence[0]])
-        
-        inputs = []
-        for sent in bigrammed:
-            # if sentence is empty
-            inputs.append(np.sum(vector_model.wv[sent], 0).tolist()) if sent else inputs.append(np.zeros(32))
-            #if not sent: 
-            #    inputs.append(np.zeros(32))
-            #else: 
-            #    a = np.sum(vector_model.wv[sent], 0).tolist()
-            #    inputs.append(a)
-    else: 
-        inputs = [vector_model.wv[sample] for sample in inputs]
-
-    inputs = np.array(inputs)
-    train_x, test_x, train_y, test_y = train_test_split(inputs, targets, test_size=0.2)
-    return train_x, test_x, train_y, test_y  
+    fig.savefig("../img/coef_lr_" + dataset_name + "_" + feature_set_name + ".png", bbox_inches="tight")                                                                 
 
 
 # In[7]:
@@ -188,11 +152,11 @@ types = {
     "hc": float,
     "sc": float,
     "ac": float,
-    "fc": float
+    "c": float
 }
 
 
-# In[29]:
+# In[178]:
 
 
 #train logrec over features
@@ -209,15 +173,15 @@ for dataset in ["norm_tweet"]:
         coefficients.append(coef)
     # unigram dataset
     results, coef = classify_with_lr(dataset, *load_vector_data(dataset))
-    all_results.append([dataset, "vec", *results])
+    all_results.append([dataset, "vec-unigram", *results])
     coefficients.append(coef)
     # bigram dataset
-    results, coef = classify_with_lr(dataset, *load_vector_data(dataset), True)
-    all_results.append([dataset, "vec", *results])
+    results, coef = classify_with_lr(dataset, *load_vector_data(dataset, True))
+    all_results.append([dataset, "vec-bigram", *results])
     coefficients.append(coef)
     # topic dataset
     results, coef = classify_with_lr(dataset, *load_topic_data(dataset, num_topics_dict[dataset]))
-    all_results.append([dataset, "topic", *results])
+    all_results.append([dataset, "topics", *results])
     coefficients.append(coef)
 
 for index, result in enumerate(all_results): 
@@ -225,10 +189,10 @@ for index, result in enumerate(all_results):
         print((result[0] + "(" + result[1] + "), f1_score: " + str(result[5]) + "):\n\n" + 
           classification_report(result[2], result[3],target_names=classes)), file=f)
     draw_coefficients_plot(result[0], result[1], coefficients[index])
-    draw_confusion_matrix(*result)
+    draw_confusion_matrix(*result, num_topics_dict[result[0]])
 
 
-# In[47]:
+# In[ ]:
 
 
 
