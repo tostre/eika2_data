@@ -1,13 +1,13 @@
-norm_tweet(nolex), f1_score: 0.3006899551666474):
+norm_tweet(nolex), f1_score: 0.29515598961969813):
 
               precision    recall  f1-score   support
 
-   happiness       0.34      0.42      0.37       290
-     sadness       0.36      0.20      0.26       320
-       anger       0.26      0.19      0.22       281
-        fear       0.29      0.45      0.36       290
+   happiness       0.34      0.47      0.39       295
+     sadness       0.32      0.17      0.22       291
+       anger       0.31      0.13      0.18       299
+        fear       0.31      0.51      0.39       296
 
-    accuracy                           0.31      1181
-   macro avg       0.31      0.31      0.30      1181
-weighted avg       0.31      0.31      0.30      1181
+    accuracy                           0.32      1181
+   macro avg       0.32      0.32      0.30      1181
+weighted avg       0.32      0.32      0.30      1181
 

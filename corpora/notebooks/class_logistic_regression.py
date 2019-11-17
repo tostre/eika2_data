@@ -25,7 +25,7 @@ from joblib import dump, load
 from gensim.models.phrases import Phrases, Phraser
 
 
-# In[197]:
+# In[201]:
 
 
 def load_lex_data(dataset_name, feature_set):
@@ -50,7 +50,7 @@ def load_vector_data(dataset_name, bgr=False):
     inputs = [" ".join(sentence) for sentence in sentences]
     tokenized = sentences
     if bgr:
-        bigram = Phraser(Phrases(sentences))
+        bigram = Phraser.load("../models/bigrams/bigram_" + dataset_name + ".pkl")
         bigrammed = [bigram[sentence] for sentence in sentences]
         tokenized = bigrammed
     inputs = [np.sum(vector_model.wv[sent], 0).tolist() if sent else np.zeros(32) for sent in tokenized]   
@@ -87,7 +87,7 @@ def load_topic_data(dataset_name, num_topics):
     train_x, test_x, train_y, test_y = train_test_split(dataset, targets, test_size=0.2)
     return train_x, test_x, train_y, test_y
 
-def classify_with_lr(dataset_name, train_x, test_x, train_y, test_y): 
+def classify_with_lr(dataset_name, feature_set_name, train_x, test_x, train_y, test_y): 
     print("building lr model")
     lr = LogisticRegression(multi_class="multinomial", solver="newton-cg", tol=0.0001, n_jobs=-1)
     print("... training model")
@@ -96,7 +96,7 @@ def classify_with_lr(dataset_name, train_x, test_x, train_y, test_y):
     pred_y = lr.predict(test_x)
     # model metadata
     score, f1_scoore = lr.score(train_x, train_y), f1_score(test_y, pred_y, average="weighted")
-    dump(lr, "../models/logistic_regression/" + dataset_name + "_logistic_regression.joblib") 
+    dump(lr, "../models/logistic_regression/" + dataset_name + "_" + feature_set_name + "_logistic_regression.joblib") 
     return (test_y, pred_y, score, f1_scoore), lr.coef_ 
     
 def draw_confusion_matrix(dataset_name, feature_set_name, test_y, pred_y, score, f1_scoore, num_topics=None): 
@@ -123,7 +123,7 @@ def draw_coefficients_plot(dataset_name, feature_set_name, coefficients):
     #plt.legend()#loc=1
     plt.grid()
     plt.show()
-    fig.savefig("../img/coef_lr_" + dataset_name + "_" + feature_set_name + ".png", bbox_inches="tight")                                                                 
+    fig.savefig("../img/coef_lr_" + dataset_name + "_" + feature_set_name + ".png", bbox_inches="tight")
 
 
 # In[7]:
@@ -156,7 +156,7 @@ types = {
 }
 
 
-# In[178]:
+# In[203]:
 
 
 #train logrec over features
@@ -164,23 +164,23 @@ all_results = []
 coefficients = []
 topics = []
 
-for dataset in ["norm_tweet"]: 
+for dataset in ["norm_tweet, norm_emotion"]: 
     topics.append(num_topics_dict[dataset])
     # lex datasets
     for key, feature_set in features.items(): 
-        results, coef = classify_with_lr(dataset, *load_lex_data(dataset, feature_set))
+        results, coef = classify_with_lr(dataset, key, *load_lex_data(dataset, feature_set))
         all_results.append([dataset, key, *results])
         coefficients.append(coef)
     # unigram dataset
-    results, coef = classify_with_lr(dataset, *load_vector_data(dataset))
+    results, coef = classify_with_lr(dataset, "vec-unigram", *load_vector_data(dataset))
     all_results.append([dataset, "vec-unigram", *results])
     coefficients.append(coef)
     # bigram dataset
-    results, coef = classify_with_lr(dataset, *load_vector_data(dataset, True))
+    results, coef = classify_with_lr(dataset,  "vec-bigram", *load_vector_data(dataset, True))
     all_results.append([dataset, "vec-bigram", *results])
     coefficients.append(coef)
     # topic dataset
-    results, coef = classify_with_lr(dataset, *load_topic_data(dataset, num_topics_dict[dataset]))
+    results, coef = classify_with_lr(dataset, "topics", *load_topic_data(dataset, num_topics_dict[dataset]))
     all_results.append([dataset, "topics", *results])
     coefficients.append(coef)
 
