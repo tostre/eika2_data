@@ -1,0 +1,12 @@
+norm_tweet_full (0.4204136732597946):
+              precision    recall  f1-score   support
+
+   happiness       0.39      0.47      0.43       280
+     sadness       0.42      0.33      0.37       309
+       anger       0.47      0.44      0.46       297
+        fear       0.41      0.44      0.43       295
+
+    accuracy                           0.42      1181
+   macro avg       0.42      0.42      0.42      1181
+weighted avg       0.42      0.42      0.42      1181
+
