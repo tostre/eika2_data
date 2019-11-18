@@ -278,8 +278,8 @@ for dataset in ["norm_tweet", "norm_emotion"]:
 		# lex data
 		for key, feature_set in features.items(): 
 		    print("--------------------", dataset, feature_set)
-		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
-		    all_results.append([dataset_name, key, *results])
+		    results, importance = classify_with_rf(dataset, key, *load_lex_data(dataset, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		    all_results.append([dataset, key, *results])
 		    importances.append(importance)
 for index, result in enumerate(all_results):
 		with open("../reports/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
@@ -296,22 +296,22 @@ def d():
 		# lex data
 		for key, feature_set in features.items(): 
 		    print("--------------------", dataset, feature_set)
-		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset_name, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
-		    all_results.append([dataset_name, key, *results])
+		    results, importance = classify_with_rf(dataset, key, *load_lex_data(dataset, feature_set), trees_for_dataset.get(dataset + "_" + key, 10))
+		    all_results.append([dataset, key, *results])
 		    importances.append(importance)
 		# unigram dataset
 		print("--------------------", dataset, "vec-unigram")
-		results, coef = classify_with_rf(dataset, "vec-unigram", *load_vector_data(dataset), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		results, coef = classify_with_rf(dataset, "vec-unigram", *load_vector_data(dataset), trees_for_dataset.get(dataset + "_" + key, 10))
 		all_results.append([dataset, "vec-unigram", *results])
 		importances.append(coef)
 		# bigram dataset
 		print("--------------------", dataset, "vec-bigram")
-		results, coef = classify_with_rf(dataset,  "vec-bigram", *load_vector_data(dataset, True), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		results, coef = classify_with_rf(dataset,  "vec-bigram", *load_vector_data(dataset, True), trees_for_dataset.get(dataset + "_" + key, 10))
 		all_results.append([dataset, "vec-bigram", *results])
 		importances.append(coef)
 		# topic dataset
 		print("--------------------", dataset, "topics-unigram")
-		results, coef = classify_with_rf(dataset, "topics", *load_topic_data(dataset, num_topics_dict[dataset]), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		results, coef = classify_with_rf(dataset, "topics", *load_topic_data(dataset, num_topics_dict[dataset]), trees_for_dataset.get(dataset + "_" + key, 10))
 		all_results.append([dataset, "topics", *results])
 		importances.append(coef)
 		
