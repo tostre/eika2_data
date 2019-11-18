@@ -274,11 +274,11 @@ types = {
 
 # In[119]:
 
-for dataset in ["norm_emotion"]:
+for dataset in ["norm_tweet", "norm_emotion"]:
 		# lex data
 		for key, feature_set in features.items(): 
 		    print("--------------------", dataset, feature_set)
-		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset_name, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
 		    all_results.append([dataset_name, key, *results])
 		    importances.append(importance)
 for index, result in enumerate(all_results):
