@@ -4,7 +4,4 @@ corpora/cleaned/.~*
 *checkpoint.ipynb*
 corpora/notebooks/.ipynb_checkpoints/*
 ssh
-corpora/models/bigrams/*
-corpora/models/dictionary/*
 corpora/models/word_embeddings/*
-corpora/models/topics_models/*
