@@ -1,0 +1,13 @@
+norm_emotion(lex), f1_score: 0.48787246942734985):
+
+              precision    recall  f1-score   support
+
+   happiness       0.45      0.84      0.59      9374
+     sadness       0.56      0.36      0.44      9599
+       anger       0.54      0.49      0.52      9317
+        fear       0.58      0.31      0.40      8036
+
+    accuracy                           0.51     36326
+   macro avg       0.53      0.50      0.49     36326
+weighted avg       0.53      0.51      0.49     36326
+
