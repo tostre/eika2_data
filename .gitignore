@@ -4,12 +4,7 @@ corpora/cleaned/.~*
 *checkpoint.ipynb*
 corpora/notebooks/.ipynb_checkpoints/*
 ssh
-corpora/models/
-corpora/models/*
-corpora/models/logistic_regression/*
 corpora/models/bigrams/*
 corpora/models/dictionary/*
-corpora/models/random_forests/*
 corpora/models/word_embeddings/*
 corpora/models/topics_models/*
-corpora/models/trigrams/*
