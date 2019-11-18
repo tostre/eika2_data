@@ -274,40 +274,54 @@ types = {
 
 # In[119]:
 
+for dataset in ["norm_emotion"]:
+		# lex data
+		for key, feature_set in features.items(): 
+		    print("--------------------", dataset, feature_set)
+		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset_name, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		    all_results.append([dataset_name, key, *results])
+		    importances.append(importance)
+for index, result in enumerate(all_results):
+		with open("../reports/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
+		    print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
+		      classification_report(result[2], result[3],target_names=classes)), file=f)
+		draw_confusion_matrix(*result)
+		draw_importances(result[0], result[1], features[result[1]], importances[index])
+
 
 all_results = []
 importances = []
-
-for dataset in ["norm_tweet", "norm_emotion"]:
-    # lex data
-    for key, feature_set in features.items(): 
-        print("--------------------", dataset, feature_set)
-        results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset_name, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
-        all_results.append([dataset_name, key, *results])
-        importances.append(importance)
-    # unigram dataset
-    print("--------------------", dataset, "vec-unigram")
-    results, coef = classify_with_rf(dataset, "vec-unigram", *load_vector_data(dataset), trees_for_dataset.get(dataset_name + "_" + key, 10))
-    all_results.append([dataset, "vec-unigram", *results])
-    importances.append(coef)
-    # bigram dataset
-    print("--------------------", dataset, "vec-bigram")
-    results, coef = classify_with_rf(dataset,  "vec-bigram", *load_vector_data(dataset, True), trees_for_dataset.get(dataset_name + "_" + key, 10))
-    all_results.append([dataset, "vec-bigram", *results])
-    importances.append(coef)
-    # topic dataset
-    print("--------------------", dataset, "topics-unigram")
-    results, coef = classify_with_rf(dataset, "topics", *load_topic_data(dataset, num_topics_dict[dataset]), trees_for_dataset.get(dataset_name + "_" + key, 10))
-    all_results.append([dataset, "topics", *results])
-    importances.append(coef)
-    
-for index, result in enumerate(all_results):
-    with open("../reports/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
-        print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
-          classification_report(result[2], result[3],target_names=classes)), file=f)
-    draw_confusion_matrix(*result)
-    if result[1] == "full" or result[1] == "lex" or result[1] == "nolex":
-        draw_importances(result[0], result[1], features[result[1]], importances[index])
+def d(): 
+	for dataset in ["norm_tweet", "norm_emotion"]:
+		# lex data
+		for key, feature_set in features.items(): 
+		    print("--------------------", dataset, feature_set)
+		    results, importance = classify_with_rf(dataset_name, key, *load_lex_data(dataset_name, feature_set), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		    all_results.append([dataset_name, key, *results])
+		    importances.append(importance)
+		# unigram dataset
+		print("--------------------", dataset, "vec-unigram")
+		results, coef = classify_with_rf(dataset, "vec-unigram", *load_vector_data(dataset), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		all_results.append([dataset, "vec-unigram", *results])
+		importances.append(coef)
+		# bigram dataset
+		print("--------------------", dataset, "vec-bigram")
+		results, coef = classify_with_rf(dataset,  "vec-bigram", *load_vector_data(dataset, True), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		all_results.append([dataset, "vec-bigram", *results])
+		importances.append(coef)
+		# topic dataset
+		print("--------------------", dataset, "topics-unigram")
+		results, coef = classify_with_rf(dataset, "topics", *load_topic_data(dataset, num_topics_dict[dataset]), trees_for_dataset.get(dataset_name + "_" + key, 10))
+		all_results.append([dataset, "topics", *results])
+		importances.append(coef)
+		
+	for index, result in enumerate(all_results):
+		with open("../reports/report_rf_" + result[0] + "_"  + result[1] + ".txt", 'w') as f:
+		    print((result[0] + "_" + result[1] + " (" + str(result[5]) + "):\n" + 
+		      classification_report(result[2], result[3],target_names=classes)), file=f)
+		draw_confusion_matrix(*result)
+		if result[1] == "full" or result[1] == "lex" or result[1] == "nolex":
+		    draw_importances(result[0], result[1], features[result[1]], importances[index])
 
 
 # In[87]:
