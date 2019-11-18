@@ -47,7 +47,7 @@ def load_vector_data(dataset_name, bgr=False):
     print("loading vector data for", dataset_name)
     sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).fillna("").values.tolist()
     targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", delimiter=",", dtype = types).astype(str)["a"].tolist() 
-    vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext")
+    vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext", binary=True)
     # replace placeholders (" "), make one-string-sentences
     print("... replacing placeholders")
     for index, sample in enumerate(sentences): 
