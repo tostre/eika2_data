@@ -44,9 +44,10 @@ def load_lex_data(dataset_name, feature_set):
     return train_x, test_x, train_y, test_y    
 
 def load_vector_data(dataset_name, bgr=False):
-    print("loading vector data for", dataset_name)
+    print("loading vector data for", dataset_name, bgr)
     sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).fillna("").values.tolist()
     targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", delimiter=",", dtype = types).astype(str)["a"].tolist() 
+    print("...attemtping to load: ", "../models/word_embeddings/" + dataset_name + "_fasttext")
     vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext", binary=True)
     # replace placeholders (" "), make one-string-sentences
     print("... replacing placeholders")
