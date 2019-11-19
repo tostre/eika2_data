@@ -1,0 +1,12 @@
+norm_emotion_vec-bigram (0.5067274433056259):
+              precision    recall  f1-score   support
+
+   happiness       0.44      0.56      0.49      9352
+     sadness       0.45      0.46      0.45      9610
+       anger       0.46      0.51      0.48      9492
+        fear       0.93      0.46      0.62      7872
+
+    accuracy                           0.50     36326
+   macro avg       0.57      0.50      0.51     36326
+weighted avg       0.55      0.50      0.51     36326
+
