@@ -1,0 +1,13 @@
+net_lin_norm_test(full), f1_score: 0.45441504855059883:
+
+              precision    recall  f1-score   support
+
+   happiness       0.43      0.72      0.54       242
+     sadness       0.43      0.41      0.42       238
+       anger       0.62      0.39      0.48       249
+        fear       0.45      0.31      0.37       216
+
+    accuracy                           0.46       945
+   macro avg       0.48      0.46      0.45       945
+weighted avg       0.48      0.46      0.45       945
+
