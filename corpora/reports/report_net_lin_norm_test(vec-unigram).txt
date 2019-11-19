@@ -1,13 +1,13 @@
-net_lin_norm_test(vec-unigram), f1_score: 0.14184128762232387:
+net_lin_norm_test(vec-unigram), f1_score: 0.2599396152502616:
 
               precision    recall  f1-score   support
 
-   happiness       0.00      0.00      0.00       252
-     sadness       0.24      0.95      0.39       222
-       anger       0.43      0.08      0.14       247
-        fear       0.42      0.04      0.07       224
+   happiness       0.38      0.48      0.43       261
+     sadness       0.26      0.12      0.17       248
+       anger       0.23      0.47      0.31       212
+        fear       0.27      0.08      0.12       224
 
-    accuracy                           0.25       945
-   macro avg       0.27      0.27      0.15       945
-weighted avg       0.27      0.25      0.14       945
+    accuracy                           0.29       945
+   macro avg       0.29      0.29      0.26       945
+weighted avg       0.29      0.29      0.26       945
 
