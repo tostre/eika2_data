@@ -324,7 +324,7 @@ num_hidden_layers = 2
 lr = 0.01
 
 
-# In[328]:
+# In[332]:
 
 
 datasets = ["norm_tweet", "norm_emotion"]
@@ -332,8 +332,8 @@ feature_set_names = ["full", "half", "topic"]
 datasets = ["norm_test"]
 feature_set_names = ["full"]
 
-for ["norm_tweet", "norm_emotion"] in ["full", "lex", "vec-unigram", "vec-bigram", "topics"]: 
-    for feature_set_name in feature_set_names: 
+for dataset_name in ["norm_tweet", "norm_emotion"]: 
+    for feature_set_name in ["topics", "vec-unigram", "vec-bigram", "full", "lex", ]: 
         run(dataset_name, feature_set_name)
 
 
