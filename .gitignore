@@ -5,3 +5,4 @@ corpora/cleaned/.~*
 corpora/notebooks/.ipynb_checkpoints/*
 ssh
 corpora/models/word_embeddings/*
+corpora/models/random_forests/*
