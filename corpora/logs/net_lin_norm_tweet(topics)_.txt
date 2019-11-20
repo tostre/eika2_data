@@ -1,0 +1,84 @@
+
+epoch: 0, 
+...train_f1: [1.0], train_loss: [0.06294131278991699], 	val_f1: [1.0], val_loss: [0.09103536605834961]
+epoch: 125, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.1672542691230774]
+epoch: 250, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.26069334149360657]
+epoch: 375, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.06807813048362732]
+epoch: 500, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.16745290160179138]
+epoch: 625, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.16428762674331665]
+epoch: 750, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.1764736920595169]
+epoch: 875, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.17678728699684143]
+epoch: 1000, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.3333333333333333], val_loss: [0.9043978452682495]
+epoch: 1125, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [1.0], val_loss: [0.30599266290664673]
+epoch: 1250, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5490935444831848]
+epoch: 1375, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5298936367034912]
+epoch: 1500, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313568711280823]
+epoch: 1625, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313719511032104]
+epoch: 1750, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313725471496582]
+epoch: 1875, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313714742660522]
+epoch: 2000, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313723683357239]
+epoch: 2125, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 2250, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 2375, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 2500, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 2625, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 2750, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 2875, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 3000, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 3125, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 3250, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 3375, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 3500, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 3625, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 3750, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 3875, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727259635925]
+epoch: 4000, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 4125, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 4250, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+epoch: 4375, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727259635925]
+epoch: 4500, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727259635925]
+epoch: 4625, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727259635925]
+epoch: 4750, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313726663589478]
+epoch: 4875, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727259635925]
+epoch: 5000, 
+...train_f1: [1.0], train_loss: [0.0], 	val_f1: [0.5], val_loss: [0.5313727855682373]
+...test_f1: 0.6315247184556515
