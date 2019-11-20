@@ -335,8 +335,8 @@ feature_set_names = ["full", "half", "topic"]
 datasets = ["norm_test"]
 feature_set_names = ["full"]
 
-for dataset_name in ["norm_tweet", "norm_emotion"]: 
-    for feature_set_name in ["topics", "vec-unigram", "vec-bigram", "full", "lex", ]: 
+for dataset_name in ["norm_emotion"]: 
+    for feature_set_name in ["topics", "full", "lex", ]: 
         run(dataset_name, feature_set_name)
 
 
