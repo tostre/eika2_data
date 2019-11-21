@@ -332,7 +332,7 @@ lr = 0.01
 
 
 datasets = ["norm_tweet"]
-feature_set_names = ["full", "lex", "vec-unigram", "vec-bigram", "topic"]
+feature_set_names = ["topics"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
