@@ -230,9 +230,9 @@ def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_ever
             log(file_name, "\nepoch: {}, \n...train_f1: {}, train_loss: {}, \tval_f1: {}, val_loss: {}".format(
                 epoch, train_f1[-1:], train_e[-1:], val_f1[-1:], val_e[-1:]), net=net, epoch=epoch)
             train_f1.append(f1_score(train_targets.tolist(), train_pred, average="weighted"))
-		    val_f1.append(f1_score(val_targets.tolist(), val_pred, average="weighted"))
-		    train_e.append(train_loss.item())
-		    val_e.append(val_loss.item())
+            val_f1.append(f1_score(val_targets.tolist(), val_pred, average="weighted"))
+            train_e.append(train_loss.item())
+            val_e.append(val_loss.item())
     plot_intersection(file_name, "f1_score", train_f1, val_f1)
     plot_intersection(file_name, "loss", train_e, val_e)
 
@@ -286,7 +286,7 @@ def run(dataset_name, feature_set_name):
 
 # create variables 
 print("creating variables")
-feature_set_names = ["full", "half", "vec-unigram", "vec-bigram", "topic"]
+
 feature_sets = {
     "norm_test_full": ["wc", "ewc", "cpc", "hc", "sc", "ac", "fc"],
     "norm_test_lex": ["hc", "sc", "ac", "fc"],
@@ -318,12 +318,12 @@ types = {
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
-epochs = 1000 + 1
+epochs = 2500 + 1
 print_every = 50
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
-num_hidden_layers = 2
+num_hidden_layers = 4
 lr = 0.01
 
 
@@ -332,10 +332,11 @@ lr = 0.01
 
 datasets = ["norm_tweet", "norm_emotion"]
 feature_set_names = ["full", "half", "topic"]
-datasets = ["norm_test"]
-feature_set_names = ["full"]
+#datasets = ["norm_test"]
+#feature_set_names = ["full"]
 
 # erst beide datensätz full/lex, dann topics, evtl später vec
+feature_set_names = ["full", "half", "vec-unigram", "vec-bigram", "topic"]
 
 for dataset_name in ["norm_tweet"]:
     for feature_set_name in feature_set_names: 
