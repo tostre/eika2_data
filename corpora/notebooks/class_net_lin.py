@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas
@@ -38,7 +38,7 @@ from joblib import dump, load
 from gensim.models.phrases import Phrases, Phraser
 
 
-# In[280]:
+# In[2]:
 
 
 class Lin_Net(nn.Module):
@@ -71,7 +71,7 @@ class MyDataset(D.Dataset):
         return len(self.x)
 
 
-# In[324]:
+# In[3]:
 
 
 def load_lex_data(dataset_name, feature_set_name, features, batch_size, split_factor=0.2):
@@ -126,18 +126,18 @@ def load_topic_data(dataset_name, split_factor=0.2):
 
 def make_loader(inputs, targets, test_size):
     # make train and test sets
-    train_x, val_x, train_y, val_y = train_test_split(inputs, targets, test_size=split_factor)
-    train_x, test_x, train_y, test_y = train_test_split(train_x, train_y, test_size=split_factor)
+    train_x, val_x, train_y, val_y = train_test_split(inputs, targets, test_size=test_size)
+    train_x, test_x, train_y, test_y = train_test_split(train_x, train_y, test_size=test_size)
     train_data = MyDataset(np.asarray(train_x), np.asarray(train_y))
     val_data = MyDataset(np.asarray(val_x), np.asarray(val_y))
     test_data = MyDataset(np.asarray(test_x), np.asarray(test_y))
     train_loader = DataLoader(dataset=train_data, batch_size=batch_size)
-    val_loader = DataLoader(dataset=val_data, batch_size=round(batch_size*split_factor))
+    val_loader = DataLoader(dataset=val_data, batch_size=round(batch_size*test_size))
     test_loader = DataLoader(dataset=test_data, batch_size=1)
     return train_loader, val_loader, test_loader
 
 
-# In[241]:
+# In[50]:
 
 
 def convert_to_cuda(cuda, inputs, targets, net):
@@ -155,9 +155,9 @@ def log(file_name, message, net=False, epoch=False):
     if net and epoch: 
         torch.save(net.state_dict(), "{}{}_{}{}".format("../nets/", file_name, epoch, ".pt"))
 
-def plot_intersection(file_name, plot_type, y1, y2, desc=True, intersection=False):
-    x, y1, y2  = list(range(1, len(y1)+1)), np.asarray(y1), np.asarray(y2)
-    epochs = len(x)
+def plot_intersection(file_name, plot_type, y1, y2, print_every, desc=True, intersection=False):
+    x, y1, y2  = list(range(0, len(y1))), np.asarray(y1), np.asarray(y2)
+    x = [print_every*e for e in x]
     fig = plt.figure()
     plt.clf()
     if plot_type == "f1_score":
@@ -173,7 +173,7 @@ def plot_intersection(file_name, plot_type, y1, y2, desc=True, intersection=Fals
     plt.ylabel(plot_type)
     plt.xlabel("epochs")
     plt.grid()
-    plt.xlim(0, epochs)
+    #plt.xlim(0, len(x))
     fig.text(0.5, -0.15, desc.replace("../logs/", ""), ha='center')
     fig.savefig("{}{}_{}{}".format("../img/", file_name, plot_type, "_intersection.png"), bbox_inches="tight")
     
@@ -197,7 +197,7 @@ def draw_confusion_matrix(file_name, test_y, pred_y, f1_score):
 
 
 
-# In[326]:
+# In[42]:
 
 
 def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_every):
@@ -216,7 +216,6 @@ def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_ever
             train_loss = criterion(train_pred.float(), train_targets)
             optimizer.zero_grad(); train_loss.backward(); optimizer.step()# save error
             train_pred = [item.index(max(item)) for item in train_pred.tolist()]
-            tf1, tloss = f1_score(train_targets.tolist(), train_pred, average="weighted"), train_loss.item()
         net.eval()
         for index, (val_inputs, val_targets) in enumerate(val_loader):
             val_inputs, val_targets = val_inputs.float(), val_targets.long()
@@ -224,17 +223,20 @@ def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_ever
             val_pred = net(val_inputs)
             val_loss = criterion(val_pred.float(), val_targets)
             val_pred = [item.index(max(item)) for item in val_pred.tolist()]
-            vf1, vloss = f1_score(val_targets.tolist(), val_pred, average="weighted"), val_loss.item()
+        
         # write logs and files 
         if epoch % print_every == 0:
-            log(file_name, "\nepoch: {}, \n...train_f1: {}, train_loss: {}, \tval_f1: {}, val_loss: {}".format(
-                epoch, train_f1[-1:], train_e[-1:], val_f1[-1:], val_e[-1:]), net=net, epoch=epoch)
-            train_f1.append(f1_score(train_targets.tolist(), train_pred, average="weighted"))
-            val_f1.append(f1_score(val_targets.tolist(), val_pred, average="weighted"))
+            train_f1.append(f1_score(train_targets.tolist(), train_pred, average="micro"))
+            val_f1.append(f1_score(val_targets.tolist(), val_pred, average="micro"))
             train_e.append(train_loss.item())
             val_e.append(val_loss.item())
-    plot_intersection(file_name, "f1_score", train_f1, val_f1)
-    plot_intersection(file_name, "loss", train_e, val_e)
+            log(file_name, "\nepoch: {}, \n...train_f1: {}, train_loss: {}, \tval_f1: {}, val_loss: {}".format(
+                epoch, train_f1[-1:], train_e[-1:], val_f1[-1:], val_e[-1:]), net=net, epoch=epoch)
+            
+    print(val_f1)
+    plot_intersection(file_name, "f1_score", train_f1, val_f1, print_every)
+    plot_intersection(file_name, "loss", train_e, val_e, print_every)
+            
 
 def test(test_loader, net, file_name): 
     print("testing")
@@ -281,12 +283,12 @@ def run(dataset_name, feature_set_name):
     
 
 
-# In[330]:
+# In[52]:
 
 
 # create variables 
 print("creating variables")
-
+feature_set_names = ["full", "half", "vec-unigram", "vec-bigram", "topic"]
 feature_sets = {
     "norm_test_full": ["wc", "ewc", "cpc", "hc", "sc", "ac", "fc"],
     "norm_test_lex": ["hc", "sc", "ac", "fc"],
@@ -319,27 +321,24 @@ criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
 epochs = 2500 + 1
-print_every = 50
+print_every = 125
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
-num_hidden_layers = 4
+num_hidden_layers = 2
 lr = 0.01
 
 
-# In[332]:
+# In[53]:
 
 
 datasets = ["norm_tweet", "norm_emotion"]
 feature_set_names = ["full", "half", "topic"]
-#datasets = ["norm_test"]
-#feature_set_names = ["full"]
+datasets = ["norm_test"]
+feature_set_names = ["full"]
 
-# erst beide datensätz full/lex, dann topics, evtl später vec
-feature_set_names = ["full", "half", "vec-unigram", "vec-bigram", "topic"]
-
-for dataset_name in ["norm_tweet"]:
-    for feature_set_name in feature_set_names: 
+for dataset_name in ["norm_test"]: 
+    for feature_set_name in ["lex"]: 
         run(dataset_name, feature_set_name)
 
 
