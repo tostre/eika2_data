@@ -331,8 +331,8 @@ lr = 0.01
 # In[53]:
 
 
-datasets = ["norm_tweet"]
-feature_set_names = ["topics"]
+datasets = ["norm_emotion"]
+feature_set_names = ["full", "lex", "vec-unigram", "vec-bigram", "topics"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
