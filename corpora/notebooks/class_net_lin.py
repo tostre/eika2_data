@@ -337,7 +337,7 @@ feature_set_names = ["full"]
 
 # erst beide datensätz full/lex, dann topics, evtl später vec
 
-for dataset_name in ["norm_tweet"]: 
+for dataset_name in ["norm_tweet"]:
     for feature_set_name in feature_set_names: 
         run(dataset_name, feature_set_name)
 
