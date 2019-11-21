@@ -225,14 +225,14 @@ def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_ever
             val_loss = criterion(val_pred.float(), val_targets)
             val_pred = [item.index(max(item)) for item in val_pred.tolist()]
             vf1, vloss = f1_score(val_targets.tolist(), val_pred, average="weighted"), val_loss.item()
-        train_f1.append(f1_score(train_targets.tolist(), train_pred, average="weighted"))
-        val_f1.append(f1_score(val_targets.tolist(), val_pred, average="weighted"))
-        train_e.append(train_loss.item())
-        val_e.append(val_loss.item())
         # write logs and files 
         if epoch % print_every == 0:
             log(file_name, "\nepoch: {}, \n...train_f1: {}, train_loss: {}, \tval_f1: {}, val_loss: {}".format(
                 epoch, train_f1[-1:], train_e[-1:], val_f1[-1:], val_e[-1:]), net=net, epoch=epoch)
+            train_f1.append(f1_score(train_targets.tolist(), train_pred, average="weighted"))
+		    val_f1.append(f1_score(val_targets.tolist(), val_pred, average="weighted"))
+		    train_e.append(train_loss.item())
+		    val_e.append(val_loss.item())
     plot_intersection(file_name, "f1_score", train_f1, val_f1)
     plot_intersection(file_name, "loss", train_e, val_e)
 
@@ -319,7 +319,7 @@ criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
 epochs = 1000 + 1
-print_every = 125
+print_every = 50
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
@@ -335,8 +335,10 @@ feature_set_names = ["full", "half", "topic"]
 datasets = ["norm_test"]
 feature_set_names = ["full"]
 
-for dataset_name in ["norm_emotion"]: 
-    for feature_set_name in ["topics", "full", "lex", ]: 
+# erst beide datensätz full/lex, dann topics, evtl später vec
+
+for dataset_name in ["norm_tweet"]:
+    for feature_set_name in feature_set_names: 
         run(dataset_name, feature_set_name)
 
 
