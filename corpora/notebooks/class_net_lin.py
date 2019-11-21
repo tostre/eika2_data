@@ -283,12 +283,11 @@ def run(dataset_name, feature_set_name):
     
 
 
-# In[52]:
+# In[54]:
 
 
 # create variables 
 print("creating variables")
-feature_set_names = ["full", "half", "vec-unigram", "vec-bigram", "topic"]
 feature_sets = {
     "norm_test_full": ["wc", "ewc", "cpc", "hc", "sc", "ac", "fc"],
     "norm_test_lex": ["hc", "sc", "ac", "fc"],
@@ -332,13 +331,11 @@ lr = 0.01
 # In[53]:
 
 
-datasets = ["norm_tweet", "norm_emotion"]
-feature_set_names = ["full", "half", "topic"]
-datasets = ["norm_test"]
-feature_set_names = ["full"]
+datasets = ["norm_tweet"]
+feature_set_names = ["full", "lex", "vec-unigram", "vec-bigram", "topic"]
 
-for dataset_name in ["norm_test"]: 
-    for feature_set_name in ["lex"]: 
+for dataset_name in datasets: 
+    for feature_set_name in feature_set_names: 
         run(dataset_name, feature_set_name)
 
 
