@@ -332,7 +332,7 @@ lr = 0.01
 
 
 datasets = ["norm_emotion"]
-feature_set_names = ["lex", "topics", "vec-bigram", "vec-unigram"]
+feature_set_names = ["vec-bigram", "lex", "topics", "vec-unigram"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
