@@ -1,0 +1,44 @@
+
+epoch: 0, 
+...train_f1: [1.0], train_loss: [0.11313319206237793], 	val_f1: [1.0], val_loss: [5.53131103515625e-05]
+epoch: 125, 
+...train_f1: [1.0], train_loss: [0.19492745399475098], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 250, 
+...train_f1: [1.0], train_loss: [0.2173912525177002], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 375, 
+...train_f1: [1.0], train_loss: [0.18622231483459473], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 500, 
+...train_f1: [1.0], train_loss: [0.2356433868408203], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 625, 
+...train_f1: [1.0], train_loss: [0.10705327987670898], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 750, 
+...train_f1: [1.0], train_loss: [0.10747194290161133], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 875, 
+...train_f1: [1.0], train_loss: [0.10394954681396484], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1000, 
+...train_f1: [1.0], train_loss: [0.8546692132949829], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1125, 
+...train_f1: [0.0], train_loss: [1.1233525276184082], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1250, 
+...train_f1: [1.0], train_loss: [0.22986912727355957], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1375, 
+...train_f1: [1.0], train_loss: [0.21402764320373535], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1500, 
+...train_f1: [1.0], train_loss: [0.2197251319885254], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1625, 
+...train_f1: [0.0], train_loss: [0.8674242496490479], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1750, 
+...train_f1: [0.0], train_loss: [0.8624873161315918], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 1875, 
+...train_f1: [1.0], train_loss: [0.19178175926208496], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 2000, 
+...train_f1: [0.0], train_loss: [0.8478884696960449], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 2125, 
+...train_f1: [0.0], train_loss: [0.8462285995483398], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 2250, 
+...train_f1: [0.0], train_loss: [0.8451857566833496], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 2375, 
+...train_f1: [0.0], train_loss: [0.8444299697875977], 	val_f1: [1.0], val_loss: [0.0]
+epoch: 2500, 
+...train_f1: [0.0], train_loss: [0.8438692092895508], 	val_f1: [1.0], val_loss: [0.0]
+...test_f1: 0.5878141394894026
