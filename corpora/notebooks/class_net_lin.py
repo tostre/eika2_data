@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, TensorDataset
 from torch.utils.data import DataLoader
 import matplotlib
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
 import seaborn as sn
@@ -232,10 +232,8 @@ def train(train_loader, val_loader, net, epochs, cuda, lr, file_name, print_ever
             val_e.append(val_loss.item())
             log(file_name, "\nepoch: {}, \n...train_f1: {}, train_loss: {}, \tval_f1: {}, val_loss: {}".format(
                 epoch, train_f1[-1:], train_e[-1:], val_f1[-1:], val_e[-1:]), net=net, epoch=epoch)
-            
-    print(val_f1)
-    plot_intersection(file_name, "f1_score", train_f1, val_f1, print_every)
-    plot_intersection(file_name, "loss", train_e, val_e, print_every)
+            plot_intersection(file_name, "f1_score", train_f1, val_f1, print_every)
+            plot_intersection(file_name, "loss", train_e, val_e, print_every)
             
 
 def test(test_loader, net, file_name): 
@@ -319,8 +317,8 @@ types = {
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
-epochs = 2500 + 1
-print_every = 125
+epochs = 1000 + 1
+print_every = 50
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
@@ -331,8 +329,8 @@ lr = 0.01
 # In[53]:
 
 
-datasets = ["norm_emotion"]
-feature_set_names = ["topics"]
+datasets = ["norm_tweet"]
+feature_set_names = ["full", "lex", "vec-unigram", "vec-bigram", "topics"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
