@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset, TensorDataset
 from torch.utils.data import DataLoader
 import matplotlib
-#matplotlib.use('Agg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score
 import seaborn as sn
