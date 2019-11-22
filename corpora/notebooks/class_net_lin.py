@@ -77,15 +77,15 @@ class MyDataset(D.Dataset):
 def load_lex_data(dataset_name, feature_set_name, features, batch_size, split_factor=0.2):
     print("loading lex data", dataset_name, feature_set_name)
     inputs = []
-    dataset = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv")
+    dataset = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", dtype=types)
     targets = dataset["a"]
     inputs = dataset[features]
     return make_loader(inputs, targets, split_factor)
     
 def load_vector_data(dataset_name, bgr=False, split_factor=0.2):
     print("loading vector data for", dataset_name)
-    sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",").astype(str).values.tolist()
-    targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv")["a"]
+    sentences = pd.read_csv("../cleaned/" + dataset_name + "_stems.csv", delimiter=",", dtype=str).astype(str).values.tolist()
+    targets = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", dtype=types)["a"]
     vector_model = FastText.load("../models/word_embeddings/" + dataset_name + "_fasttext")
     # replace placeholders (" "), make one-string-sentences
     print("... replacing placeholders")
@@ -106,7 +106,7 @@ def load_topic_data(dataset_name, split_factor=0.2):
     print("loading lex data", dataset_name, feature_set_name)
     inputs = []
     num_topics = num_topics_dict[dataset_name]
-    dataset = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv")
+    dataset = pd.read_csv("../cleaned/" + dataset_name + "_clean.csv", dtype=types)
     targets = dataset["a"]
     dataset = dataset.astype(str).values.tolist() 
     dic = gs.corpora.Dictionary.load("../models/dictionary/" + dataset_name + "_dictionary")
@@ -332,7 +332,7 @@ lr = 0.01
 
 
 datasets = ["norm_emotion"]
-feature_set_names = ["vec-bigram", "vec-unigram"]
+feature_set_names = ["lex", "topics", "vec-bigram", "vec-unigram"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
