@@ -319,8 +319,8 @@ types = {
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
-epochs = 2500 + 1
-print_every = 125
+epochs = 1000 + 1
+print_every = 50
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
@@ -332,7 +332,7 @@ lr = 0.01
 
 
 datasets = ["norm_emotion"]
-feature_set_names = ["vec-unigram"]
+feature_set_names = ["vec-bigram", "vec-unigram"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
