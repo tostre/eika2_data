@@ -176,6 +176,7 @@ def plot_intersection(file_name, plot_type, y1, y2, print_every, desc=True, inte
     #plt.xlim(0, len(x))
     fig.text(0.5, -0.15, desc.replace("../logs/", ""), ha='center')
     fig.savefig("{}{}_{}{}".format("../img/", file_name, plot_type, "_intersection.png"), bbox_inches="tight")
+    plt.close(fig)
     
 def draw_confusion_matrix(file_name, test_y, pred_y, f1_score): 
     fig = plt.figure()
@@ -189,6 +190,7 @@ def draw_confusion_matrix(file_name, test_y, pred_y, f1_score):
     fig.text(0.5, -0.1, desc, ha='center')
     plt.show()
     fig.savefig("{}{}_{}".format("../img/", file_name, "confusion.png"), bbox_inches="tight")
+    plt.close(fig)
 
 
 # In[14]:
@@ -317,8 +319,8 @@ types = {
 criterion = nn.CrossEntropyLoss()
 cuda = torch.cuda.is_available()
 batch_size = 16
-epochs = 1000 + 1
-print_every = 50
+epochs = 2500 + 1
+print_every = 125
 split_factor = 0.2
 output_dim = 4
 hidden_dim = 256
@@ -329,8 +331,8 @@ lr = 0.01
 # In[53]:
 
 
-datasets = ["norm_tweet"]
-feature_set_names = ["full", "lex", "vec-unigram", "vec-bigram", "topics"]
+datasets = ["norm_emotion"]
+feature_set_names = ["vec-unigram"]
 
 for dataset_name in datasets: 
     for feature_set_name in feature_set_names: 
