@@ -1,0 +1,13 @@
+net_lin_norm_emotion(vec-unigram), f1_score: 0.22801364333032598:
+
+              precision    recall  f1-score   support
+
+   happiness       0.28      1.00      0.44      7652
+     sadness       0.00      0.00      0.00      7557
+       anger       0.00      0.00      0.00      7600
+        fear       1.00      0.35      0.52      6252
+
+    accuracy                           0.34     29061
+   macro avg       0.32      0.34      0.24     29061
+weighted avg       0.29      0.34      0.23     29061
+
