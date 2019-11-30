@@ -1,0 +1,13 @@
+norm_tweet(vec-bigram), f1_score: 0.3047330550281792):
+
+              precision    recall  f1-score   support
+
+   happiness       0.30      0.41      0.35       286
+     sadness       0.31      0.40      0.35       297
+       anger       0.34      0.27      0.30       296
+        fear       0.31      0.18      0.23       302
+
+    accuracy                           0.31      1181
+   macro avg       0.32      0.31      0.31      1181
+weighted avg       0.32      0.31      0.30      1181
+
